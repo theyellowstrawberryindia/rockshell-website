@@ -1,0 +1,196 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* 1rem = 10px */
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 6rem; /* Adequate spacing between links */
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #00233B;
+ 
+  display: inline-block;
+  text-align: center;
+    max-width: none;
+  width: auto; /* ← don't restrict width */
+}
+
+.contact-button {
+  padding: 1rem 2.5rem;
+  background: linear-gradient(to right, #0072a2, #004466);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25rem 10rem;
+  /* background: linear-gradient(to bottom right, #ffffff, #e6f6fc); */
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg-img {
+  position: absolute;
+  bottom: 0;
+  right:50rem;         /* aligns it to the right */
+  width: 90rem;     /* adjust as needed */
+  height: auto;
+  z-index: 0;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+
+/* Ensure content stays on top */
+.hero-content,
+.hex-image-wrapper {
+  position: relative;
+  z-index: 2;
+}
+/* Welcome Text */
+.welcome-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 2rem;
+  position: relative;
+  white-space: nowrap; /* ✨ Prevent line break */
+}
+
+/* Circular Gradient Behind Text */
+.welcome-text::before {
+  content: '';
+  position: absolute;
+  top: -7rem;       /* slightly higher */
+  left: -18rem;      /* adjust more to the left */
+  width: 63rem;     /* increased from 22rem */
+  height: 63rem;    /* increased from 22rem */
+  background: radial-gradient(circle, rgba(108, 166, 189, 0.35) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+/* Hero Heading */
+.hero-content h1 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 6rem; /* Increased font size */
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #01739C;
+  margin-bottom: 3rem;
+  max-width: 70rem; /* Optional: Controls line breaks */
+  white-space: nowrap; /* Allow wrapping */
+}
+
+.highlight {
+  background: linear-gradient(to right, #00233B, #01739C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for Firefox */
+  text-fill-color: transparent;
+}
+
+/* Connect Button */
+.connect-btn {
+  display: inline-block;
+  padding: 1.4rem 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(to right, #05A0C6, #00233B);
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+/* Optional arrow icon spacing */
+.connect-btn .arrow {
+  margin-left: 1rem;
+  font-size: 1.6rem;
+}
+
+/* Hexagon Image */
+.hex-image-wrapper {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  width: 60.7rem;
+  height: 75.8rem;
+  z-index: 1;
+}
+
+.hex-group-img {
+  width: 105%;
+  height: 105%;
+  object-fit: contain;
+}
+
+/* Responsive (Laptop and Below) */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    padding: 6rem 4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .hex-image-wrapper {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+
