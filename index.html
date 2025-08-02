@@ -2,217 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rockshell Corp</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-<!-- Work Sans -->
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-<!-- Fahkwang -->
-<link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  
+    <header class="navbar">
 
-  <!-- Navbar -->
-  <nav class="navbar">
-  <div class="navbar-left">
-    <img src="assets/logo.svg" alt="Rockshell Corp Logo" class="logo" />
-  </div>
+      <div class="logo"> 
+        <img src="assets/logo.svg" alt="ROCKSHELL CORP Logo" />
+      </div>
 
-  <ul class="nav-links">
-    <li><a href="#">Heat Pump<br>Solutions</a></li>
-    <li><a href="#">Heat Pump Dryers<br>& Evaporators</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Industries</a></li>
-    <li><a href="#">Insights</a></li>
-  </ul>
+      <nav class="nav-links">
+        <a href="#">Heat Pump Solutions</a>
+        <a href="#">Heat Pump Dryers & Evaporators</a>
+        <a href="#">Services</a>
+        <a href="#">Industries</a>
+        <a href="#">Insights</a>
+      </nav>
 
-  <a href="#" class="contact-button">
-    Contact Us →
+      <a class="contact-btn" href="#">
+        <img src="assets/log-out.svg" alt="Log out" class="btn-icon" />
+        Contact Us
+      </a>
+    </header>
+   
+<div class="container">
+    <section class="hero-section">
+      <div class="hero-content welcome-text">
+  <p class="intro-text">Welcome To ROCKSHELL CORP</p>
+  <h1 class="main-heading">
+    Working <span class="highlight">Towards Building</span><br />
+    A Sustainable <span class="highlight">Future</span>
+  </h1>
+  <a class="expert-btn" href="#">
+    <img src="assets/log-out.svg" alt="Logout Icon" class="btn-icon" />
+    Connect With Expert
   </a>
-</nav>
+</div>
 
-  <!-- Hero Section -->
-  <!-- Hero Section -->
-<!-- Hero Section -->
-<section class="hero-section">
-  <!-- Background Image -->
-  <img src="assets/design.svg" alt="Background Design" class="hero-bg-img" />
 
-  <!-- Text Content -->
-  <div class="hero-content">
-    <p class="welcome-text">Welcome To ROCKSHELL CORP</p>
-    <h1>
-      Working <span class="highlight">Towards Building</span><br />
-      A <span class="highlight">Sustainable Future</span>
-    </h1>
-    <a href="#" class="connect-btn">Connect With Expert</a>
-  </div>
+      <div class="hero-image">
+        <img src="assets/hexa.svg" alt="Hexagon Visual" />
+      </div>
+  </section>
+</div>
 
-  <!-- Hexagon Image -->
-  <div class="hex-image-wrapper">
-    <img src="assets/hexa.svg" alt="Hex Group" class="hex-group-img">
-  </div>
-</section>
-
-<!-- NEW  SECTION 2 -->
-
-<section class="industry-section">
-  <div class="industry-container">
-    <div class="industry-text">
-      <h2>Built For Industry.<br>Trusted For Execution.</h2>
-      <p>
-        Rockshell Corp is a leading manufacturer for Innovative Heating, Cooling and Effluent/Chemical recovery solutions in India. Rockshell continues to innovate & strives to save operational cost for its...
+      <!-- Industry Section -->
+  <div class="container">
+  <section class="industry-section">
+    <div class="industry-content">
+      <h1 class="industry-heading">
+        Built For Industry.<br />
+        Trusted For Execution.
+      </h1>
+      <p class="industry-description">
+        Rockshell Corp is a leading manufacturer for Innovative Heating, Cooling and Effluent/Chemical recovery solutions in India. Rockshell continues to innovate & strives to save operational cost for its customers. It also endeavours to create a cleaner environment across the globe through its products and services.
       </p>
-      <a href="#" class="read-more-btn">
-  Read More
-  <img src="assets/log-out.svg" alt="Arrow Icon" class="btn-icon" />
-</a>
+      <a class="read-more-btn" href="#">
+        Read More <img src="assets/log-out.svg" alt="Arrow" />
+      </a>
 
+      <div class="industry-metrics-wrapper">
+        <div class="full-width-border"></div>
+
+        <div class="industry-metrics">
+          <div class="metric">
+            <strong>100+</strong>
+            <span>years of experience</span>
+          </div>
+          <div class="divider"></div>
+          <div class="metric">
+            <strong>1000+</strong>
+            <span>employee strength</span>
+          </div>
+          <div class="divider"></div>
+          <div class="metric">
+            <strong>1000+</strong>
+            <span>projects</span>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="industry-image">
-      <img src="assets/engineer.svg" alt="Worker at factory" />
+      <img src="assets/engineer.svg" alt="Engineer" />
+    </div>
+  </section>
+
+<section class="industry-overlap-section">
+  <div class="industry-overlay-content">
+    <div class="industry-box">
+      <h3>Innovative Technology</h3>
+      <p>Rockshell Corps Heat pump are designed to Heat up Alkaline, acidic chemicals etc in the most energy efficient manner with special</p>
+    </div>
+    <div class="industry-box">
+      <h3>Operational Efficiency</h3>
+      <p>Streamlined processes and optimized performance across sectors.</p>
+    </div>
+    <div class="industry-box">
+      <h3>Sustainable Impact</h3>
+      <p>Creating eco-friendly innovations that drive a cleaner tomorrow.</p>
     </div>
   </div>
-
-  <div class="industry-metrics">
-    <div class="metric"><strong>100+</strong><span>years of experience</span></div>
-    <div class="divider"></div>
-    <div class="metric"><strong>1000+</strong><span>employee strength</span></div>
-    <div class="divider"></div>
-    <div class="metric"><strong>1000+</strong><span>projects</span></div>
-  </div>
+  <!-- <img src="assets/clip.svg" alt="Clip Decoration" class="bottom-clip" /> -->
 </section>
-<style>
-  .industry-section {
-    padding: 4rem 0rem;
-    background-color: #fff;
-    font-family: 'Work Sans', sans-serif;
-  }
+<!-- <section class="our-clients-section">
+  <div class="clients-container">
+    <div class="clients-text">
+  <div class="clients-heading-with-line">
+    
+    <h2>Our Clients</h2>
+    <div class="vertical-line"></div>
+  </div>
+</div>
 
-  .industry-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0; /* tighter layout */
-  }
+   
 
-  .industry-text {
-    width: 50%;
- padding: 0 0rem 0 6rem;
-  }
-
-  .industry-text h2 {
-    font-family: 'Fahkwang', sans-serif;
-    font-weight: 600;
-    font-size: 4rem;
-    line-height: 1;
-    text-transform: capitalize;
-    color: #00233B;
-    margin-bottom: 2rem;
-  }
-
-  .industry-text p {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 1;
-    color: #00233B;
-    margin-bottom: 2rem;
-  }
-
-  .read-more-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 24.4rem;
-    height: 6rem;
-    padding: 1.6rem 2.4rem;
-    gap: 2.4rem;
-    background: linear-gradient(90deg, #01739C 0%, #00233B 100%);
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-
-  .read-more-btn img.btn-icon {
-    width: 2rem;
-    height: 2rem;
-    margin-left: 1rem;
-  }
-
-  .read-more-btn:hover {
-    opacity: 0.9;
-  }
-
-  .industry-image {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-}
-
-.industry-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0; /* Square corners */
-  display: block;   /* Removes small gap under image */
-}
+    <div class="clients-logos">
+      <img src="assets/Everest.svg" alt="Everest" />
+      <img src="assets/DHL.svg" alt="DHL" />
+      <img src="assets/Hero.svg" alt="Hero" />
+      <img src="assets/Cummins.svg" alt="Cummins" />
+      <img src="assets/Dharamsi.svg" alt="Chemical Co." />
+    </div>
+  </div>
+</section> -->
 
 
-  .industry-metrics {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    margin-top: 6rem;
-    padding-top: 2rem;
-    border-top: 1px solid #ccc;
-  }
+</div>
 
-  .metric {
-    text-align: center;
-  }
-
-  .metric strong {
-    font-size: 3.2rem;
-    color: #00233B;
-    font-weight: 600;
-    display: block;
-  }
-
-  .metric span {
-    font-size: 1.5rem;
-    color: #00233B;
-    margin-top: 0.5rem;
-    display: block;
-  }
-
-  .divider {
-    height: 4rem;
-    width: 1px;
-    background-color: #ccc;
-  }
-
-  @media (max-width: 768px) {
-    .industry-container {
-      flex-direction: column;
-    }
-    .industry-text,
-    .industry-image {
-      width: 100%;
-      padding: 0;
-    }
-  }
-</style>
-
-</body>
+  </body>
 </html>

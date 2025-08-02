@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rockshell Corp</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+    <header class="navbar">
+
+      <div class="logo"> 
+        <img src="assets/logo.svg" alt="ROCKSHELL CORP Logo" />
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">Heat Pump Solutions</a>
+        <a href="#">Heat Pump Dryers & Evaporators</a>
+        <a href="#">Services</a>
+        <a href="#">Industries</a>
+        <a href="#">Insights</a>
+      </nav>
+
+      <a class="contact-btn" href="#">
+        <img src="assets/log-out.svg" alt="Log out" class="btn-icon" />
+        Contact Us
+      </a>
+    </header>
+   
+<div class="container">
+    <section class="hero-section">
+      <div class="hero-content welcome-text">
+  <p class="intro-text">Welcome To ROCKSHELL CORP</p>
+  <h1 class="main-heading">
+    Working <span class="highlight">Towards Building</span><br />
+    A Sustainable <span class="highlight">Future</span>
+  </h1>
+  <a class="expert-btn" href="#">
+    <img src="assets/log-out.svg" alt="Logout Icon" class="btn-icon" />
+    Connect With Expert
+  </a>
+</div>
+
+
+      <div class="hero-image">
+        <img src="assets/hexa.svg" alt="Hexagon Visual" />
+      </div>
+  </section>
+</div>
+
+      <!-- Industry Section -->
+       <div class="container">
+       <section class="industry-section">
+      
+  <div class="industry-content">
+    <h1 class="industry-heading">
+      Built For Industry.<br />
+      Trusted For Execution.
+    </h1>
+    <p class="industry-description">
+      Rockshell Corp is a leading manufacturer for Innovative Heating, Cooling and Effluent/Chemical recovery solutions in India. Rockshell continues to innovate & strives to save operational cost for its customers. It also endeavours to create a cleaner environment across the globe through its products and services.
+    </p>
+    <a class="read-more-btn" href="#">
+      Read More <img src="assets/log-out.svg" alt="Arrow" />
+    </a>
+    <div class="industry-metrics-wrapper">
+     <div class="full-width-border"></div>  
+     
+    <div class="industry-metrics">
+  <div class="metric">
+    <strong>100+</strong>
+    <span>years of experience</span>
+  </div>
+  <div class="metric">
+    <strong>1000+</strong>
+    <span>employee strength</span>
+  </div>
+  <div class="metric">
+    <strong>1000+</strong>
+    <span>projects</span>
+  </div>
+</div>
+</div>
+  </div>
+  <div class="industry-image">
+    <img src="assets/engineer.svg" alt="Engineer" />
+  </div>
+  
+</section>
+
+  
+  </div>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* 1rem = 10px */
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem; /* Reduced vertical padding from 2rem to 1.2rem */
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo {
+  width: 9rem;
+  margin-left: 35px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4rem; /* Adequate spacing between links */
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #00233B;
+ 
+  display: inline-block;
+  text-align: center;
+    max-width: none;
+  width: auto; /* ← don't restrict width */
+}
+
+.contact-button {
+  padding: 1rem 2.5rem;
+  background: linear-gradient(to right, #0072a2, #004466);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;             /* Reduced from 127px */
+  height: 50px;             /* Reduced from 60px */
+  padding: 4px 10px;        /* Slightly smaller padding */
+  gap: 6px;                 /* Slight spacing between icon and text */
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;          /* Reduced from 16px */
+  color: #ffffff;
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #01739C 0%, #00233B 100%);
+  border: none;
+
+  cursor: pointer;
+}
+
+.contact-btn .btn-icon {
+  width: 20px;              /* Slightly smaller */
+  height: 20px;
+  margin-top: 1px;
+  margin-left: -3px;        /* Adjusted for tighter fit */
+}
+
+.hero-section {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+padding: 0rem 6rem;
+  background: #f9f9f9;
+  flex-wrap: wrap; /* In case of smaller screens */
+}
+
+/* Background image as decoration */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 30rem;   /* 300px */
+  left: 22.3rem; /* 223px */
+  width: 86.6rem;  /* 866px */
+  height: 54.1rem; /* 541px */
+  background: url('assets/design.svg') no-repeat center/contain;
+  opacity: 0.56;
+  z-index: 0;
+}
+
+/* Make sure actual content stays above */
+.hero-content,
+.hero-image {
+  position: relative;
+  z-index: 1;
+}
+.hero-content {
+  max-width: 50%;
+}
+
+.intro-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 1.6rem;
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-text::before {
+  content: '';
+  position: absolute;
+  top: -7rem;
+  left: -18rem;
+  width: 63rem;
+  height: 63rem;
+  background: radial-gradient(circle, rgba(108, 166, 189, 0.35) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.main-heading {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 1.3;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+
+  background: linear-gradient(90deg, #00233B 0%, #05A0C6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For better support */
+  background-clip: text;
+  color: transparent;
+}
+
+
+.main-heading .highlight {
+  color: #0076a5;
+  font-weight: bold;
+}
+.expert-btn {
+  background: linear-gradient(90deg, #01739C 0%, #00233B 100%);
+  color: #ffffff;
+  padding: 1.6rem 2.4rem;
+
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 2.4rem; /* spacing between icon and text */
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.expert-btn .btn-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 0.2rem; /* optional vertical tweak */
+}
+
+
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* === Industry Section === */
+
+
+/* === Industry Section === */
+.industry-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+ /* More padding on the left, less on the right */
+
+
+  background-color: #fafafa;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.industry-content {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 6rem;
+}
+
+.industry-heading {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 4rem; /* 40px */
+  line-height: 100%;
+  color: #00233B;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.industry-description {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem; /* 24px */
+  line-height: 100%;
+  color: #00233B;
+  margin-bottom: 3rem;
+}
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.4rem;
+  background: #00233B;
+  color: #fafafa;
+  padding: 1.6rem 2.4rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #01739C;
+}
+
+.read-more-btn img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.industry-image {
+  flex: 1;
+  max-width: 50%;
+  text-align: right;
+  padding: 0;        /* Remove any internal padding */
+  margin: 0;         /* Remove margin if needed */
+}
+
+
+.industry-image img {
+  width: 57.6rem;
+  height: auto;
+}
+
+.industry-metrics {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Or space-around / space-between if needed */
+  gap: 4rem;
+  margin-top: 4rem;
+
+  padding: 4rem 0;
+  background-color: #fafafa;
+}
+.full-width-border {
+  width: 150%;
+  border-top: 2px solid #00233B;
+  margin-top: 4rem;
+  padding-left: 0;
+  
+}
+
+.metric {
+  width: 22.9rem;   /* 229px */
+  height: 9.8rem;   /* 98px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fafafa;
+ 
+ 
+}
+
+.metric:last-child {
+  border-right: none; /* remove border from the last box */
+}
+
+.metric strong {
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 3.7rem;
+  font-weight: 600;
+  color: #00233B;
+}
+
+.metric span {
+  font-size: 2rem;
+  color: #00233B;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+}
+
+  </style>
+</body>
+</html>
