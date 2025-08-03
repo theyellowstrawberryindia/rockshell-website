@@ -21,21 +21,174 @@
         <img src="assets/logo.svg" alt="ROCKSHELL CORP Logo" />
       </div>
 
-      <nav class="nav-links">
-        <a href="#">Heat Pump Solutions</a>
-        <a href="#">Heat Pump Dryers & Evaporators</a>
-        <a href="#">Services</a>
-        <a href="#">Industries</a>
-        <a href="#">Insights</a>
-      </nav>
+    <nav class="nav-links">
+  <div class="back-arrow"></div> <!-- 👈 Add this line -->
+
+  <a href="#">Heat Pump Solutions</a>
+  <a href="#">Heat Pump Dryers & Evaporators</a>
+  <a href="#">Services</a>
+  <a href="#">Industries</a>
+  <a href="#">Insights</a>
+</nav>
 
       <a class="contact-btn" href="#">
-        <img src="assets/log-out.svg" alt="Log out" class="btn-icon" />
+       
         Contact Us
+         <img src="assets/log-out.svg" alt="Log out" class="btn-icon" />
       </a>
+      <button class="menu-toggle" aria-label="Toggle Menu"></button>
+
     </header>
-   
-<div class="container">
+    <!-- Nav bar responsive Code starts here -->
+   <style>
+@media (max-width: 768px) {
+ 
+ .nav-links {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: 'Fahkwang', sans-serif;
+  padding: 0;
+  z-index: 999;
+}
+.back-arrow {
+  background: url('/assets/arrow-left.svg') no-repeat center;
+  background-size: 2.4rem 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem;
+  cursor: pointer;
+} arrow at top */
+.nav-links::before {
+  content: '';
+  background: url('/assets/arrow-left.svg') no-repeat center;
+  background-size: 2.4rem 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem;
+  cursor: pointer;
+  font-family: 'Fahkwang', sans-serif;
+}
+
+/* Fullscreen visible */
+.nav-links.active {
+  display: flex;
+}
+
+/* Links: no gaps, full-width */
+.nav-links a {
+  width: 100%;
+  padding: 0;                 /* Remove extra padding */
+  margin: 0;                  /* Remove margin */
+  /* font-size: 1.6rem; */
+  color: #00233B;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  line-height: 6rem;        /* Optional: controls link height */
+  box-sizing: border-box;
+}
+
+/* First link (header bar style) */
+.nav-links a.active-link {
+  background: linear-gradient(to right, #01739C, #00233B) !important;
+  color: white !important;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.nav-links a:focus,
+.nav-links a:active {
+  background: none;
+  color: inherit;
+  outline: none;
+}
+
+  .menu-toggle {
+    display: block;
+    background: url('assets/menu.svg') no-repeat center;
+    background-size: 2.4rem 2.4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    cursor: pointer;
+    margin-left: -5rem;
+  }
+
+    .contact-btn {
+    width: 11rem;          /* 110px */
+    height: 3rem;          /* 30px */
+    padding: 0.8rem 1.2rem; /* 8px top/bottom, 12px left/right */
+    font-size: 1rem;
+    gap: 0.8rem;            /* 8px spacing between icon and text */
+  }
+
+  .contact-btn .btn-icon {
+    width: 1.6rem;         /* Adjust icon size if needed */
+    height: 1.6rem;
+    margin: 0;
+  }
+
+  .logo img {
+    height: 3.5rem;
+  }
+
+  .navbar {
+    padding: 1.2rem 2rem;
+  }
+}
+
+   </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = navLinks.querySelectorAll('a');
+    const backArrow = document.querySelector('.back-arrow');
+
+    // ✅ Toggle mobile menu visibility
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // ✅ Highlight active nav link
+    navItems.forEach(link => {
+      link.addEventListener('click', function () {
+        navItems.forEach(item => item.classList.remove('active-link'));
+        this.classList.add('active-link');
+      });
+    });
+
+    // ✅ Handle back arrow click
+    if (backArrow) {
+      backArrow.addEventListener('click', function () {
+        // Close the menu (optional, can remove this line if not needed)
+        navLinks.classList.remove('active');
+
+        // Navigate back or fallback to landing page
+        if (window.history.length > 1) {
+          history.back();
+        } else {
+          window.location.href = '/'; // Change if landing page is not at "/"
+        }
+      });
+    }
+  });
+</script>
+
+<!-- Nav bar responsive Code Ends here -->
+
+
+
+
+
+
     <section class="hero-section">
       <div class="hero-content welcome-text">
   <p class="intro-text">Welcome To ROCKSHELL CORP</p>
@@ -54,10 +207,81 @@
         <img src="assets/hexa.svg" alt="Hexagon Visual" />
       </div>
   </section>
-</div>
+   <!-- Hero Section Responsive Ends Here -->
+<style>
+    @media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    position: relative;
+    background: #f9f9f9;
+  }
+
+  .hero-section::before {
+    top: 7.5rem;   /* design.svg top */
+    left: 3rem;    /* design.svg left */
+    width: 40rem;  /* design.svg width */
+    height: 18rem; /* design.svg height */
+    background-size: contain;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+    line-height: 1;
+    width: 18.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-heading {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    width: 34.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .expert-btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    gap: 1.2rem;
+  }
+
+  .expert-btn .btn-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.1rem;
+  }
+
+  .hero-image img {
+    width: 37.6rem; /* hexa.svg width */
+    height: 40rem;  /* hexa.svg height */
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .welcome-text::before {
+    top: -5rem;
+    left: -10rem;
+    width: 45rem;
+    height: 45rem;
+  }
+}
+
+</style>
+ <!-- Hero Section Responsive Ends Here -->
+
+
+
 
       <!-- Industry Section -->
-  <div class="container">
+  
+   <!-- Industry Section -->
+  
   <section class="industry-section">
     <div class="industry-content">
       <h1 class="industry-heading">
@@ -91,12 +315,260 @@
           </div>
         </div>
       </div>
-    </div>
-
+    
+</div>
     <div class="industry-image">
       <img src="assets/engineer.svg" alt="Engineer" />
     </div>
+    <!-- This only shows on mobile -->
+<div class="industry-metrics-wrapper mobile-only-metrics">
+  <div class="full-width-border"></div>
+
+  <div class="industry-metrics">
+    <div class="metric">
+      <strong>100+</strong>
+      <span>years of experience</span>
+    </div>
+    <div class="divider"></div>
+    <div class="metric">
+      <strong>1000+</strong>
+      <span>employee strength</span>
+    </div>
+    <div class="divider"></div>
+    <div class="metric">
+      <strong>1000+</strong>
+      <span>projects</span>
+    </div>
+  </div>
+</div>
+
   </section>
+  <style>
+    .industry-metrics-wrapper {
+  display: block;
+}
+.mobile-only-metrics {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* On mobile: hide original, show new metrics section */
+  .industry-metrics-wrapper:not(.mobile-only-metrics) {
+    display: none;
+  }
+
+  .mobile-only-metrics {
+    display: block;
+  }
+   .industry-image img {
+    margin-left: 20px;
+   
+  }
+}
+@media (max-width: 768px) {
+    .industry-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 6rem 0;
+      gap: 4rem;
+    }
+
+    .industry-content {
+      flex: 1;
+      padding: 0 2rem;
+    }
+
+    .industry-heading {
+      font-family: 'Fahkwang', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: capitalize;
+      width: 25.9rem;
+      margin-bottom: 1.2rem;
+      color: #00233B;
+    }
+
+    .industry-description {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.2;
+      width: 30.6rem;
+      margin-bottom: 1.6rem;
+      color: #00233B;
+    }
+
+    .read-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1.2rem;
+      padding: 0.8rem 1.2rem;
+      background-color: #00233B;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .read-more-btn img {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    .industry-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .industry-image.mobile-only {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+
+    .industry-image.mobile-only img {
+      width: 39rem;
+      height: 47.2rem;
+      object-fit: contain;
+      opacity: 1;
+    }
+
+    .desktop-only {
+      display: none;
+    }
+
+    .industry-metrics-wrapper {
+      position: relative;
+      margin-top: -3rem;
+      padding-bottom: 5px;
+      width: 100%;
+    }
+
+    .full-width-border {
+     position: absolute;
+        top: -80%;
+        left: 0;
+        width: 50rem;
+        right: 0;
+        height: 1px;
+        background-color: #ccc;
+        z-index: 0;
+        padding: 0px;
+    }
+
+    .industry-metrics {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 0;
+      width: 33.9rem;
+      margin: 0 auto;
+      z-index: 1;
+      position: relative;
+    }
+
+    .metric {
+      width: 8.6rem;
+      height: 5.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Work Sans', sans-serif;
+      color: #00233B;
+      text-align: center;
+    }
+
+    .metric strong {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .metric span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .divider {
+      height: 8rem;
+      width: 1px;
+      background-color: #00233B;
+    }
+  }
+
+
+
+  </style>
+<style>
+
+ @media (max-width: 768px) {
+  .industry-section {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  .industry-content {
+    padding: 0 1.6rem; /* 16px left/right, matching `left: 16px` */
+  }
+
+  .industry-heading {
+    width: 25.9rem;     /* 259px */
+    height: 5.2rem;     /* 52px */
+    margin-top: -5.88rem; /* approx 788px spacing */
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;    /* 20px */
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    color: #00233B;
+  }
+
+  .industry-description {
+    width: 30.6rem;     /* 306px */
+    height: 7.4rem;     /* 74px */
+    margin-top: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;  /* 12px */
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #333;
+  }
+
+  .read-more-btn {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;         /* 8px */
+    width: 10.7rem;      /* 107px */
+    height: 3rem;        /* 30px */
+    padding: 0.8rem 1.2rem; /* 8px top/bottom, 12px left/right */
+    background-color: #01739C;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+  }
+
+  .read-more-btn img {
+    width: 1.2rem;
+    height: auto;
+  }
+}
+</style>
+
+ <!-- The Industry Metrics Section's Responsive Ends Here -->
+
+
 
 <section class="industry-overlap-section">
   <div class="industry-overlay-content">
@@ -113,8 +585,69 @@
       <p>Creating eco-friendly innovations that drive a cleaner tomorrow.</p>
     </div>
   </div>
-  <!-- <img src="assets/clip.svg" alt="Clip Decoration" class="bottom-clip" /> -->
+  
+  <img src="assets/clip.svg" alt="Clip Decoration" class="bottom-clip" />
 </section>
+<style>
+    @media (max-width: 768px) {
+  .industry-overlap-section {
+    height: 16.6rem; /* 166px */
+    padding: 0;
+    background: url('assets/engineer2.svg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+  }
+
+.industry-overlay-content {
+  position: absolute;
+  top: 14rem;
+  
+  left: 10.9rem; /* Aligns it slightly inset from the right edge */
+  transform: none; /* Remove center shifting */
+  width: 28.3rem; /* 283px */
+  margin: 0;
+  gap: 1.2rem;
+}
+
+
+  .industry-box {
+    width: 100%;
+    height: 9.2rem; /* 92px */
+    padding: 1.6rem;
+    background-color: #fff;
+    border-radius: 0;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: none;
+  }
+
+  .industry-box:first-child {
+    border-top: none;
+  }
+
+  .industry-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .industry-box p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .bottom-clip {
+    position: absolute;
+    width: 26.5rem; /* 265px */
+    height: auto;
+    left: -4.1rem; /* -41px */
+    top: 17.2rem;  /* 172px */
+    transform: rotate(-90deg);
+    opacity: 0.56;
+    z-index: 0;
+  }
+}
+
+</style>
 <!-- <section class="our-clients-section">
   <div class="clients-container">
     <div class="clients-text">
@@ -136,7 +669,458 @@
     </div>
   </div>
 </section> -->
+<!-- Decorative clip image above Our Clients -->
 
+<!-- The Engineer2 section Responsive ends here -->
+
+<!-- The Logos section Responsive Starts here -->
+<style>
+    
+@media (max-width: 768px) {
+  .clients-row {
+    display: flex;
+    align-items: center;
+    width: 79.2rem; /* 792px */
+    max-width: 120%;
+    height: 6.7rem;  /* 67px */
+    border-width: 1px;
+    border-color: #00233B;
+    border-style: solid;
+    overflow: hidden;
+    padding: 0 3.6rem;
+    box-sizing: border-box;
+  }
+
+  .clients-heading {
+    flex: 0 0 auto;
+    width: 12rem; /* 120px */
+    height: 2.6rem; /* 26px */
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    color: #00233B;
+    text-transform: capitalize;
+    border-right: 0px solid #00233B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0rem;
+  }
+
+  .clients-logos {
+    display: flex;
+    gap: 1.4rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .clients-logos img {
+    flex: 0 0 auto;
+    height: 3.2rem;
+    scroll-snap-align: center;
+  }
+
+  .clients-logos::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+</style>
+<section class="our-clients-section">
+  <div class="clients-row ">
+    <h2 class="clients-heading">Our Clients</h2>
+    <div class="clients-logos">
+      <img src="assets/Everest.svg" alt="Everest" />
+      <img src="assets/DHL.svg" alt="DHL" />
+      <img src="assets/Hero.svg" alt="Hero" />
+      <img src="assets/Cummins.svg" alt="Cummins" />
+      <img src="assets/Dharamsi.svg" alt="Dhampur Chemicals" />
+    </div>
+  </div>
+</section>
+<!-- The Logos section Responsive ends here -->
+
+
+<!-- The CTA section Responsive Starts  here -->
+<section class="contact-cta">
+  <div class="contact-container">
+    <p class="cta-text">
+      Looking for more information about ROCKSHELL's products or services?
+    </p>
+    <a href="#contact" class="contact-btn">
+      Contact Us
+      <img src="assets/Phone.svg" alt="Phone" />
+    </a>
+  </div>
+</section>
+<style>
+@media (max-width: 420px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.4rem; /* 54px */
+    padding: 0 1.6rem;
+  }
+
+  .cta-text {
+    width: auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    flex: 1; /* allows text to grow naturally */
+  }
+
+  .contact-btn {
+    width: auto;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .contact-btn img {
+    width: 1.2rem;
+    height: auto;
+  }
+}
+
+
+</style>
+<!-- The CTA section Responsive ends here -->
+
+
+<!-- The CTA Wrapper section Responsive Starts  here -->
+<div class="container">
+<section class="portfolio-message-section">
+  <div class="portfolio-content container">
+    <div class="text-column">
+      <h3>Businesses</h3>
+      <p>Our diverse portfolio</p>
+    </div>
+   <div class="cta-wrapper">
+    
+    <p class="cta-description">
+      We take pride in every project we complete solving tough industrial
+      challenges with care, skill, and commitment.
+    </p>
+   <div class="cta-button">
+      <a href="#" class="cta-btn">
+        See Our Work
+        <img src="assets/log-out.svg" alt="arrow icon" />
+      </a>
+    </div>
+
+  </div>
+  </div></div>
+
+  <div class="portfolio-images-row">
+    <img src="assets/Industry_5.svg" alt="Project 1" />
+    <img src="assets/Industry_2.svg" alt="Project 2" />
+    <img src="assets/Industry_3.svg" alt="Project 3" />
+    <img src="assets/Industry_4.svg" alt="Project 4" />
+    <img src="assets/Industry_5.svg" alt="Project 5" />
+  </div>
+</section>
+<style>
+    @media (max-width: 420px) {
+  .portfolio-message-section {
+    padding: 2rem 1.6rem;
+  }
+
+  .portfolio-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  .text-column h3 {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    margin: 0;
+  }
+
+  .text-column p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 0.6rem;
+  }
+
+  .cta-wrapper {
+    max-width: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .cta-description {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 100%;
+  }
+
+  .cta-btn {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(to right, #0077B6, #00B4D8); /* Optional gradient */
+    color: white;
+    border-radius: 0.4rem;
+    width: 12.5rem;
+    height: 3rem;
+    text-decoration: none;
+  }
+
+  .cta-btn img {
+    width: 1.2rem;
+    height: auto;
+  }
+
+  .portfolio-images-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    padding: 2rem 1.6rem;
+    margin-top: -180px;
+  }
+
+  .portfolio-images-row img {
+    width: 17.5rem;
+    height: 24.3rem;
+    object-fit: cover;
+  }
+  .container {
+    padding: 0;
+  }
+  body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+}
+</style>
+<!-- The CTA Wrapper section Responsive Starts  here -->
+
+<!-- The Blog section Responsive Starts  here -->
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-header">
+      <h3>Blog</h3>
+      <p>
+        Stay updated with tips, stories, and project learnings from our team working on-site in the industry.
+      </p>
+      <div class="arrow-controls">
+        <img src="assets/arrow-left.svg" alt="Previous" class="arrow-left" />
+        <img src="assets/arrow-right.svg" alt="Next" class="arrow-right" />
+      </div>
+    </div>
+
+
+  <div class="blog-cards">
+    <div class="blog-card">
+      <img src="assets/Image_1.svg" alt="Blog 1" />
+      <p class="blog-description">
+        Lorem ipsum dolor sit amet consectetur. Non pulvinar ac diam aliquam. Integer in purus a integer lobortis. Feli...
+      </p>
+      <hr />
+      <div class="blog-meta">
+        <span>Lorem ipsum</span>
+        <span>01 May 2025</span>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="assets/Image_2.svg" alt="Blog 2" />
+      <p class="blog-description">
+        Lorem ipsum dolor sit amet consectetur. Non pulvinar ac diam aliquam. Integer in purus a integer lobortis. Feli...
+      </p>
+      <hr />
+      <div class="blog-meta">
+        <span>Lorem ipsum</span>
+        <span>01 May 2025</span>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="assets/Image_3.svg" alt="Blog 3" />
+      <p class="blog-description">
+        Lorem ipsum dolor sit amet consectetur. Non pulvinar ac diam aliquam. Integer in purus a integer lobortis. Feli...
+      </p>
+      <hr />
+      <div class="blog-meta">
+        <span>Lorem ipsum</span>
+        <span>01 May 2025</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<hr class="full-width-hr" />
+<style>
+    
+
+@media (max-width: 768px) {
+  .blog-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.6rem;
+    padding: 1rem 1.6rem;
+    margin-top: -5rem;
+  }
+
+  .blog-card {
+    flex: 0 0 auto;
+    width: 24rem; /* fixed card width */
+    scroll-snap-align: start;
+   
+  
+    background-color: #fff;
+  }
+
+  .blog-card img {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+  
+  }
+
+ .blog-description {
+  font-size: 1.2rem;
+  padding: 1rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+  .blog-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0 1rem 1rem;
+  }
+
+  .container {
+    padding: 1rem; /* remove global container padding in mobile */
+  }
+    .blog-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+   
+    /* padding: 0 1.6rem; */
+  }
+  .blog-header h3 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .blog-header p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    max-width: 60%;
+  }
+
+  .arrow-controls {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: -20rem;
+    gap: 2rem;
+  }
+
+  .arrow-controls img {
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+  }
+}
+
+</style>
+
+<!-- Blog Section Responsive Ends Here -->
+
+<section class="signup-email-section">
+
+
+  <div class="signup-flex">
+    <!-- Left Side -->
+    <div class="signup-left">
+      <h3>Sign Up For Our Newsletter</h3>
+      <div class="email-box">
+        <input type="email" placeholder="Enter email" />
+        <button type="submit">
+          <img src="assets/mail.svg" alt="Send" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Side Image -->
+    <div class="signup-right">
+      <img src="assets/Map.svg" alt="Newsletter Image" />
+    </div>
+  </div>
+</section>
+<footer class="custom-footer welcome-texts">
+  <div class="footer-top">
+    <img src="assets/logo.svg" alt="Logo" class="footer-logo" />
+
+    <div class="social-icons">
+      <img src="assets/linkedin.svg" alt="LinkedIn" />
+      <img src="assets/mail.svg" alt="Mail" />
+      <img src="assets/youtube.svg" alt="YouTube" />
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Our Location</h4>
+      <p>141/145, 8, Kazi Syed<br>street, CST, Mumbai 3</p>
+      <div class="footer-section">
+      <h4>Working hours</h4>
+      <p>Monday to Saturday<br>8am to 9pm</p>
+    </div>
+</div>
+    
+
+    <div class="footer-sections">
+      <h4>Quick Links</h4>
+      <p>Contact us</p>
+      <p>Evaporators</p>
+      <p>HVAC</p>
+      <p>Heat pumps</p>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+    <p>Copyright 2025 © Rockshell Corp. All rights reserved | Crafted by The Yellow Strawberry</p>
+    <div class="footer-links">
+      <a href="#">Disclaimer</a>
+      <a href="#">Privacy Statement</a>
+      <a href="#">Legal Terms</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
 
 </div>
 
