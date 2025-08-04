@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
   display: inline-flex;
   align-items: center;
   text-align: left;
-  margin-left: -17rem;
+  margin-left: -15rem;
 }
 
 .expert-btn .btn-icon {
@@ -456,6 +456,7 @@ document.addEventListener("DOMContentLoaded", function () {
       text-decoration: none;
       /* border-radius: 0.4rem; */
       margin-bottom: 2rem;
+        font-family: 'Work Sans', sans-serif;
     }
 
     .read-more-btn img {
@@ -602,6 +603,7 @@ document.addEventListener("DOMContentLoaded", function () {
     text-decoration: none;
     font-size: 1.2rem;
     margin-top: 4rem;
+      font-family: 'Work Sans', sans-serif;
   }
 
   .read-more-btn img {
@@ -812,6 +814,8 @@ document.addEventListener("DOMContentLoaded", function () {
     flex: 0 0 auto;
     height: 3.2rem;
     scroll-snap-align: center;
+    height: 5rem;
+    width: 6rem;
   }
 
   .clients-logos::-webkit-scrollbar {
@@ -980,7 +984,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   .cta-btn {
     font-size: 1.2rem;
-    font-family: 'Work Sans', sans-serif;
+      font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -999,13 +1003,13 @@ document.addEventListener("DOMContentLoaded", function () {
     height: auto;
   }
 
-  .portfolio-images-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.6rem;
-    padding: 2rem 2rem;
-    margin-top: -180px;
-  }
+     .portfolio-images-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem 1rem;
+        margin-top: -180px;
+    }
 
   .portfolio-images-row img {
     width: 17.5rem;
@@ -1023,7 +1027,108 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 </style>
 <!-- The CTA Wrapper section Responsive Starts  here -->
+<style>
+  @media (max-width: 480px) {
+  .portfolio-message-section {
+    padding: 2rem 1.6rem;
+  }
 
+  .portfolio-content {
+
+    gap: 1.6rem;
+  }
+
+  .text-column h3 {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    margin: 0;
+  }
+ .cta-text {
+    width: auto;
+    font-size: 13px;
+    line-height: 1.4;
+    flex: 1;
+  }
+   .contact-cta {
+   padding: 0rem;
+   height: 5rem;
+  }
+  .text-column p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 0.6rem;
+  }
+
+  .cta-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .cta-description {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .cta-btn {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(to right, #01739C, #00233B);
+    color: white;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+  }
+
+  .cta-btn img {
+    width: 1.2rem;
+    height: auto;
+  }
+
+  .portfolio-images-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem 1rem;
+    margin-top: -10rem; /* Replaced negative margin */
+  }
+
+  .portfolio-images-row img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+   
+  }
+.contact-btn img{
+  width: 2rem;
+  height: 2rem;
+}
+  .container {
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+}
+</style>
 <!-- The Blog section Responsive Starts  here -->
 <section class="blog-section">
   <div class="container">

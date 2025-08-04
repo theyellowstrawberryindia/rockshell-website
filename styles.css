@@ -337,10 +337,10 @@ body {
   gap: 2.4rem;
 
   font-size: 1.6rem;
-  font-weight: 600;
+
   color: #ffffff;
   text-decoration: none;
-font-family: 'Fahkwang', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
   border: none;
  
@@ -547,7 +547,7 @@ font-family: 'Fahkwang', sans-serif;
   display: flex;
   align-items: center;
   gap: 4rem;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 6s linear infinite;
 }
 
 .clients-logos img {
@@ -724,7 +724,7 @@ font-family: 'Fahkwang', sans-serif;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
-font-family: 'Fahkwang', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
   border: none;
  
