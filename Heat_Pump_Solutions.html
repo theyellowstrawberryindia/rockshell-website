@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rockshell Corp</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <!-- Logo on the left -->
+    <div class="logo-wrapper">
+      <img src="assets/logo.svg" alt="Rockshell Logo" class="logo" />
+    </div>
+
+    <!-- Navigation links in the center -->
+    <ul class="nav-links">
+       <div class="back-arrow">
+    <img src="assets/arrow-left.svg" alt="Back" />
+  </div>
+      <li><a href="#">Heat Pump Solutions</a></li>
+      <li><a href="#">Heat Pump Dryers<br>& Evaporators</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Insights</a></li>
+    </ul>
+
+    <!-- Right-side: Contact Us button + Hamburger -->
+    <div class="right-controls">
+      <a class="contact-btn" href="#">
+        Contact Us
+        <img src="assets/log-out.svg" alt="arrow" class="btn-icon" />
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Menu"></button>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Nav bar responsive Code starts here -->
+   <style>
+    .back-arrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+   
+  }.back-arrow {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1001;
+  cursor: pointer;
+  display: block; /* Only visible on mobile */
+}
+
+.back-arrow img {
+  width: 2.4rem;
+  height: auto;
+}
+
+  .navbar-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.logo {
+    width: 5rem;     /* or smaller like 6rem */
+    height: auto;
+  }
+ 
+  .logo img {
+    width: 100%;      /* scales image to fit container */
+    height: auto;     /* maintains aspect ratio */
+    display: block;
+  }
+  .right-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    height: auto;
+    white-space: nowrap;
+  }
+.nav-links li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  color: #00233B;
+  text-decoration: none;
+ 
+}
+
+  .contact-btn .btn-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: url('assets/Menu.svg') no-repeat center;
+    background-size: 2.4rem 2.4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    cursor: pointer;
+  }
+ .nav-links {
+    display: none; /* 👈 hide by default */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+.nav-links li a.active {
+  background: linear-gradient(180deg, #00233B 0%, #004266 100%);
+  color: #fff;
+  font-weight: 600;
+}
+
+  .nav-links a {
+    /* padding: 0 2rem; */
+    line-height: 5rem;
+
+    font-size: 1.4rem;
+  }
+
+.nav-links.is-closing {
+  display: none !important;
+}
+
+}
+   </style>
+   <script>
+  const navLinks = document.querySelectorAll('.nav-links li a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active')); // Remove previous
+      link.classList.add('active'); // Add to clicked
+    });
+  });
+ 
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const navItems = navLinks.querySelectorAll('a');
+  const backArrow = document.querySelector('.back-arrow');
+
+  // 🟢 Toggle nav visibility on menu icon click
+  menuToggle.addEventListener('click', () => {
+    const isActive = navLinks.classList.contains('active');
+
+    if (isActive) {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
+    } else {
+      navLinks.classList.remove('is-closing');
+      navLinks.classList.add('active');
+    }
+  });
+
+  // 🟢 Highlight active nav link
+  navItems.forEach(link => {
+    link.addEventListener('click', function () {
+      navItems.forEach(item => item.classList.remove('active-link'));
+      this.classList.add('active-link');
+    });
+  });
+
+  // 🟢 Back arrow: hide menu and go back
+  if (backArrow) {
+    backArrow.addEventListener('click', function () {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
+
+      setTimeout(() => {
+        if (window.history.length > 1) {
+          history.back();
+        } else {
+          window.location.href = '/';
+        }
+      }, 50);
+    });
+  }
+});
+</script>
+
+<section class="heat-pump-section">
+  <div class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <span class="breadcrumb-home">Home</span> ● <span class="breadcrumb-current">Heat Pump Solutions</span>
+    </div>
+
+    <!-- Heading -->
+    <h2 class="section-heading">Heat Pump Solutions</h2>
+
+    <!-- Image Cards -->
+    <div class="heat-pump-row">
+      <div class="heat-pump-card">
+        <img src="assets/Industry_4.svg" alt="High Temperature Heat Pumps">
+        <p>High Temperature Heat Pumps</p>
+      </div>
+      <div class="heat-pump-card">
+        <img src="assets/Industry_2.svg" alt="Steam Heat Pumps">
+        <p>Steam Heat Pumps</p>
+      </div>
+      <div class="heat-pump-card">
+        <img src="assets/Industry_3.svg" alt="Low GWP Refrigerant Heat Pump">
+        <p>Low GWP Refrigerant Heat Pump</p>
+      </div>
+      <div class="heat-pump-card">
+        <img src="assets/Industry_4.svg" alt="Customized Heat Pumps">
+        <p>Customized Heat Pumps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+ .heat-pump-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 100px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.breadcrumb {
+  position: absolute;
+  top: 168px;
+  left: 100px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  opacity: 1;
+}
+
+.section-heading {
+  margin-top: 80px;
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 52px;
+  width: 449px;
+}
+
+.heat-pump-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.heat-pump-card {
+  flex: 1 1 25%;
+  max-width: 298px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.heat-pump-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.heat-pump-card p {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 5px;
+}
+
+
+</style>
+<!-- Nav bar responsive Code Ends here -->
+
+</div>
+
+  </body>
+
