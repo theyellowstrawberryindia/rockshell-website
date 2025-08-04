@@ -340,7 +340,7 @@ body {
 
   color: #ffffff;
   text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
+font-family: 'Fahkwang', sans-serif;
   background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
   border: none;
  
@@ -547,7 +547,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4rem;
-  animation: scroll-left 6s linear infinite;
+  animation: scroll-left 20s linear infinite;
 }
 
 .clients-logos img {
@@ -724,7 +724,7 @@ body {
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
+font-family: 'Fahkwang', sans-serif;
   background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
   border: none;
  
