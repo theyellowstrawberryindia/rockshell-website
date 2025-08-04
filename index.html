@@ -14,101 +14,102 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  
-    <header class="navbar">
+<nav class="navbar">
+  <div class="container">
+    <!-- Logo on the left -->
+    <div class="logo-wrapper">
+      <img src="assets/logo.svg" alt="Rockshell Logo" class="logo" />
+    </div>
 
-      <div class="logo"> 
-        <img src="assets/logo.svg" alt="ROCKSHELL CORP Logo" />
-      </div>
+    <!-- Navigation links in the center -->
+    <ul class="nav-links">
+       <div class="back-arrow">
+    <img src="assets/arrow-left.svg" alt="Back" />
+  </div>
+      <li><a href="#">Heat Pump Solutions</a></li>
+      <li><a href="#">Heat Pump Dryers<br>& Evaporators</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Insights</a></li>
+    </ul>
 
-    <nav class="nav-links">
-  <div class="back-arrow"></div> <!-- 👈 Add this line -->
-
-  <a href="#">Heat Pump Solutions</a>
-  <a href="#">Heat Pump Dryers & Evaporators</a>
-  <a href="#">Services</a>
-  <a href="#">Industries</a>
-  <a href="#">Insights</a>
-</nav>
-
+    <!-- Right-side: Contact Us button + Hamburger -->
+    <div class="right-controls">
       <a class="contact-btn" href="#">
-       
         Contact Us
-         <img src="assets/log-out.svg" alt="Log out" class="btn-icon" />
+        <img src="assets/log-out.svg" alt="arrow" class="btn-icon" />
       </a>
       <button class="menu-toggle" aria-label="Toggle Menu"></button>
+    </div>
+  </div>
+</nav>
 
-    </header>
+
     <!-- Nav bar responsive Code starts here -->
    <style>
-@media (max-width: 768px) {
- 
- .nav-links {
+    .back-arrow {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  font-family: 'Fahkwang', sans-serif;
-  padding: 0;
-  z-index: 999;
-}
-.back-arrow {
-  background: url('/assets/arrow-left.svg') no-repeat center;
-  background-size: 2.4rem 2.4rem;
-  width: 4rem;
-  height: 4rem;
-  margin: 2rem;
-  cursor: pointer;
-} arrow at top */
-.nav-links::before {
-  content: '';
-  background: url('/assets/arrow-left.svg') no-repeat center;
-  background-size: 2.4rem 2.4rem;
-  width: 4rem;
-  height: 4rem;
-  margin: 2rem;
-  cursor: pointer;
-  font-family: 'Fahkwang', sans-serif;
 }
 
-/* Fullscreen visible */
-.nav-links.active {
-  display: flex;
+@media (max-width: 768px) {
+  .navbar {
+   
+  }.back-arrow {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1001;
+  cursor: pointer;
+  display: block; /* Only visible on mobile */
 }
 
-/* Links: no gaps, full-width */
-.nav-links a {
+.back-arrow img {
+  width: 2.4rem;
+  height: auto;
+}
+
+  .navbar-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.logo {
+    width: 5rem;     /* or smaller like 6rem */
+    height: auto;
+  }
+ 
+  .logo img {
+    width: 100%;      /* scales image to fit container */
+    height: auto;     /* maintains aspect ratio */
+    display: block;
+  }
+  .right-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    height: auto;
+    white-space: nowrap;
+  }
+.nav-links li a {
+  display: block;
   width: 100%;
-  padding: 0;                 /* Remove extra padding */
-  margin: 0;                  /* Remove margin */
-  /* font-size: 1.6rem; */
+  text-align: center;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
   color: #00233B;
   text-decoration: none;
-  border-bottom: 1px solid #eee;
-  line-height: 6rem;        /* Optional: controls link height */
-  box-sizing: border-box;
+ 
 }
 
-/* First link (header bar style) */
-.nav-links a.active-link {
-  background: linear-gradient(to right, #01739C, #00233B) !important;
-  color: white !important;
-  font-weight: 600;
-  border: none;
-  outline: none;
-}
-.nav-links a:focus,
-.nav-links a:active {
-  background: none;
-  color: inherit;
-  outline: none;
-}
+  .contact-btn .btn-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 
   .menu-toggle {
     display: block;
@@ -118,69 +119,100 @@
     height: 3.2rem;
     border: none;
     cursor: pointer;
-    margin-left: -5rem;
+  }
+ .nav-links {
+    display: none; /* 👈 hide by default */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
   }
 
-    .contact-btn {
-    width: 11rem;          /* 110px */
-    height: 3rem;          /* 30px */
-    padding: 0.8rem 1.2rem; /* 8px top/bottom, 12px left/right */
-    font-size: 1rem;
-    gap: 0.8rem;            /* 8px spacing between icon and text */
+  .nav-links.active {
+    display: flex;
   }
-
-  .contact-btn .btn-icon {
-    width: 1.6rem;         /* Adjust icon size if needed */
-    height: 1.6rem;
-    margin: 0;
-  }
-
-  .logo img {
-    height: 3.5rem;
-  }
-
-  .navbar {
-    padding: 1.2rem 2rem;
-  }
+.nav-links li a.active {
+  background: linear-gradient(180deg, #00233B 0%, #004266 100%);
+  color: #fff;
+  font-weight: 600;
 }
 
+  .nav-links a {
+    /* padding: 0 2rem; */
+    line-height: 5rem;
+
+    font-size: 1.4rem;
+  }
+
+.nav-links.is-closing {
+  display: none !important;
+}
+
+}
    </style>
+   <script>
+  const navLinks = document.querySelectorAll('.nav-links li a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active')); // Remove previous
+      link.classList.add('active'); // Add to clicked
+    });
+  });
+ 
+
+</script>
+
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const navItems = navLinks.querySelectorAll('a');
-    const backArrow = document.querySelector('.back-arrow');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const navItems = navLinks.querySelectorAll('a');
+  const backArrow = document.querySelector('.back-arrow');
 
-    // ✅ Toggle mobile menu visibility
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+  // 🟢 Toggle nav visibility on menu icon click
+  menuToggle.addEventListener('click', () => {
+    const isActive = navLinks.classList.contains('active');
+
+    if (isActive) {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
+    } else {
+      navLinks.classList.remove('is-closing');
+      navLinks.classList.add('active');
+    }
+  });
+
+  // 🟢 Highlight active nav link
+  navItems.forEach(link => {
+    link.addEventListener('click', function () {
+      navItems.forEach(item => item.classList.remove('active-link'));
+      this.classList.add('active-link');
     });
+  });
 
-    // ✅ Highlight active nav link
-    navItems.forEach(link => {
-      link.addEventListener('click', function () {
-        navItems.forEach(item => item.classList.remove('active-link'));
-        this.classList.add('active-link');
-      });
-    });
+  // 🟢 Back arrow: hide menu and go back
+  if (backArrow) {
+    backArrow.addEventListener('click', function () {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
 
-    // ✅ Handle back arrow click
-    if (backArrow) {
-      backArrow.addEventListener('click', function () {
-        // Close the menu (optional, can remove this line if not needed)
-        navLinks.classList.remove('active');
-
-        // Navigate back or fallback to landing page
+      setTimeout(() => {
         if (window.history.length > 1) {
           history.back();
         } else {
-          window.location.href = '/'; // Change if landing page is not at "/"
+          window.location.href = '/';
         }
-      });
-    }
-  });
+      }, 50);
+    });
+  }
+});
 </script>
+
 
 <!-- Nav bar responsive Code Ends here -->
 
@@ -189,24 +221,25 @@
 
 
 
-    <section class="hero-section">
-      <div class="hero-content welcome-text">
-  <p class="intro-text">Welcome To ROCKSHELL CORP</p>
-  <h1 class="main-heading">
-    Working <span class="highlight">Towards Building</span><br />
-    A Sustainable <span class="highlight">Future</span>
-  </h1>
-  <a class="expert-btn" href="#">
-    <img src="assets/log-out.svg" alt="Logout Icon" class="btn-icon" />
-    Connect With Expert
-  </a>
-</div>
-
-
-      <div class="hero-image">
-        <img src="assets/hexa.svg" alt="Hexagon Visual" />
-      </div>
-  </section>
+<section class="hero-section">
+  <div class="container hero-inner">
+    <div class="hero-content welcome-text">
+      <p class="intro-text">Welcome To ROCKSHELL CORP</p>
+      <h1 class="main-heading">
+        Working <span class="highlight">Towards Building</span><br />
+        A Sustainable <span class="highlight">Future</span>
+      </h1>
+      <a class="expert-btn" href="#">
+       
+        Connect With Expert
+         <img src="assets/log-out.svg" alt="Logout Icon" class="btn-icon" />
+      </a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hexa.svg" alt="Hexagon Visual" />
+    </div>
+  </div>
+</section>
    <!-- Hero Section Responsive Ends Here -->
 <style>
     @media (max-width: 768px) {
@@ -219,7 +252,7 @@
   }
 
   .hero-section::before {
-    top: 7.5rem;   /* design.svg top */
+    /* top: 7.5rem;    */
     left: 3rem;    /* design.svg left */
     width: 40rem;  /* design.svg width */
     height: 18rem; /* design.svg height */
@@ -231,36 +264,48 @@
     margin-top: 50px;
   }
 
-  .intro-text {
-    font-size: 1.2rem;
-    line-height: 1;
-    width: 18.3rem;
-    margin-bottom: 1rem;
-  }
+  .intro-text,
+.main-heading,
+.expert-btn {
+  text-align: left;
+  margin-left: -2rem; /* Pushes it toward the left side of screen */
+}
 
-  .main-heading {
-    font-size: 2.4rem;
-    line-height: 1.3;
-    width: 34.1rem;
-    margin-bottom: 2rem;
-  }
+.intro-text {
+  font-size: 1.4rem;
+  line-height: 1;
+  width: 25.3rem;
+  /* margin-bottom: 1rem; */
+}
 
-  .expert-btn {
-    font-size: 1.4rem;
-    padding: 1rem 2rem;
-    gap: 1.2rem;
-  }
+.main-heading {
+  font-size: 2.6rem;
+  line-height: 1.3;
+  width: 40.1rem;
+  margin-bottom: 2rem;
+}
 
-  .expert-btn .btn-icon {
-    width: 2rem;
-    height: 2rem;
-    margin-top: 0.1rem;
-  }
+.expert-btn {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  gap: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  margin-left: -17rem;
+}
+
+.expert-btn .btn-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.1rem;
+}
+
 
   .hero-image img {
     width: 37.6rem; /* hexa.svg width */
     height: 40rem;  /* hexa.svg height */
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     margin-left: 2rem;
   }
 
@@ -361,7 +406,7 @@
     display: block;
   }
    .industry-image img {
-    margin-left: 20px;
+    margin-left: 40px;
    
   }
 }
@@ -409,7 +454,7 @@
       background-color: #00233B;
       color: white;
       text-decoration: none;
-      border-radius: 0.4rem;
+      /* border-radius: 0.4rem; */
       margin-bottom: 2rem;
     }
 
@@ -450,7 +495,7 @@
 
     .full-width-border {
      position: absolute;
-        top: -80%;
+        top: -60%;
         left: 0;
         width: 50rem;
         right: 0;
@@ -519,12 +564,12 @@
   }
 
   .industry-heading {
-    width: 25.9rem;     /* 259px */
+    width: 30.9rem;     /* 259px */
     height: 5.2rem;     /* 52px */
     margin-top: -5.88rem; /* approx 788px spacing */
     font-family: 'Fahkwang', sans-serif;
     font-weight: 600;
-    font-size: 2rem;    /* 20px */
+    font-size: 2.4rem;    /* 20px */
     line-height: 100%;
     letter-spacing: 0;
     text-transform: capitalize;
@@ -532,31 +577,31 @@
   }
 
   .industry-description {
-    width: 30.6rem;     /* 306px */
+    width: 35.6rem;     /* 306px */
     height: 7.4rem;     /* 74px */
     margin-top: 2rem;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;  /* 12px */
-    line-height: 100%;
+    font-size: 1.4rem;  /* 12px */
+    
     letter-spacing: 0;
-    color: #333;
+    color:#00233B;
   }
 
   .read-more-btn {
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;         /* 8px */
-    width: 10.7rem;      /* 107px */
+    width: 12.7rem;      /* 107px */
     height: 3rem;        /* 30px */
     padding: 0.8rem 1.2rem; /* 8px top/bottom, 12px left/right */
     background-color: #01739C;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    border-radius: 4px;
+    margin-top: 4rem;
   }
 
   .read-more-btn img {
@@ -568,26 +613,37 @@
 
  <!-- The Industry Metrics Section's Responsive Ends Here -->
 
-
-
 <section class="industry-overlap-section">
   <div class="industry-overlay-content">
     <div class="industry-box">
       <h3>Innovative Technology</h3>
       <p>Rockshell Corps Heat pump are designed to Heat up Alkaline, acidic chemicals etc in the most energy efficient manner with special</p>
+      <div class="read-more">
+        <span>Read More</span>
+        <img src="assets/log-out.svg" alt="Arrow Icon" />
+      </div>
     </div>
     <div class="industry-box">
       <h3>Operational Efficiency</h3>
       <p>Streamlined processes and optimized performance across sectors.</p>
+      <div class="read-more">
+        <span>Read More</span>
+        <img src="assets/log-out.svg" alt="Arrow Icon" />
+      </div>
     </div>
     <div class="industry-box">
       <h3>Sustainable Impact</h3>
       <p>Creating eco-friendly innovations that drive a cleaner tomorrow.</p>
+      <div class="read-more">
+        <span>Read More</span>
+        <img src="assets/log-out.svg" alt="Arrow Icon" />
+      </div>
     </div>
   </div>
-  
+
   <img src="assets/clip.svg" alt="Clip Decoration" class="bottom-clip" />
 </section>
+
 <style>
     @media (max-width: 768px) {
   .industry-overlap-section {
@@ -607,7 +663,7 @@
   transform: none; /* Remove center shifting */
   width: 28.3rem; /* 283px */
   margin: 0;
-  gap: 1.2rem;
+  /* gap: 1.2rem; */
 }
 
 
@@ -646,6 +702,36 @@
     z-index: 0;
   }
 }
+@media (max-width: 768px) {
+  .industry-overlay-content {
+    flex-direction: column;
+  }
+
+  .industry-box {
+    flex: 1 1 100%;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .industry-box p {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .read-more {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    color: #004266;
+    margin-top: auto;
+  }
+
+  .read-more img {
+    width: 1.6rem;
+    height: auto;
+  }
+}
 
 </style>
 <!-- <section class="our-clients-section">
@@ -675,8 +761,7 @@
 
 <!-- The Logos section Responsive Starts here -->
 <style>
-    
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
   .clients-row {
     display: flex;
     align-items: center;
@@ -689,8 +774,15 @@
     overflow: hidden;
     padding: 0 3.6rem;
     box-sizing: border-box;
-  }
 
+    /* 👇 Add this to push it lower */
+    margin-top: 40rem; /* or adjust as needed */
+  }
+  .our-clients-section {
+    border-top: none;
+    border-bottom: none;
+    margin-top: 4rem; /* optional: reduce spacing for mobile */
+  }
   .clients-heading {
     flex: 0 0 auto;
     width: 12rem; /* 120px */
@@ -727,19 +819,32 @@
   }
 }
 
+
 </style>
 <section class="our-clients-section">
-  <div class="clients-row ">
+  <div class="clients-row">
     <h2 class="clients-heading">Our Clients</h2>
-    <div class="clients-logos">
-      <img src="assets/Everest.svg" alt="Everest" />
-      <img src="assets/DHL.svg" alt="DHL" />
-      <img src="assets/Hero.svg" alt="Hero" />
-      <img src="assets/Cummins.svg" alt="Cummins" />
-      <img src="assets/Dharamsi.svg" alt="Dhampur Chemicals" />
+    
+    <div class="clients-logos-scroll-wrapper">
+      <div class="clients-logos">
+        <img src="assets/Everest.svg" alt="Everest" />
+        <img src="assets/DHL.svg" alt="DHL" />
+        <img src="assets/Hero.svg" alt="Hero" />
+        <img src="assets/Cummins.svg" alt="Cummins" />
+        <img src="assets/Dharamsi.svg" alt="Dhampur Chemicals" />
+        <!-- Duplicate logos for smooth loop -->
+        <img src="assets/Everest.svg" alt="Everest" />
+        <img src="assets/DHL.svg" alt="DHL" />
+        <img src="assets/Hero.svg" alt="Hero" />
+        <img src="assets/Cummins.svg" alt="Cummins" />
+        <img src="assets/Dharamsi.svg" alt="Dhampur Chemicals" />
+      </div>
     </div>
+
   </div>
 </section>
+<style>
+</style>
 <!-- The Logos section Responsive ends here -->
 
 
@@ -780,7 +885,14 @@
     align-items: center;
     gap: 0.8rem;
   }
-
+.contact-cta {
+  width: 100%;
+  background-color: #00233B; /* navy blue */
+  height: 5.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   .contact-btn img {
     width: 1.2rem;
     height: auto;
@@ -874,9 +986,9 @@
     align-items: center;
     gap: 0.8rem;
     padding: 0.8rem 1.2rem;
-    background: linear-gradient(to right, #0077B6, #00B4D8); /* Optional gradient */
+    background: linear-gradient(to right, #01739C, #00233B); /* Optional gradient */
     color: white;
-    border-radius: 0.4rem;
+    
     width: 12.5rem;
     height: 3rem;
     text-decoration: none;
@@ -891,7 +1003,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.6rem;
-    padding: 2rem 1.6rem;
+    padding: 2rem 2rem;
     margin-top: -180px;
   }
 
@@ -1035,10 +1147,11 @@
     font-size: 1.4rem;
     line-height: 1.6;
     max-width: 60%;
+    padding-bottom: 1rem;
   }
 
   .arrow-controls {
-    display: flex;
+    display: none;
     gap: 1.2rem;
     margin-top: -20rem;
     gap: 2rem;
@@ -1076,9 +1189,83 @@
     </div>
   </div>
 </section>
+
+<style>
+ @media (max-width: 768px) {
+  .signup-email-section {
+    padding: 2rem 1rem;
+    background-color: #fff;
+  }
+
+  .signup-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .signup-right {
+    order: 1;
+    width: 100%;
+  }
+
+  .signup-right img {
+    width: 39rem;   /* 390px */
+    height: 23.9rem; /* 239px */
+    object-fit: contain;
+  }
+
+  .signup-left {
+    order: 2;
+    width: 100%;
+  }
+
+  .signup-left h3 {
+    width: 23.3rem;   /* 233px */
+    height: 2.1rem;   /* 21px */
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin: 0 0 1rem;
+  }
+
+  .email-box {
+    width: 35.9rem;    /* 359px */
+    height: 4rem;      /* 40px */
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+
+  .email-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+  }
+
+  .email-box button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .email-box button img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+</style>
 <footer class="custom-footer welcome-texts">
   <div class="footer-top">
-    <img src="assets/logo.svg" alt="Logo" class="footer-logo" />
+    <img src="assets/Logo_Png.png" alt="Logo" class="footer-logo" />
 
     <div class="social-icons">
       <img src="assets/linkedin.svg" alt="LinkedIn" />
@@ -1121,7 +1308,114 @@
     </div>
   </div>
 </footer>
+<style>
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 2rem 1.6rem;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+  }
 
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 4.9rem;   /* 49px */
+    height: 4.7rem;  /* 47px */
+  }
+
+  .social-icons {
+     display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin-right: -50px;
+  }
+
+  .social-icons img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .footer-divider {
+    border-top: 1px solid #000;
+    margin: 2rem 0;
+  }
+
+  .footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section h4 {
+    width: 7.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.6rem;
+       padding-bottom: 1rem;
+  }
+
+  .footer-section p {
+    width: 14.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0.4rem 0;
+       padding-bottom: 1rem;
+  }
+
+  .footer-sections h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-sections p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.4rem 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #00233B;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    color: #00233B;
+    text-decoration: none;
+  }
+}
+
+</style>
 </div>
 
   </body>

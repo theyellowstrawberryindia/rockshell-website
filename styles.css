@@ -14,133 +14,112 @@ body {
   background-color: #fff;
  
 }
-.container {
-  max-width: 144rem;
-  margin: 0 auto;
-  padding: 0 4rem; /* 👈 horizontal padding */
-}
-
-/* Navbar */
+/* Navbar Layout */
 .navbar {
   width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar .container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem; /* Reduced vertical padding from 2rem to 1.2rem */
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  gap: 6rem;
 }
 
+/* Logo Left */
+.logo-wrapper {
+  flex-shrink: 0;
+}
 
 .logo {
   width: 9rem;
-  margin-left: 35px;
+  height: auto;
 }
 
+/* Nav Center */
 .nav-links {
   display: flex;
-  gap: 4rem; /* Adequate spacing between links */
-  list-style: none;
-}
-
-.nav-links a {
-  font-size: 2em;
-  text-decoration: none;
-  color: #00233B;
- 
-  display: inline-block;
-  text-align: center;
-    /* max-width: none; */
-  /* width: auto;  */
-}
-
-.contact-button {
-  padding: 1rem 2.5rem;
-  background: linear-gradient(to right, #0072a2, #004466);
-  color: white;
-  text-decoration: none;
-  /* border-radius: 0.4rem; */
-  font-size: 1.5rem;
-}
-
-.contact-btn {
-  display: inline-flex;
-  align-items: center;
+  flex-grow: 1;
   justify-content: center;
+  list-style: none;
+  gap: 4rem;
+}
 
-  width: 190px;             /* Reduced from 127px */
-  height: 50px;             /* Reduced from 60px */
-  /* padding: 4px 10px;         */
-  /* gap: 6px;                  */
-
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;          /* Reduced from 16px */
-  color: #ffffff;
+.nav-links li a {
+  font-size: 20px;
+  color: #00233B;
   text-decoration: none;
+  text-align: center;
+  line-height: 1.4;
+}
 
-background: linear-gradient(to bottom, #01739C, #00233B);
-  border: none;
-
-  cursor: pointer;
+/* Button Right */
+.contact-btn {
+  background: linear-gradient(to right, #01739C, #00233B);
+  color: #ffffff;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  /* border-radius: 0.4rem; */
 }
 
 .contact-btn .btn-icon {
-  width: 20px;              /* Slightly smaller */
-  height: 20px;
-  margin-top: 1px;
-  margin-left: -3px;        /* Adjusted for tighter fit */
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.menu-toggle {
+  display: none; /* For desktop by default */
+  background: none;
+  border: none;
+}
+
+.container {
+  max-width: 132rem; /* Best fit for 1440px MacBook Pro */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+  box-sizing: border-box;
 }
 
 .hero-section {
-  display: flex;
-  
-  align-items: center;
-  justify-content: space-between;
-padding: 0rem 6rem;
   background: #f9f9f9;
-  flex-wrap: wrap; /* In case of smaller screens */
+  position: relative;
 }
 
-/* Background image as decoration */
+/* Flex container for layout */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .hero-section::before {
   content: "";
   position: absolute;
-  top: 30rem;   /* 300px */
-  left: 22.3rem; /* 223px */
-  width: 86.6rem;  /* 866px */
-  height: 54.1rem; /* 541px */
+  top: 20rem;
+  left: 15.3rem;
+  width: 86.6rem;
+  height: 54.1rem;
   background: url('assets/design.svg') no-repeat center/contain;
   opacity: 0.56;
   z-index: 0;
 }
 
-/* Make sure actual content stays above */
 .hero-content,
 .hero-image {
   position: relative;
   z-index: 1;
-}
-.hero-content {
+  flex: 1 1 50%;
   max-width: 50%;
-}
-
-.intro-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 2.6rem;
-  line-height: 1;
-  text-transform: capitalize;
-  color: #00233B;
-  margin-bottom: 1.6rem;
-}
-
-.welcome-text {
-  position: relative;
-  z-index: 1;
 }
 
 .welcome-text::before {
@@ -162,31 +141,37 @@ padding: 0rem 6rem;
   line-height: 1.3;
   text-transform: capitalize;
   margin-bottom: 3rem;
-
   background: linear-gradient(90deg, #00233B 0%, #05A0C6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  /* For better support */
   background-clip: text;
   color: transparent;
 }
-
 
 .main-heading .highlight {
   color: #0076a5;
   font-weight: bold;
 }
+
+.intro-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 1.6rem;
+}
+
 .expert-btn {
-   background: linear-gradient(to bottom, #01739C, #00233B);
+  background: linear-gradient(to bottom, #01739C, #00233B);
   color: #ffffff;
   padding: 1.6rem 2.4rem;
-
   text-decoration: none;
   font-size: 1.6rem;
   display: inline-flex;
   align-items: center;
-  gap: 2.4rem; /* spacing between icon and text */
+  gap: 2.4rem;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -197,15 +182,43 @@ padding: 0rem 6rem;
 .expert-btn .btn-icon {
   width: 2.4rem;
   height: 2.4rem;
-  margin-top: 0.2rem; /* optional vertical tweak */
+  margin-top: 0.2rem;
 }
-
-
 
 .hero-image img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+/* Optional: MacBook Pro tweaks for spacing */
+@media (max-width: 1440px) {
+  .main-heading {
+    font-size: 4.5rem;
+  }
+  .hero-content {
+    padding-right: 1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .main-heading {
+    font-size: 4rem;
+  }
 }
 
 
@@ -241,30 +254,50 @@ padding: 0rem 6rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
 }
-
-
-
-.read-more-btn {
+.read-more {
   display: inline-flex;
   align-items: center;
-  gap: 2.4rem;
-  background: #00233B;
-  color: #fafafa;
-  padding: 1.6rem 2.4rem;
-  text-decoration: none;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
   font-size: 1.8rem;
-  
-  transition: background 0.3s ease;
+  font-weight: 500;
+  color: #0072CE;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.read-more-btn:hover {
-  background: #192f36;
+.read-more span {
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
-.read-more-btn img {
+.read-more img {
   width: 1.8rem;
   height: 1.8rem;
+  transition: filter 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(28%) sepia(98%) saturate(1640%) hue-rotate(185deg) brightness(92%) contrast(101%);
 }
+
+.read-more:hover {
+  color: #ffffff;
+}
+
+.read-more:hover img {
+  filter: brightness(0) invert(1);
+}
+.industry-box:hover .read-more {
+  color: #ffffff;
+}
+
+.industry-box:hover .read-more span {
+  color: #ffffff;
+}
+
+.industry-box:hover .read-more img {
+  filter: brightness(0) invert(1);
+}
+
 .industry-section {
   display: flex;
   flex-wrap: wrap;
@@ -281,14 +314,14 @@ padding: 0rem 6rem;
 }
 
 .industry-heading {
-  font-size: 5rem;
+ 
   color: #00233B;
   margin-bottom: 2rem;
   line-height: 1.3;
 }
 
 .industry-description {
-  font-size: 2rem;
+  font-size: 1.9rem;
   line-height: 1.6;
   color: #333;
   margin-bottom: 3rem;
@@ -298,7 +331,7 @@ padding: 0rem 6rem;
   align-items: center;
   justify-content: center;
 
-  width: 24.4rem;  /* 244px */
+
   height: 6rem;    /* 60px */
   padding: 1.6rem 2.4rem;
   gap: 2.4rem;
@@ -307,26 +340,26 @@ padding: 0rem 6rem;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
-
-  background: linear-gradient(90deg, #00233B 0%, #00233B 100%);
+font-family: 'Fahkwang', sans-serif;
+  background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
   border: none;
  
   cursor: pointer;
 }
 
 .full-width-border {
-  width: 100%;
+  width: 150%;
   border-top: 2px solid #00233B;
   margin: 4rem 0 2rem;
-  opacity: 0.2;
+  
 }
 
 .industry-metrics {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
-  flex-wrap: wrap;
+  /* gap: 4rem; */
+  /* flex-wrap: wrap; */
 }
 
 .metric {
@@ -504,6 +537,32 @@ padding: 0rem 6rem;
   height: 5.9rem; 
   object-fit: contain;
 } */
+ .clients-logos-scroll-wrapper {
+  overflow: hidden;
+  flex-grow: 1;
+  position: relative;
+}
+
+.clients-logos {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  animation: scroll-left 20s linear infinite;
+}
+
+.clients-logos img {
+ 
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
  .our-clients-section {
   width: 100%;
   background-color: #fff;
@@ -591,7 +650,7 @@ padding: 0rem 6rem;
 .contact-btn {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 2.4rem;
    background: linear-gradient(to bottom, #01739C, #00233B);
   color: #ffffff;
   text-decoration: none;
@@ -607,8 +666,8 @@ padding: 0rem 6rem;
 }
 
 .contact-btn img {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
 
@@ -652,23 +711,24 @@ padding: 0rem 6rem;
 }
 
 .cta-btn {
-  background: linear-gradient(90deg, #01739C 0%, #00233B 100%);
-  color: #fff;
-  padding: 1.6rem 2.4rem;
-  font-size: 1.8rem;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  display: flex;
-  justify-content: flex-start; 
-  text-decoration: none;
-  
+   display: inline-flex;
   align-items: center;
+  justify-content: center;
+
+
+  height: 6rem;    /* 60px */
+  padding: 1.6rem 2.4rem;
   gap: 2.4rem;
-  height: 6rem;
-  /* width: 25.7rem; */
-  
-  transition: background 0.3s ease;
-  
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+font-family: 'Fahkwang', sans-serif;
+  background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
+  border: none;
+ 
+  cursor: pointer;
 }
 .cta-button {
   display: flex;
@@ -680,21 +740,34 @@ padding: 0rem 6rem;
   background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
 }
 
+/* Base Layout: Always keep this */
+/* Avoid using width: 100vw — it's causing overflow */
 .portfolio-images-row {
   display: flex;
-  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  /* Remove 100vw, and instead stretch naturally */
+  width: 100%;                 
   margin: 0;
   padding: 0;
+
+  /* Prevent overflow issue */
+  overflow-x: clip;
 }
+
+/* Make all 5 images fit exactly in one row without overflow */
 .portfolio-images-row img {
-  flex: 1 0 20%;
-  height: 40rem;
+  width: 20%;
+  height: auto;                /* Maintain aspect ratio */
   object-fit: cover;
   display: block;
   margin: 0;
   padding: 0;
   border: none;
 }
+
+
 .cta-wrapper {
   display: flex;
   flex-direction: column;
@@ -704,8 +777,8 @@ padding: 0rem 6rem;
   gap: 2rem;
 }
 .cta-btn img {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .cta-description {
@@ -721,10 +794,11 @@ padding: 0rem 6rem;
 }
 
 
+/* Optional: control max width for readability */
 .blog-section {
-  padding: 6rem 0;
+  width: 100%;
+  overflow-x: clip;
 }
-
 .blog-header h3 {
   font-family: 'Fahkwang', sans-serif;
   font-weight: 600;
@@ -732,6 +806,7 @@ padding: 0rem 6rem;
   font-size: 4rem; /* 40px */
   line-height: 100%;
   letter-spacing: 0;
+  padding: 3rem 0rem 0rem 0rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
   color: #00233B;
@@ -754,24 +829,34 @@ padding: 0rem 6rem;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 4rem;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0rem 0rem 6rem 0rem; /* ⬅️ Adds 6rem padding to top and bottom */
+
+  box-sizing: border-box;
+  overflow-x: clip;
 }
+
 
 .blog-card {
-  width: 40rem; /* 360px */
+  flex: 1 1 calc(33.33% - 2.7rem);  /* auto resize with gap */
+  max-width: 40rem;
+  min-width: 30rem;
+  box-sizing: border-box;
 }
-
 .blog-card img {
-    width: 40rem;   /* increased from 36rem */
-  height: 40rem;  /* increased from 36rem */
+  width: 100%;
+  height: 40rem;
   object-fit: cover;
- 
+  display: block;
 }
 
 .blog-description {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   line-height: 100%;
   letter-spacing: 0;
   color: #00233B;
@@ -989,7 +1074,7 @@ padding: 0rem 6rem;
   top: -7rem;
   left: -15rem;
   width: 63rem;
-  height: 63rem;
+  height: 43rem;
   background: radial-gradient(circle, rgba(108, 166, 189, 0.35) 0%, transparent 70%);
   border-radius: 50%;
   z-index: -1;
