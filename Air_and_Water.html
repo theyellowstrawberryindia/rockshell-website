@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rockshell Corp</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Here Starts the Navbar Section  -->
+<nav class="navbar">
+  <div class="container">
+    <!-- Logo on the left -->
+    <div class="logo-wrapper">
+      <a href="index.html"><img src="assets/logo.svg" alt="Rockshell Logo" class="logo" /></a>
+    </div>
+
+    <!-- Navigation links in the center -->
+    <ul class="nav-links">
+       <div class="back-arrow">
+    <img src="assets/arrow-left.svg" alt="Back" />
+  </div>
+      <li><a href="#">Heat Pump Solutions</a></li>
+      <li><a href="#">Heat Pump Dryers<br>& Evaporators</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Insights</a></li>
+    </ul>
+
+    <!-- Right-side: Contact Us button + Hamburger -->
+    <div class="right-controls">
+      <a class="contact-btn" href="#">
+        Contact Us
+        <img src="assets/log-out.svg" alt="arrow" class="btn-icon" />
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Menu"></button>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Nav bar responsive Code starts here -->
+   <style>
+    .back-arrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+   
+  }.back-arrow {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1001;
+  cursor: pointer;
+  display: block; /* Only visible on mobile */
+}
+
+.back-arrow img {
+  width: 2.4rem;
+  height: auto;
+}
+
+  .navbar-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.logo {
+    width: 5rem;     /* or smaller like 6rem */
+    height: auto;
+  }
+ 
+  .logo img {
+    width: 100%;      /* scales image to fit container */
+    height: auto;     /* maintains aspect ratio */
+    display: block;
+  }
+  .right-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    height: auto;
+    white-space: nowrap;
+  }
+.nav-links li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  color: #00233B;
+  text-decoration: none;
+ 
+}
+
+  .contact-btn .btn-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: url('assets/Menu.svg') no-repeat center;
+    background-size: 2.4rem 2.4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    cursor: pointer;
+  }
+ .nav-links {
+    display: none; /* 👈 hide by default */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+.nav-links li a.active {
+  background: linear-gradient(180deg, #00233B 0%, #004266 100%);
+  color: #fff;
+  font-weight: 600;
+}
+
+  .nav-links a {
+    /* padding: 0 2rem; */
+    line-height: 5rem;
+
+    font-size: 1.4rem;
+  }
+
+.nav-links.is-closing {
+  display: none !important;
+}
+
+}
+   </style>
+   <script>
+  const navLinks = document.querySelectorAll('.nav-links li a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active')); // Remove previous
+      link.classList.add('active'); // Add to clicked
+    });
+  });
+ 
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const navItems = navLinks.querySelectorAll('a');
+  const backArrow = document.querySelector('.back-arrow');
+
+  // 🟢 Toggle nav visibility on menu icon click
+  menuToggle.addEventListener('click', () => {
+    const isActive = navLinks.classList.contains('active');
+
+    if (isActive) {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
+    } else {
+      navLinks.classList.remove('is-closing');
+      navLinks.classList.add('active');
+    }
+  });
+
+  // 🟢 Highlight active nav link
+  navItems.forEach(link => {
+    link.addEventListener('click', function () {
+      navItems.forEach(item => item.classList.remove('active-link'));
+      this.classList.add('active-link');
+    });
+  });
+
+  // 🟢 Back arrow: hide menu and go back
+  if (backArrow) {
+    backArrow.addEventListener('click', function () {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
+
+      setTimeout(() => {
+        if (window.history.length > 1) {
+          history.back();
+        } else {
+          window.location.href = '/';
+        }
+      }, 50);
+    });
+  }
+});
+</script>
+<!-- Here Ends the Ends the Navbar  Section  -->
+<section class="high-temp-pump">
+  <div class="container">
+  <div class="breadcrumb">
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
+   <p class="breadcrumb-text current inactive">
+    <a href="index.html">Home</a>
+  </p>
+
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
+  <p class="breadcrumb-text current inactive">
+    <a href="Heat_Pump_Solutions.html">Heat Pump Solutions</a>
+  </p>
+
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
+  <p class="breadcrumb-text current">
+    <a href="High_Temperature_Heat_Pumps.html">High Temperature Heat Pumps</a>
+</p>
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
+  <p class="breadcrumb-text current">
+    <a href="Air_and_Water.html">Air and Water</a>
+</p>
+</div>
+<style>
+      .breadcrumb-text a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6; /* Match the inactive breadcrumb style */
+}
+
+.breadcrumb-text a:hover {
+  text-decoration: underline;
+}
+
+
+
+     .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+  padding-top: 80px; /* Ensure it's on top */
+  /* padding-left: 25px; */
+}
+/* Style for inactive (gray) breadcrumb */
+.breadcrumb-text.inactive {
+  color: #00233B; /* Light gray */
+  opacity: 0.6;
+}
+
+.breadcrumb-icon.inactive {
+ opacity: 0.6;
+  color: #00233B;
+}
+.breadcrumb-icon {
+  width: 8px;
+  height: 8px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.breadcrumb-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+  color: #00233B;
+  margin: 0;
+}
+
+.breadcrumb-text.current {
+  font-weight: 400;
+}
+</style>
+<section class="air-water-section">
+  <div class="container">
+    <div class="air-water-content">
+      <!-- Left column -->
+      <div class="performance-left">
+        <h3>Air and water sourced units upto 130C capable</h3>
+
+        <div class="performance-block">
+          <h4>Performance Range :</h4>
+          <p>50 kW – 3 MW</p>
+          <hr />
+        </div>
+
+        <div class="performance-block">
+          <h4>Temperature Limit :</h4>
+          <p>Up to 130°C</p>
+          <hr />
+        </div>
+
+        <div class="performance-block">
+          <h4>Applications :</h4>
+          <p>Food, Chemical, Textile</p>
+          <hr />
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="performance-description">
+        <p>
+          Industrial heat pumps are advanced heating and cooling systems that play a crucial role in improving energy
+          efficiency and reducing greenhouse gas emissions in various industrial processes. They work on the same principle
+          as household heat pumps but are designed to meet industries' high-capacity heating and cooling demands.
+        </p>
+        <p>
+          The future of industrial heat pumps is promising, with ongoing research and development focused on increasing
+          their efficiency and applicability. Advancements in materials, control systems, and integration with renewable
+          energy sources are expected to further enhance the performance and sustainability of industrial heat pump
+          systems.
+        </p>
+        <p>
+          Industrial heat pumps are a vital component of modern industrial processes, offering energy-efficient solutions
+          for heating, cooling, and waste heat recovery. Their adoption can lead to significant energy and cost savings
+          while reducing the environmental impact of industrial operations.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<style>
+  .air-water-section {
+  background-color: #fff;
+  padding: 80px 0px;
+  color: #00233B;
+}
+
+.air-water-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: nowrap; /* ensures left-right layout doesn't wrap on larger screens */
+}
+
+.performance-left {
+  max-width: 628px;
+  flex: 0 0 50%;
+}
+
+.performance-left h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  margin-left: -28px;
+}
+
+.performance-description {
+  max-width: 612px;
+  flex: 0 0 45%;
+  margin-top: 115px; /* Aligns with .performance-block h4 */
+  
+}
+
+.performance-block h4 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #00233B;
+   margin-left: -28px;
+}
+
+.performance-block p {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: 0 0 12px 0;
+   margin-left: -28px;
+}
+
+.performance-block hr {
+  border: none;
+  border-top: 1px solid #00233B;
+  width: 100%;
+  padding-top: 15px;
+   margin-left: -28px;
+}
+
+.performance-description {
+  max-width: 612px;
+  flex: 0 0 45%;
+}
+
+.performance-description p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 24px;
+  color: #00233B;
+}
+
+
+</style>
+
+<section class="heatpump-industrial-section">
+  <div class="heatpump-industrial-bg">
+    <div class="container">
+    <div class="heatpump-industrial-wrapper">
+      <div class="heatpump-industrial-content">
+        <h3>Industrial Heat Pump Solutions</h3>
+        <p>
+          Rockshell Corp’s Industrial heat pumps are cutting-edge technologies designed to provide efficient heating and cooling solutions for a wide range of industrial processes. These systems are highly energy-efficient and can significantly reduce both energy consumption and carbon emissions in industrial applications. They can produce temperatures as high as 130 °C with a good COP, making the heat pumps suitable for direct use in district heating networks and other high-temperature applications.
+        </p>
+      </div>
+      <div class="heatpump-industrial-image">
+        <img src="assets/Seasaw.svg" alt="Seasaw Image" />
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<style>
+.heatpump-industrial-section {
+  width: 100%;
+}
+.heatpump-industrial-image {
+  position: relative;
+  right: -100px;
+  flex: 1; /* Allow image container to grow with content */
+  display: flex;
+  align-items: stretch; /* Let image fill full height */
+}
+
+.heatpump-industrial-image img {
+  width: 728px;
+  height: 712px;
+  object-fit: contain;
+  display: block;
+}
+
+.heatpump-industrial-bg {
+  background-color: #00233B;
+  width: 100%;
+  
+}
+.heatpump-industrial-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Makes both columns equal in height */
+  width: 100%;
+  box-sizing: border-box;
+  /* Remove fixed height so it grows with content */
+}
+.heatpump-industrial-content {
+  color: #ffffff;
+  font-family: 'Fahkwang', sans-serif;
+  max-width: 628px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.heatpump-industrial-content h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.heatpump-industrial-content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  margin: 0;
+  max-width: 612px;
+}
+
+
+
+.heatpump-industrial-image img {
+  width: 100%;
+  height: 100%; /* Image fills height of content */
+  object-fit: cover; /* Use "contain" if you don't want cropping */
+  display: block;
+}
+
+</style>
+
+
+
+
+<section class="how-heatpumps-work-section">
+  <div class="container">
+    <div class="how-heatpumps-work-wrapper">
+      <div class="how-heatpumps-work-content">
+        <h3>How Industrial Heat Pumps Work</h3>
+        <p>
+          Industrial heat pumps operate on the same basic principle as household heat pumps, which is the transfer of heat from one location to another. They use a refrigeration cycle to extract heat from a low-temperature source and transfer it to a high-temperature sink. This process can be reversed to provide cooling when needed.
+        </p>
+      </div>
+      <div class="how-heatpumps-work-image">
+        <img src="assets/Clip1.svg" alt="Industrial Process Diagram" />
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+    .how-heatpumps-work-section {
+  width: 100%;
+  background-color: #ffffff; /* adjust as needed */
+  padding: 100px 0;
+}
+
+.how-heatpumps-work-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.how-heatpumps-work-content {
+  max-width: 612px;
+  color: #00233B;
+}
+
+.how-heatpumps-work-content h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.how-heatpumps-work-content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%; /* Better readability */
+}
+.how-heatpumps-work-image {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -100px; /* Pull upward to stick to previous image — tweak if needed */
+}
+.how-heatpumps-work-image img {
+  /* width: 326px;
+  height: 409px; */
+  
+ 
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+
+<section class="heatpump-industrial-section">
+  <div class="heatpump-industrial-bgs">
+    <div class="container">
+    <div class="heatpump-industrial-wrapper2">
+          <div class="heatpump-industrial-image2">
+        <img src="assets/Train.svg" alt="Seasaw Image" />
+      </div>
+      <div class="heatpump-industrial-contents">
+        <h3>Waste heat recovery from heat pumps for best COPs</h3>
+        <p>
+          Rockshell Corp’s heat pumps allow companies to use heat sources which would be otherwise difficult or impossible to use. For example, low-temperature waste heat from industrial processes can be used as a source of energy for district heating.
+The best coefficient of performance can be achieved with combined heating and cooling (CHC). In CHC solutions, a heat pump cools down one part of a process and uses the extracted energy to heat up another part of the process, reducing the need for traditional forms of heating. This arrangement can be used to create a fully carbon-neutral heating and cooling solution.
+        </p>
+      </div>
+    
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<style>
+.heatpump-industrial-section {
+  width: 100%;
+}
+
+
+.heatpump-industrial-image2 img {
+  /* width: 728px;
+  height: 712px; */
+  object-fit: contain;
+  display: block;
+}
+
+.heatpump-industrial-bgs {
+  background-color: #05A0C6;
+  width: 100%;
+  
+}
+
+
+.heatpump-industrial-wrapper2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: stretch; /* This makes both sides match height */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.heatpump-industrial-contents {
+  color: #ffffff;
+  font-family: 'Fahkwang', sans-serif;
+  max-width: 628px;
+  /* Remove height and overflow so it grows naturally */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.heatpump-industrial-contents h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.heatpump-industrial-contents p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  margin: 0;
+  max-width: 612px;
+  padding-bottom: 20px;
+  /* Remove overflow, let it grow */
+}
+
+.heatpump-industrial-image2 {
+  flex: 1; /* Allow image container to grow */
+  position: relative;
+  left: 100px;
+  display: flex; /* Required for image inside to fill it */
+  align-items: stretch;
+}
+
+.heatpump-industrial-image2 img {
+  width: 100%;
+  height: 100%; /* Image will now scale with text section height */
+  object-fit: cover; /* or use contain if you want full visibility */
+  display: block;
+}
+
+</style>
+<div class="space"></div>
+<style>
+    .space{
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+</style>
+<!-- Industry Section -->
+<section class="overlap-industry-section">
+  <div class="overlap-industry-content">
+    <div class="overlap-industry-card">
+      <ul class="industry-feature-list">
+        <li>Process Heating: Industrial heat pumps are commonly used. Industrial heat pumps are commonly used... Industrial heat pumps are commonly used.....</li>
+        <li>Waste Heat Recovery: One of the key a Industrial heat pumps are commonly used. Industrial heat pumps are commonly used Industrial heat pumps are commonly used........dvantages...</li>
+        <li>Cooling and Air Conditioning: In  Industrial heat pumps are commonly used... Industrial heat pumps are commonly used... Industrial heat pumps are commonly used...addition to heating...</li>
+        <li>Drying and Dehumidification: Industrie Industrial heat pumps are commonly used... Industrial heat pumps are commonly used...s that require...</li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <div class="container">
+<h3 class="why-choose-heading">A Few Applications Where Industrial Heat Pumps are the best fit</h3>
+</div>
+
+
+<style>
+/* Hover effect when card is hovered */
+
+/* Section: Industry (with background image right, card left) */
+.overlap-industry-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Push content to the right */
+  align-items: flex-start;
+  padding: 8rem 0;
+  background: url('assets/place.svg') no-repeat top left;
+  background-size: contain;
+   margin-bottom: 0rem;
+}
+
+.overlap-industry-content {
+  width: 100%;               /* Take full width of screen */
+  display: flex;
+  justify-content: flex-end; /* Push card to the right */
+}
+.overlap-industry-card {
+  background-color: #00233B;
+  padding: 2.4rem;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 60.6rem;            /* Reduced width */
+}
+.industry-feature-list {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.industry-feature-list li + li {
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #eee;
+}
+
+.why-choose-heading {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 100%;
+  color: #00233B;
+  padding-top: 80px;
+  margin-top: -40rem;
+  width: 65.6rem;
+}
+
+/* .overlap-industry-card:hover {
+  background-color: #00233B;
+  color: #ffffff;
+}
+
+.overlap-industry-card:hover h3,
+.overlap-industry-card:hover p {
+  color: #ffffff;
+} */
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .overlap-industry-section {
+    height: 16.6rem;
+    padding: 0;
+    background: url('assets/engineer2.svg') no-repeat center;
+    background-size: cover;
+    justify-content: center;
+  }
+
+  .overlap-industry-content {
+    position: absolute;
+    top: 14rem;
+    left: 10.9rem;
+    width: 28.3rem;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .overlap-industry-card {
+    width: 100%;
+    height: 9.2rem;
+    padding: 1.6rem;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .overlap-industry-card:first-child {
+    border-top: none;
+  }
+
+  .overlap-industry-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .overlap-industry-card p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .overlap-clip-decoration {
+    position: absolute;
+    width: 26.5rem;
+    left: -4.1rem;
+    top: 17.2rem;
+    transform: rotate(-90deg);
+    opacity: 0.56;
+    z-index: 0;
+  }
+}
+
+</style>
+<!-- Here ends the Industry Section  -->
+
+
+<div class="space"></div>
+
+<!-- Here ends the CTA1 Section  -->
+<section class="why-choose-us">
+    <div class="container">
+  <h3>Benefits of Industrial Heat Pumps</h3>
+  <ul class="reasons">
+    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
+    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
+    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
+    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
+    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
+  </ul></div>
+</section>
+
+<style>
+.why-choose-us {
+  padding: 20px 0px;
+  background-color: #fff;
+  color: #00233B;
+}
+
+.why-choose-us h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+ 
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.why-choose-us .reasons {
+  list-style-type: disc;
+  padding-left: 20px;
+  max-width: 768px;
+}
+
+.why-choose-us .reasons li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+  
+  color: #00233B;
+}
+
+</style>
+<!-- Here ends the CTA1 Section  -->
+<section class="why-choose-us">
+    <div class="container">
+  <h3>Why Choose Us?</h3>
+  <ul class="reasons">
+    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
+    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
+    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
+    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
+    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
+  </ul></div>
+</section>
+
+<style>
+.why-choose-us {
+  padding: 60px 0px;
+  background-color: #fff;
+  color: #00233B;
+}
+
+.why-choose-us h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.why-choose-us .reasons {
+  list-style-type: disc;
+  padding-left: 20px;
+  max-width: 768px;
+}
+
+.why-choose-us .reasons li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+  color: #00233B;
+}
+
+</style>
+
+<!-- Here Starts the Footer section  -->
+<footer class="custom-footer welcome-texts">
+  <div class="footer-top">
+    <img src="assets/Logo_Png.png" alt="Logo" class="footer-logo" />
+
+    <div class="social-icons">
+      <img src="assets/linkedin.svg" alt="LinkedIn" />
+      <img src="assets/mail.svg" alt="Mail" />
+      <img src="assets/youtube.svg" alt="YouTube" />
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Our Location</h4>
+      <p>141/145, 8, Kazi Syed<br>street, CST, Mumbai 3</p>
+      <div class="footer-section">
+      <h4>Working hours</h4>
+      <p>Monday to Saturday<br>8am to 9pm</p>
+    </div>
+</div>
+    
+
+    <div class="footer-sections">
+      <h4>Quick Links</h4>
+      <p>Contact us</p>
+      <p>Evaporators</p>
+      <p>HVAC</p>
+      <p>Heat pumps</p>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+    <p>Copyright 2025 © Rockshell Corp. All rights reserved | Crafted by The Yellow Strawberry</p>
+    <div class="footer-links">
+      <a href="#">Disclaimer</a>
+      <a href="#">Privacy Statement</a>
+      <a href="#">Legal Terms</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+<style>
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 2rem 1.6rem;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 4.9rem;   /* 49px */
+    height: 4.7rem;  /* 47px */
+  }
+
+  .social-icons {
+     display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin-right: -50px;
+  }
+
+  .social-icons img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .footer-divider {
+    border-top: 1px solid #000;
+    margin: 2rem 0;
+  }
+
+  .footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section h4 {
+    width: 7.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.6rem;
+       padding-bottom: 1rem;
+  }
+
+  .footer-section p {
+    width: 14.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0.4rem 0;
+       padding-bottom: 1rem;
+  }
+
+  .footer-sections h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-sections p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.4rem 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #00233B;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    color: #00233B;
+    text-decoration: none;
+  }
+}
+
+</style>
+ </div>
+
+  </body>

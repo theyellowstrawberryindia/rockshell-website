@@ -340,7 +340,7 @@ body {
 
   color: #ffffff;
   text-decoration: none;
-font-family: 'Fahkwang', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
   border: none;
  
@@ -442,7 +442,7 @@ font-family: 'Fahkwang', sans-serif;
   padding: 2.4rem;
   height: 18.4rem;
   border-radius: 0; /* removed rounded corners */
-  box-shadow: none; /* optional: remove shadow for flat connected look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* optional: remove shadow for flat connected look */
   border-top: 1px solid #e0e0e0; /* optional: divider line */
 }
 .industry-box:first-child {
@@ -547,7 +547,7 @@ font-family: 'Fahkwang', sans-serif;
   display: flex;
   align-items: center;
   gap: 4rem;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 6s linear infinite;
 }
 
 .clients-logos img {
@@ -724,7 +724,7 @@ font-family: 'Fahkwang', sans-serif;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
-font-family: 'Fahkwang', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background: linear-gradient(90deg, #00233B 0%, #01739C 100%);
   border: none;
  
@@ -1071,9 +1071,9 @@ font-family: 'Fahkwang', sans-serif;
 .welcome-texts::before {
   content: '';
   position: absolute;
-  top: -7rem;
+  /* top: -7rem; */
   left: -15rem;
-  width: 63rem;
+  width: 53rem;
   height: 43rem;
   background: radial-gradient(circle, rgba(108, 166, 189, 0.35) 0%, transparent 70%);
   border-radius: 50%;

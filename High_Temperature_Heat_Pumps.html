@@ -213,57 +213,72 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 </script>
-
 <!-- Here Ends the Ends the Navbar  Section  -->
-
-<!-- Here Starts the Heatpump 4 images  Section  -->
-<section class="heat-pump-section">
+<section class="high-temp-pump">
   <div class="container">
-
-<div class="breadcrumb">
+  <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
-  <p class="breadcrumb-text inactive">Home</p>
+   <p class="breadcrumb-text current inactive">
+    <a href="index.html">Home</a>
+  </p>
+
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
+  <p class="breadcrumb-text current inactive">
+    <a href="Heat_Pump_Solutions.html">Heat Pump Solutions</a>
+  </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
-  <p class="breadcrumb-text current">Heat Pump Solutions</p>
+  <p class="breadcrumb-text current">
+    <a href="High_Temperature_Heat_Pumps.html">High Temperature Heat Pumps</a></p>
 </div>
 
-
-    <!-- Heading -->
-    <h2 class="section-heading">Heat Pump Solutions</h2>
-
-
-    <div class="heat-pump-row">
-      <div class="heat-pump-card">
-        <img src="assets/Industry_4.svg" alt="High Temperature Heat Pumps">
-        <p>High Temperature Heat Pumps</p>
+    <div class="high-temp-content">
+      <div class="high-temp-text">
+        <h3>High temperature heat pumps</h3>
+        <p>
+          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
+          Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+        </p>
       </div>
-      <div class="heat-pump-card">
-        <img src="assets/Industry_2.svg" alt="Steam Heat Pumps">
-        <p>Steam Heat Pumps</p>
-      </div>
-      <div class="heat-pump-card">
-        <img src="assets/Industry_3.svg" alt="Low GWP Refrigerant Heat Pump">
-        <p>Low GWP Refrigerant Heat Pump</p>
-      </div>
-      <div class="heat-pump-card">
-        <img src="assets/Industry_4.svg" alt="Customized Heat Pumps">
-        <p>Customized Heat Pumps</p>
+      <div class="high-temp-image">
+        <img src="assets/Industry_2.svg" alt="High temperature heat pump" />
       </div>
     </div>
-
   </div>
+
+  <!-- Full-width HR below the image -->
+  <hr class="full-width-divider" />
 </section>
 
 
 <style>
- .breadcrumb {
+    .breadcrumb-text a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6; /* Match the inactive breadcrumb style */
+}
+
+.breadcrumb-text a:hover {
+  text-decoration: underline;
+}
+
+    .full-width-divider {
+  width: 100vw;
+  border: none;
+  height: 1px;
+  background-color: #00233B;
+  margin: -2px 0 0; /* Add top margin to separate from content */
+  padding: 0;
+}
+
+     .breadcrumb {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin-bottom: 2rem;
   position: relative;
-  z-index: 10; /* Ensure it's on top */
+  z-index: 10;
+  padding-top: 80px; /* Ensure it's on top */
 }
 /* Style for inactive (gray) breadcrumb */
 .breadcrumb-text.inactive {
@@ -295,6 +310,84 @@ document.addEventListener("DOMContentLoaded", function () {
 .breadcrumb-text.current {
   font-weight: 400;
 }
+.high-temp-pump {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.high-temp-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  padding-top: 80px;
+}
+
+.high-temp-text {
+  max-width: 650px;
+  color: #00233B;
+}
+
+.high-temp-text h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.high-temp-text p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #00233B;
+  max-width: 612px;
+}
+
+.high-temp-image img {
+  width: 455px;
+  height: 536px;
+  object-fit: cover;
+}
+
+
+</style>
+<!-- Here Starts the Heatpump 4 images  Section  -->
+<section class="heat-pump-section">
+  <div class="container">
+
+
+
+    <!-- Heading -->
+    <h2 class="section-heading">Heat Pump Solutions</h2>
+
+
+    <div class="heat-pump-row">
+      <div class="heat-pump-card">
+        <img src="assets/Industry_4.svg" alt="High Temperature Heat Pumps">
+        <p>High Temperature Heat Pumps</p>
+      </div>
+      <div class="heat-pump-card">
+        <img src="assets/Industry_2.svg" alt="Steam Heat Pumps">
+        <p>Steam Heat Pumps</p>
+      </div>
+      <div class="heat-pump-card">
+        <img src="assets/Industry_3.svg" alt="Low GWP Refrigerant Heat Pump">
+        <p>Low GWP Refrigerant Heat Pump</p>
+      </div>
+      <div class="heat-pump-card">
+        <img src="assets/Industry_4.svg" alt="Customized Heat Pumps">
+        <p>Customized Heat Pumps</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
 
 
  .heat-pump-section {
@@ -375,10 +468,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </style>
 <!-- Here ends the Heat Pump 4 Images Section  -->
-
-
-
-<!-- Here Starts the CTA 1 Section  -->
+ <!-- Here Starts the CTA 1 Section  -->
 <section class="contact-cta">
   <div class="contact-container">
     <p class="cta-text">Need a custom coating solution?</p>
@@ -504,387 +594,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </style>
 <!-- Here ends the CTA1 Section  -->
-
-
-
-<!-- Here Starts  the Image Grid with arrows Section  -->
-<section class="image-grid-section">
-  <div class="container">
-
-    <!-- Heading -->
-    <div class="image-grid-heading-wrapper">
-      <h3 class="image-grid-heading">Trusted Across Industries</h3>
-    
-  <div class="arrow-controlss">
-      <button class="arrow-buttons left" onclick="scrollImages(-1)">
-        <img src="assets/arrow-left.svg" alt="Scroll Left" />
-      </button>
-      <button class="arrow-buttons right" onclick="scrollImages(1)">
-        <img src="assets/arrow-right.svg" alt="Scroll Right" />
-      </button>
-    </div>
-    </div>
-    <!-- Scrollable Image Grid -->
-    <div class="image-grid-wrapper">
-      <div class="image-grid" id="imageGrid">
-        <img src="assets/Industry_3.svg" alt="Product 1">
-        <img src="assets/Industry_4.svg" alt="Product 2">
-        <img src="assets/Industry_5.svg" alt="Product 3">
-        <img src="assets/Industry_2.svg" alt="Product 4">
-        <img src="assets/Industry_3.svg" alt="Product 5">
-      </div>
-    </div>
-
-    <!-- ✅ Arrows moved here -->
-  
-
-  </div>
+<section class="why-choose-us">
+    <div class="container">
+  <h3>Why Choose Us?</h3>
+  <ul class="reasons">
+    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
+    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
+    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
+    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
+    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
+  </ul></div>
 </section>
 
-
 <style>
-  /* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap');
-
-.image-grid-section {
-  position: relative;
-  padding: 92px 0;
+.why-choose-us {
+  padding: 60px 0px;
   background-color: #fff;
+  color: #00233B;
 }
 
-.image-grid-section .container {
-  width: 100%;
-  /* max-width: 1400px; */
-  margin: 0 auto;
-  padding-left: 100px;
-  /* padding-right: 100px;
-  box-sizing: border-box; */
-}
-
-.image-grid-heading {
+.why-choose-us h3 {
   font-family: 'Fahkwang', sans-serif;
   font-weight: 600;
+  font-style: normal;
   font-size: 40px;
   line-height: 100%;
   text-transform: capitalize;
-  opacity: 1;
-  margin: 0;
-  width: auto; /* Reset from fixed 553px */
+  margin-bottom: 40px;
 }
 
-
-.image-grid-wrapper {
-  position: relative;
-  max-width: 1533px; /* 4 full images + 3 gaps + 1/2 image */
-  overflow: hidden;
+.why-choose-us .reasons {
+  list-style-type: disc;
+  padding-left: 20px;
+  max-width: 768px;
 }
 
-.image-grid {
-  display: flex;
-  gap: 4rem; /* 64px gap */
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-right: 0;
-  scrollbar-width: none; /* Firefox */
-}
-
-.image-grid::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-
-.image-grid img {
-  width: 298px;
-  height: 298px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-/* Arrow Controls (outside scroll area) */
-.arrow-controlss {
-  display: flex;
-  justify-content: flex-end; /* Align to right */
-  gap: 10px;
-  margin-top: 12px;  /* ⬅️ Reduced from 32px to 12px */
-}
-
-.image-grid-heading-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1400px;
-  margin-bottom: 40px;  /* ⬅️ Change this */
-  box-sizing: border-box;
-}
-
-
-
-.arrow-left,
-.arrow-right {
-  width: 40px;
-  height: 40px;
-  background-color: #00233B;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* Arrow buttons */
-.arrow-buttons {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;      /* White background */
-  border: none;                /* No border */
-  border-radius: 0; 
-  border: 1px solid #00233B;           /* No rounding */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-/* Icon inside the button */
-.arrow-buttons img {
-  width: 20px;
-  height: 20px;
-  filter: none;                /* Keep original icon color (#00233B) */
-}
-
-.arrow-left img,
-.arrow-right img {
-  width: 16px;
-  height: 16px;
-  filter: brightness(0) invert(1); /* make white icons visible on dark background */
+.why-choose-us .reasons li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+  color: #00233B;
 }
 
 </style>
-<script>
-  function scrollImages(direction) {
-    const scrollContainer = document.getElementById('imageGrid');
-    const scrollAmount = 340; // image width + gap (298 + ~64px gap)
-    scrollContainer.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
-    });
-  }
-</script>
-<!-- Here ends the Image Grid with arrows Section  -->
-
-
-<!-- Here Starts the Why Rockshell Section  -->
-<section class="overlap-industry-section">
-  <div class="overlap-industry-content">
-  <div class="overlap-industry-card">
-  <h3 class="why-choose-heading">Why Choose Rock Shell?</h3>
-  
-  <ul class="industry-feature-list">
-    <li>Superior Bonding Strength</li>
-    <li>Long-lasting Durability</li>
-    <li>Custom Formulations Available</li>
-    <li>Eco-Friendly Compliant</li>
-  </ul>
-  
-  <!-- <div class="overlap-read-more">
-    <span>Read More</span>
-    <img src="assets/log-out.svg" alt="Arrow Icon" />
-  </div> -->
-</div>
-
-
-   
-  </div>
-
-  <!-- <img src="assets/clip.svg" alt="Clip Decoration" class="overlap-clip-decoration" /> -->
-</section>
-
-
-<style>
-/* Hover effect when card is hovered */
-.overlap-industry-card:hover .overlap-read-more {
-  color: #ffffff;
-}
-
-.overlap-industry-card:hover .overlap-read-more img {
-  filter: brightness(0) invert(1); /* makes dark icon white */
-}
-.why-choose-heading {
-  width: 37.5rem;
-  height: 10.4rem;
-  font-family: 'Fahkwang', sans-serif;
-  font-weight: 600; /* SemiBold = 600 */
-  font-size: 4rem;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-transform: capitalize;
-  color: #00233B;
-  margin-bottom: 2.4rem;
-}
-
-.industry-feature-list {
-  width: 40.1rem;
-  height: 17.2rem;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 2.4rem;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: #333;
-  padding-left: 2rem;
-  margin: 0 0 2rem 0;
-}
-
-.industry-feature-list li + li {
-  margin-top: 1.2rem;
-}
-.overlap-industry-card:hover .industry-feature-list li  {
-  color: #ffffff;
-}
- .overlap-industry-section {
-  position: relative;
-  width: 100%;
-  height: 61.7rem;
-  background: url('assets/engineer2.svg') no-repeat center right;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-   justify-content: flex-end; /* Keep image aligned right */
-  padding-right: 0;     
-  
-
-  margin-bottom: 15rem;
-}
-
-.overlap-clip-decoration {
-  position: absolute;
-  bottom: -33rem;
-  left: 0;
-  z-index: 1;
-}
-
-.overlap-industry-content {
-  display: flex;
-  flex-direction: column;
-  max-width: 57.6rem;
-  z-index: 2;
-  margin-top: 43rem;
-  gap: 0;
-}
-
-.overlap-industry-card {
-  background-color: #ffffff;
-  padding: 2.4rem;
-  border-radius: 0;
-  border-top: 1px solid #e0e0e0;
-
-  /* Added shadow */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-
-.overlap-industry-card:first-child {
-  border-top: none;
-}
-
-.overlap-industry-card h3 {
-  font-family: 'Fahkwang', sans-serif;
-  font-weight: 600;
-  font-size: 3.2rem;
-  line-height: 100%;
-  color: #00233B;
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-}
-
-.overlap-industry-card p {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 100%;
-  color: #333;
-}
-
-.overlap-industry-card:hover {
-  background-color: #00233B;
-  color: #ffffff;
-}
-
-.overlap-industry-card:hover h3,
-.overlap-industry-card:hover p {
-  color: #ffffff;
-}
-
-.overlap-read-more {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 1.4rem;
-  color: #004266;
-  margin-top: auto;
-}
-
-.overlap-read-more img {
-  width: 1.6rem;
-  height: auto;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .overlap-industry-section {
-    height: 16.6rem;
-    padding: 0;
-    background: url('assets/engineer2.svg') no-repeat center;
-    background-size: cover;
-    justify-content: center;
-  }
-
-  .overlap-industry-content {
-    position: absolute;
-    top: 14rem;
-    left: 10.9rem;
-    width: 28.3rem;
-    margin: 0;
-    flex-direction: column;
-  }
-
-  .overlap-industry-card {
-    width: 100%;
-    height: 9.2rem;
-    padding: 1.6rem;
-    border-top: 1px solid #e0e0e0;
-  }
-
-  .overlap-industry-card:first-child {
-    border-top: none;
-  }
-
-  .overlap-industry-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .overlap-industry-card p {
-    font-size: 1.2rem;
-    line-height: 1.4;
-  }
-
-  .overlap-clip-decoration {
-    position: absolute;
-    width: 26.5rem;
-    left: -4.1rem;
-    top: 17.2rem;
-    transform: rotate(-90deg);
-    opacity: 0.56;
-    z-index: 0;
-  }
-}
-
-</style>
-<!-- Here ends the Why Rockshell Section  -->
-
 <!-- Here Starts the CTA Section  -->
 <section class="help-cta">
   <div class="help-container">
@@ -1019,6 +775,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <!-- Here starts the FAQ Section -->
 <section class="faq-section">
+    <div class="container">
   <h3 class="faq-heading">Frequently Asked Questions</h3>
 
   <div class="faq-item">
@@ -1064,10 +821,11 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     <hr />
   </div>
+  </div>
 </section>
 <style>
   .faq-section {
-  padding: 6rem 10rem;
+  padding-top: 80px;
   background-color: #ffffff;
 }
 
@@ -1295,8 +1053,6 @@ hr {
 }
 
 </style>
-<!-- Here ends the Footer Section  -->
  </div>
 
   </body>
-
