@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exact Mobile Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #f5f5f5;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        /* Mobile Menu Container */
+        .mobile-menu {
+            width: 100vw;
+            height: 100vh;
+            background-color: #f5f5f5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Back Arrow */
+        .back-arrow {
+            position: absolute;
+            top: 2.5rem;
+            left: 2.5rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .back-arrow svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            color: #333;
+            stroke-width: 2.5;
+        }
+
+        /* Menu Items Container */
+        .menu-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        /* Individual Menu Items */
+        .menu-item {
+            background-color: #fff;
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .menu-item:first-child {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+            color: white;
+        }
+
+        .menu-item:first-child .menu-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-link {
+            display: block;
+            width: 100%;
+            padding: 2.5rem 3rem;
+            text-decoration: none;
+            color: #1f2937;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.3;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:not(:first-child):hover {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+        }
+
+        .menu-item:not(:first-child):hover .menu-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Active state styling */
+        .menu-item.active {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+        }
+
+        .menu-item.active .menu-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Demo button to show menu */
+        .demo-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 999;
+        }
+
+        .show-menu-btn {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            padding: 1.5rem 3rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-radius: 0.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .show-menu-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Hide menu by default */
+        .mobile-menu.hidden {
+            display: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .menu-link {
+                font-size: 1.6rem;
+                padding: 2.2rem 2rem;
+            }
+
+            .back-arrow {
+                top: 2rem;
+                left: 2rem;
+            }
+
+            .back-arrow svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Demo Button -->
+    <div class="demo-container">
+        <button class="show-menu-btn" onclick="toggleMenu()">Show Menu</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobileMenu">
+        <!-- Back Arrow -->
+        <div class="back-arrow" onclick="toggleMenu()">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <!-- Menu Items -->
+        <ul class="menu-items">
+            <li class="menu-item active">
+                <a href="#" class="menu-link">Heat Pump Solutions</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Heat Pump Dryers & Evaporators</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Services</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Industries</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Insights</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const demoContainer = document.querySelector('.demo-container');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                demoContainer.style.display = 'none';
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add('hidden');
+                demoContainer.style.display = 'block';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Handle menu item clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all items
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Add active class to clicked item
+                    this.classList.add('active');
+                });
+            });
+
+            // Back arrow functionality
+            document.querySelector('.back-arrow').addEventListener('click', function() {
+                toggleMenu();
+                
+                // Optional: Add navigation back functionality
+                setTimeout(() => {
+                    if (window.history.length > 1) {
+                        window.history.back();
+                    }
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
