@@ -29,9 +29,9 @@
     <img src="assets/arrow-left.svg" alt="Back" />
   </div>
       <li><a href="heat-pump-solutions.html">Heat Pump Solutions</a></li>
-      <li><a href="coming-soon.html">Heat Pump Dryers<br>& Evaporators</a></li>
-      <li><a href="coming-soon.html">Services</a></li>
-      <li><a href="coming-soon.html">Industries</a></li>
+      <li><a href="heat-pump-dryers-evaporators.html">Heat Pump Dryers<br>& Evaporators</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Industries</a></li>
       <li><a href="about-us.html">About Us</a></li>
     </ul>
 
@@ -516,21 +516,22 @@ body{
     <h2 class="section-heading">Discover Product Variants</h2>
 
 <div class="heat-pump-row">
-  <a href="/Heat_Pump_Solutions/Air_and_Water.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="High Temperature Heat Pumps" />
-    <p>Steam compressors  </p>
+    <p>Steam compressors</p>
   </a>
   <a href="low-pressure-steam.html" class="heat-pump-card">
     <img src="assets/products.svg" alt="Steam Heat Pumps" />
-    <p>Low pressure steam HP - upto 135C capable </p>
+    <p>Low pressure steam HP - upto 135C capable</p>
   </a>
   <a href="high-pressure-steam-hp.html" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>High pressure steam HP - upto 300C capable  </p>
+    <p>High pressure steam HP - upto 300C capable</p>
   </a>
-  
+  <a href="high-pressure-steam-hp.html" class="heat-pump-card cta-card">
+    <img src="assets/cta-final.png" alt="Low GWP Refrigerant Heat Pump" />
+  </a>
 </div>
-
 
   </div>
 </section>
@@ -538,7 +539,11 @@ body{
 
 <style>
 
-
+@media (max-width: 768px) {
+  .cta-card img {
+    content: url("assets/cta-mobile.png");
+  }
+}
  .heat-pump-section {
   padding: 60px 0;
   background: #fff;

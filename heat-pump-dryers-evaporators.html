@@ -28,11 +28,11 @@
        <div class="back-arrow">
     <img src="assets/arrow-left.svg" alt="Back" />
   </div>
-      <li><a href="Heat_Pump_Solutions.html">Heat Pump Solutions</a></li>
-      <li><a href="High_Temperature_Heat_Pumps.html">Heat Pump Dryers<br>& Evaporators</a></li>
+      <li><a href="heat-pump-solutions.html">Heat Pump Solutions</a></li>
+      <li><a href="heat-pump-dryers-evaporators.html">Heat Pump Dryers<br>& Evaporators</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Industries</a></li>
-      <li><a href="#">Insights</a></li>
+      <li><a href="about-us.html">About Us</a></li>
     </ul>
 
     <!-- Right-side: Contact Us button + Hamburger -->
@@ -298,27 +298,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon " />
   <p class="breadcrumb-text current inactive">
-    <a href="Heat_Pump_Solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-dryers-evaporators.html">Heat Pumps Dryers & Evaporators</a>
   </p>
 </div>
 
 
 
     <!-- Heading -->
-    <h2 class="section-heading">Heat Pump Solutions</h2>
-
-
+    <h2 class="section-heading">Heat Pumps Dryers & Evaporators</h2>
+    
+<p class="section-subheading">
+ Below are our advanced Heat Pump Dryers and Evaporators, designed to provide high-performance, energy-efficient, and environmentally responsible solutions. These systems are engineered to handle diverse industrial, commercial, and institutional drying and evaporation needs, ensuring precise temperature control, reduced energy consumption, lower operational costs, and long-term sustainability.
+</p>
     <div class="heat-pump-row">
-  <a href="high_temperature_heat_pumps.html" class="heat-pump-card">
-    <img src="assets/Industry_4.svg" alt="High Temperature Heat Pumps" />
+  <a href="heat-pump-based-zero.html" class="heat-pump-card">
+    <img src="assets/high_temp.svg" alt="High Temperature Heat Pumps" />
     <p>Heat pump based zero liquid discharge solutions </p>
   </a>
-  <a href="steam_heat_pumps.html" class="heat-pump-card">
-    <img src="assets/Industry_2.svg" alt="Steam Heat Pumps" />
-    <p>Heat pump dryers </p>
+  <a href="heat-pump-dryers.html" class="heat-pump-card">
+    <img src="assets/high_Temp2.svg" alt="Heat pumps dryers" />
+    <p> Heat pump dryers </p>
   </a>
- 
- 
+  <a href="low-gwp-refrigenant.html" class="heat-pump-card">
+    <img src="assets/low.svg" alt="Low GWP Refrigerant Heat Pump" />
+    <p>Low GWP Refrigerant Heat Pump</p>
+  </a>
+ <a href="high-pressure-steam-hp.html" class="heat-pump-card cta-card">
+    <img src="assets/cta-final.png" alt="Low GWP Refrigerant Heat Pump" />
+  </a>
 </div>
 
 
@@ -327,11 +334,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <style>
+  .section-subheading {
+    font-size: 18px;
+    color: #00233B; /* softer than heading */
+    margin-top: 8px;
+    margin-bottom: 20px;
+   
+    line-height: 1.5;
+}
+@media (max-width: 992px) {
+    .section-subheading {
+        font-size: 15px;
+        max-width: 600px;
+        margin-bottom: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+   .cta-card img {
+    content: url("assets/cta-mobile.png");
+  }
+    .section-subheading {
+        font-size: 14px;
+        max-width: 100%; /* allow full width */
+        margin-bottom: 15px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .section-subheading {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
  .breadcrumb {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin-bottom: 2rem;
+  font-size: 14px;
   position: relative;
   z-index: 10; /* Ensure it's on top */
 }
@@ -342,6 +385,7 @@ document.addEventListener("DOMContentLoaded", function () {
 }
  .breadcrumb-text a {
   color: inherit;
+    font-size: 14px;
   text-decoration: none;
   
 }
@@ -390,7 +434,7 @@ document.addEventListener("DOMContentLoaded", function () {
   top: -60px;
   left: 100px;
   font-family: 'Work Sans', sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   opacity: 1;
@@ -403,7 +447,7 @@ document.addEventListener("DOMContentLoaded", function () {
   font-weight: 600;
   text-transform: capitalize;
   line-height: 52px;
-  width: 449px;
+  width: 900px;
   color: #00233B;
 }
 
@@ -772,12 +816,28 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- Scrollable Image Grid -->
     <div class="image-grid-wrapper">
       <div class="image-grid" id="imageGrid">
-        <img src="assets/Industry_3.svg" alt="Product 1">
-        <img src="assets/Industry_4.svg" alt="Product 2">
-        <img src="assets/Industry_5.svg" alt="Product 3">
-        <img src="assets/Industry_2.svg" alt="Product 4">
-        <img src="assets/Industry_3.svg" alt="Product 5">
-      </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-1.svg" alt="Product 1">
+    <div class="image-title">Food & Beverage</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-2.svg" alt="Product 2">
+    <div class="image-title">Pharmaceutical</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-3.svg" alt="Product 3">
+    <div class="image-title">Textile Industry</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-4.svg" alt="Product 4">
+    <div class="image-title">Chemical Plants</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-1.svg" alt="Product 5">
+    <div class="image-title">Hospitality</div>
+  </div>
+</div>
+
     </div>
 
     <!-- ✅ Arrows moved here -->
@@ -790,6 +850,43 @@ document.addEventListener("DOMContentLoaded", function () {
 <style>
   /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap');
+.image-item {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.image-item img {
+  width: 298px;
+  height: 298px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay text */
+.image-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 35, 59, 0.7); /* dark transparent */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 4px;
+  box-sizing: border-box;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .image-item img {
+    width: 175px;
+    height: 175px;
+  }
+  .image-title {
+    font-size: 14px;
+    padding: 6px 4px;
+  }
+}
 
 .image-grid-section {
   position: relative;
@@ -812,6 +909,7 @@ document.addEventListener("DOMContentLoaded", function () {
   font-size: 40px;
   line-height: 100%;
   text-transform: capitalize;
+  color: #00233B;
   opacity: 1;
   margin: 0;
   width: auto; /* Reset from fixed 553px */
@@ -989,13 +1087,13 @@ document.addEventListener("DOMContentLoaded", function () {
 <section class="overlap-industry-section">
   <div class="overlap-industry-content">
   <div class="overlap-industry-card">
-  <h3 class="why-choose-heading">Why Choose Rock Shell?</h3>
+  <h3 class="why-choose-heading">Why Choose Rockshell Heat Pump Dryers & Evaporators?</h3>
   
   <ul class="industry-feature-list">
-    <li>Superior Bonding Strength</li>
-    <li>Long-lasting Durability</li>
-    <li>Custom Formulations Available</li>
-    <li>Eco-Friendly Compliant</li>
+    <li>High Energy Efficiency with Low Operating Costs</li>
+    <li>Consistent Performance Across Diverse Applications</li>
+    <li>Custom-Engineered Solutions for Specific Processes</li>
+    <li>Environmentally Friendly with Reduced CO₂ Emissions</li>
   </ul>
   
   <!-- <div class="overlap-read-more">
@@ -1013,7 +1111,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <style>
-/* Hover effect when card is hovered */
 .overlap-industry-card:hover .overlap-read-more {
   color: #ffffff;
 }
@@ -1086,7 +1183,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .overlap-industry-card {
   background-color: #ffffff;
-  padding: 2.4rem;
+  padding: 4.4rem;
   border-radius: 0;
   border-top: 1px solid #e0e0e0;
 
@@ -1107,6 +1204,7 @@ document.addEventListener("DOMContentLoaded", function () {
   color: #00233B;
   text-transform: capitalize;
   margin-bottom: 1rem;
+  padding-bottom: 150px;
 }
 
 .overlap-industry-card p {
@@ -1197,6 +1295,16 @@ document.addEventListener("DOMContentLoaded", function () {
     padding: 4rem 1.6rem 0 1.6rem;
     margin-bottom: 8rem;
   }
+  .overlap-industry-card h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 100%;
+  color: #00233B;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
 
   .overlap-industry-content {
     align-items: flex-end; /* push child elements to the right */
@@ -1211,6 +1319,7 @@ document.addEventListener("DOMContentLoaded", function () {
        margin-top: 3rem; 
         margin-left: 100px;
         margin-top: -50px;
+        padding: 0.5rem;
     }
   .why-choose-heading {
     font-size: 2.4rem;
@@ -1219,6 +1328,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 .overlap-industry-card h4 {
     font-size: 1.6rem; /* optional: reduce heading font */
+    padding-bottom: 0rem;
   }
     .overlap-industry-card p {
     font-size: 1.2rem; /* optional: reduce paragraph font */
@@ -1234,7 +1344,6 @@ document.addEventListener("DOMContentLoaded", function () {
     margin-top: 0.8rem;
   }
 }
-
 /* @media (max-width: 768px) {
   .overlap-industry-section {
     height: auto;
@@ -1484,44 +1593,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>What is a heat pump and how does it work?</h4>
+      <h4>What is a heat pump dryer or evaporator and how does it work?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Heat pumps transfer heat from one place to another using a refrigerant cycle. They can be used for both heating and cooling.</p>
+      <p>Heat pump dryers and evaporators use a closed-loop refrigerant cycle to remove moisture or concentrate liquids while recovering and reusing heat.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Are heat pumps energy efficient?</h4>
+      <h4>Are heat pump dryers and evaporators energy efficient?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Yes, heat pumps are more energy efficient compared to traditional heating methods because they move heat rather than generate it.</p>
+      <p>Yes. By recycling thermal energy within the system, heat pump dryers and evaporators can reduce energy consumption by up to 50–70% compared to traditional steam or electric heating systems.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Can heat pumps be used in cold climates?</h4>
+      <h4>Can they be used for sensitive products or low-temperature drying?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Modern heat pumps can work efficiently in colder climates with improved technology such as variable speed compressors.</p>
+      <p>Absolutely. Heat pump dryers and evaporators can operate at lower and controlled temperatures, making them ideal for heat-sensitive products such as food, pharmaceuticals, and specialty chemicals.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>How long does a heat pump last?</h4>
+      <h4>What is the typical lifespan of these systems?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>With proper maintenance, a heat pump can last between 10–15 years or longer.</p>
+      <p>With proper operation and regular maintenance, heat pump dryers and evaporators can last 15 years or more, offering reliable performance and consistent product quality over time.</p>
     </div>
     <hr />
   </div>

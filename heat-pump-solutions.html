@@ -29,7 +29,7 @@
     <img src="assets/arrow-left.svg" alt="Back" />
   </div>
       <li><a href="heat-pump-solutions.html">Heat Pump Solutions</a></li>
-      <li><a href="coming-soon.html">Heat Pump Dryers<br>& Evaporators</a></li>
+      <li><a href="heat-pump-dryers-evaporators.html">Heat Pump Dryers<br>& Evaporators</a></li>
       <li><a href="coming-soon.html">Services</a></li>
       <li><a href="coming-soon.html">Industries</a></li>
       <li><a href="about-us.html">About Us</a></li>
@@ -306,8 +306,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Heading -->
     <h2 class="section-heading">Heat Pump Solutions</h2>
-
-
+    
+<p class="section-subheading">
+  Below are the product variants of our advanced Heat Pump Solutions, engineered to deliver reliable, energy-efficient, and environmentally friendly performance. These systems are tailored to meet diverse industrial, commercial, and institutional heating requirements, ensuring optimal efficiency, reduced operational costs, and long-term sustainability.
+</p>
     <div class="heat-pump-row">
   <a href="high-temperature-heat-pumps.html" class="heat-pump-card">
     <img src="assets/high_temp.svg" alt="High Temperature Heat Pumps" />
@@ -333,6 +335,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <style>
+  .section-subheading {
+    font-size: 18px;
+    color: #00233B; /* softer than heading */
+    margin-top: 8px;
+    margin-bottom: 20px;
+   
+    line-height: 1.5;
+}
+@media (max-width: 992px) {
+    .section-subheading {
+        font-size: 15px;
+        max-width: 600px;
+        margin-bottom: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .section-subheading {
+        font-size: 14px;
+        max-width: 100%; /* allow full width */
+        margin-bottom: 15px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .section-subheading {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
  .breadcrumb {
   display: flex;
   align-items: center;
@@ -780,12 +814,28 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- Scrollable Image Grid -->
     <div class="image-grid-wrapper">
       <div class="image-grid" id="imageGrid">
-        <img src="assets/trusted-image-1.svg" alt="Product 1">
-        <img src="assets/trusted-image-2.svg" alt="Product 2">
-        <img src="assets/trusted-image-3.svg" alt="Product 3">
-        <img src="assets/trusted-image-4.svg" alt="Product 4">
-        <img src="assets/trusted-image-1.svg" alt="Product 5">
-      </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-1.svg" alt="Product 1">
+    <div class="image-title">Chemical Plants</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-2.svg" alt="Product 2">
+    <div class="image-title">Motor Industry</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-3.svg" alt="Product 3">
+    <div class="image-title"> Pharmaceutical</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-4.svg" alt="Product 4">
+    <div class="image-title"> Food & Beverage</div>
+  </div>
+  <div class="image-item">
+    <img src="assets/trusted-image-1.svg" alt="Product 5">
+    <div class="image-title">Chemical Plants</div>
+  </div>
+</div>
+
     </div>
 
     <!-- ✅ Arrows moved here -->
@@ -798,6 +848,43 @@ document.addEventListener("DOMContentLoaded", function () {
 <style>
   /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap');
+.image-item {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.image-item img {
+  width: 298px;
+  height: 298px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay text */
+.image-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 35, 59, 0.7); /* dark transparent */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 4px;
+  box-sizing: border-box;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .image-item img {
+    width: 175px;
+    height: 175px;
+  }
+  .image-title {
+    font-size: 14px;
+    padding: 6px 4px;
+  }
+}
 
 .image-grid-section {
   position: relative;
@@ -820,6 +907,7 @@ document.addEventListener("DOMContentLoaded", function () {
   font-size: 40px;
   line-height: 100%;
   text-transform: capitalize;
+  color: #00233B;
   opacity: 1;
   margin: 0;
   width: auto; /* Reset from fixed 553px */
@@ -1205,7 +1293,15 @@ document.addEventListener("DOMContentLoaded", function () {
     padding: 4rem 1.6rem 0 1.6rem;
     margin-bottom: 8rem;
   }
-
+.overlap-industry-card h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 100%;
+  color: #00233B;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
   .overlap-industry-content {
     align-items: flex-end; /* push child elements to the right */
     padding-right: 1.6rem; /* optional: add right padding for breathing space */
