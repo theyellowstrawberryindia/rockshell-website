@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling Clients</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+ 
+
+        .our-clients-section {
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid #00233B;
+            border-bottom: 1px solid #00233B;
+            padding: 40px 0;
+        }
+
+        .clients-row {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            gap: 40px;
+        }
+
+        .clients-heading {
+            font-size: 28px;
+            font-family: 'Fahkwang', sans-serif;
+            font-weight: 600;
+            color: #00233B;
+            white-space: nowrap;
+            margin: 0;
+            flex-shrink: 0;
+            position: relative;
+            padding-right: 40px;
+        }
+
+        .clients-heading::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 133px;
+            background-color: #00233B;
+        }
+
+        .clients-logos-scroll-wrapper {
+            overflow: hidden;
+            flex-grow: 1;
+            position: relative;
+            mask: linear-gradient(90deg, transparent, white 20px, white calc(100% - 20px), transparent);
+            -webkit-mask: linear-gradient(90deg, transparent, white 20px, white calc(100% - 20px), transparent);
+        }
+
+        .clients-logos {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            animation: scroll-left 20s linear infinite;
+            width: max-content;
+        }
+
+        .clients-logos:hover {
+            animation-play-state: paused;
+        }
+
+        .clients-logos img {
+            height: 60px;
+            width: auto;
+            flex-shrink: 0;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .clients-logos img:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Demo image styling */
+        .demo-image {
+            height: 60px;
+            width: 120px;
+            background: #e0e0e0;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .demo-image:hover {
+            border-color: #00233B;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 35, 59, 0.1);
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+    
+        .demo-image {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 120px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.demo-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.demo-image:hover {
+    transform: translateY(-2px);
+}
+ /* Responsive Adjustments */
+    @media (max-width: 992px) {
+        .clients-heading {
+            font-size: 20px;
+            padding-right: 15px;
+        }
+        .clients-heading::after {
+            height: 60px;
+        }
+        .clients-logos {
+            gap: 30px;
+            animation-duration: 18s;
+        }
+        .demo-image {
+            height: 45px;
+            width: 90px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .clients-row {
+            /* flex-direction: column; */
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .clients-heading {
+            padding-right: 0;
+            font-size: 18px;
+        }
+        .clients-heading::after {
+            display: none;
+        }
+        .clients-logos {
+            gap: 25px;
+        }
+        .demo-image {
+            height: 40px;
+            width: 80px;
+        }
+              .clients-heading::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 133px;
+            background-color: #00233B;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .clients-heading {
+            font-size: 16px;
+        }
+        .clients-logos {
+            gap: 20px;
+            animation-duration: 15s;
+        }
+        .demo-image {
+            height: 35px;
+            width: 70px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section class="our-clients-section">
+        <div class="clients-row">
+            <h2 class="clients-heading">Our Clients</h2>
+            
+            <div class="clients-logos-scroll-wrapper">
+              <div class="clients-logos">
+    <!-- Original set of logos -->
+    <div class="demo-image"><img src="assets/Everest.svg" alt="Everest"></div>
+    <div class="demo-image"><img src="assets/DHL.svg" alt="DHL"></div>
+    <div class="demo-image"><img src="assets/Hero.svg" alt="Hero"></div>
+    <div class="demo-image"><img src="assets/Cummins.svg" alt="Cummins"></div>
+    <div class="demo-image"><img src="assets/Dharamsi.svg" alt="Dhampur Chemicals"></div>
+    <div class="demo-image"><img src="assets/AnotherLogo.svg" alt="Another Client"></div>
+
+    <!-- Duplicate set for smooth loop -->
+    <div class="demo-image"><img src="assets/Everest.svg" alt="Everest"></div>
+    <div class="demo-image"><img src="assets/DHL.svg" alt="DHL"></div>
+    <div class="demo-image"><img src="assets/Hero.svg" alt="Hero"></div>
+    <div class="demo-image"><img src="assets/Cummins.svg" alt="Cummins"></div>
+    <div class="demo-image"><img src="assets/Dharamsi.svg" alt="Dhampur Chemicals"></div>
+    <div class="demo-image"><img src="assets/AnotherLogo.svg" alt="Another Client"></div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Optional: Add dynamic control for animation speed
+        const clientsLogos = document.querySelector('.clients-logos');
+        
+        // Pause animation on hover for better UX
+        clientsLogos.addEventListener('mouseenter', () => {
+            clientsLogos.style.animationPlayState = 'paused';
+        });
+        
+        clientsLogos.addEventListener('mouseleave', () => {
+            clientsLogos.style.animationPlayState = 'running';
+        });
+    </script>
+</body>
+</html>

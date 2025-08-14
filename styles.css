@@ -547,7 +547,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4rem;
-  animation: scroll-left 6s linear infinite;
+  animation: scroll-left 10s linear infinite;
 }
 
 .clients-logos img {
