@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rockshell Corp</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Here Starts the Navbar Section  -->
+<!-- Navbar Section -->
+<nav class="navbar">
+  <div class="container">
+    <!-- Logo on the left -->
+    <div class="logo-wrapper">
+      <a href="index.html"><img src="assets/logo.svg" alt="Rockshell Logo" class="logo" /></a>
+    </div>
+
+    <!-- Navigation links in the center -->
+    <ul class="nav-links">
+       <div class="back-arrow">
+    <img src="assets/arrow-left.svg" alt="Back" />
+  </div>
+      <li><a href="heat-pump-solutions.html">Heat Pump Solutions</a></li>
+      <li><a href="heat-pump-dryers-evaporators.html">Heat Pump Dryers<br>& Evaporators</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+    </ul>
+
+    <!-- Right-side: Contact Us button + Hamburger -->
+    <div class="right-controls">
+      <a class="contact-btn" href="#">
+        Contact Us
+        <img src="assets/log-out.svg" alt="arrow" class="btn-icon" />
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Menu"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+    <!-- Nav bar responsive Code starts here -->
+   <style>
+    .back-arrow {
+  display: none;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+ 
+}
+
+@media (max-width: 768px) {
+  .navbar {
+   
+  }.back-arrow {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1001;
+  cursor: pointer;
+  display: block; /* Only visible on mobile */
+}
+
+.back-arrow img {
+  width: 2.4rem;
+  height: auto;
+}
+
+  .navbar-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+.logo {
+    width: 5rem;     /* or smaller like 6rem */
+    height: auto;
+  }
+ 
+  .logo img {
+    width: 100%;      /* scales image to fit container */
+    height: auto;     /* maintains aspect ratio */
+    display: block;
+  }
+  .right-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 12px;
+    gap: 0.8rem;
+    height: auto;
+    white-space: nowrap;
+  }
+.nav-links li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #ccc; /* light gray bottom border */
+  color: #00233B;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #00233B;
+  color: #fff;
+  border-bottom-color: #004266; /* darker blue on hover */
+}
+body.menu-open {
+  overflow: hidden;
+  height: 100vh; /* optional: prevent touch scrolling on some devices */
+}
+
+  .contact-btn .btn-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: url('assets/Menu.svg') no-repeat center;
+    background-size: 2.4rem 2.4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    cursor: pointer;
+  }
+ .nav-links {
+    display: none; /* 👈 hide by default */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    gap: 0.1rem;
+    left: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+.nav-links li a.active {
+  background: linear-gradient(180deg, #00233B 0%, #004266 100%);
+  color: #fff;
+  font-weight: 600;
+}
+
+  .nav-links a {
+    /* padding: 0 2rem; */
+    line-height: 5rem;
+
+    font-size: 1.4rem;
+  }
+
+.nav-links.is-closing {
+  display: none !important;
+}
+
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Show nav links inline, allow wrapping */
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    /* flex-wrap: wrap;  */
+    justify-content: flex-end;
+    /* align-items: center; */
+    gap: 1.5rem;
+    height: auto;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
+  /* Hide menu icon */
+  .menu-toggle {
+    display: none !important;
+  }
+
+  /* Adjust logo size */
+  .logo {
+    width: 7rem;
+    height: auto;
+  }
+
+  /* Desktop-style link appearance */
+  .nav-links li a {
+    padding: 0.4rem 0;
+    font-size: 1.3rem;
+    border: none;
+    background: none;
+    color: #00233B;
+    text-decoration: none;
+    white-space: nowrap; /* keeps each link on one line */
+    transition: color 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    color: #004266;
+    background: none;
+  }
+
+  /* Smaller Contact Us button */
+  .contact-btn {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.5rem;
+    gap: 1rem;
+    height: auto;
+     width: 14.2rem;
+  }
+
+  .contact-btn .btn-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+   </style>
+   <script>
+  const navLinks = document.querySelectorAll('.nav-links li a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active')); // Remove previous
+      link.classList.add('active'); // Add to clicked
+    });
+  });
+ 
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const backArrow = document.querySelector('.back-arrow');
+
+  // Toggle menu open/close
+  menuToggle.addEventListener('click', () => {
+    const isActive = navLinks.classList.contains('active');
+
+    if (isActive) {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
+      document.body.classList.remove('menu-open');
+    } else {
+      navLinks.classList.remove('is-closing');
+      navLinks.classList.add('active');
+      document.body.classList.add('menu-open');
+    }
+  });
+
+  // Back arrow just closes menu, no redirect
+  if (backArrow) {
+    backArrow.addEventListener('click', function () {
+      navLinks.classList.remove('active');
+      navLinks.classList.add('is-closing');
+      document.body.classList.remove('menu-open');
+    });
+  }
+});
+
+
+</script>
+
+<!-- Here Ends the Ends the Navbar  Section  -->
+<section class="high-temp-pump">
+  <div class="container">
+  <div class="breadcrumb">
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
+  <p class="breadcrumb-text current inactive">
+    <a href="index.html">Home</a>
+  </p>
+
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
+  <p class="breadcrumb-text current inactive">
+    <a href="heat-pump-dryers-evaporators.html">Heat Pump Dryers & Evaporators </a>
+  </p>
+
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
+  <p class="breadcrumb-text current">
+    <a href="heat-pump-dryers.html"> Heat pump dryers </a>
+  </p>
+
+  <!-- New line for Air and Water -->
+  <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
+  <p class="breadcrumb-text current">
+    ATFD Dryers
+  </p>
+</div>
+
+<style>
+  .breadcrumb-text a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6; /* Match the inactive breadcrumb style */
+}
+
+.breadcrumb-text a:hover {
+  text-decoration: underline;
+}
+
+    .full-width-divider {
+  width: 100vw;
+  border: none;
+  height: 1px;
+  background-color: #00233B;
+  margin: -2px 0 0; /* Add top margin to separate from content */
+  padding: 0;
+}
+
+  .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+  padding-top: 20px; /* Ensure it's on top */
+}
+/* Style for inactive (gray) breadcrumb */
+.breadcrumb-text.inactive {
+  color: #00233B; /* Light gray */
+  opacity: 0.6;
+}
+
+.breadcrumb-icon.inactive {
+ opacity: 0.6;
+  color: #00233B;
+}
+.breadcrumb-icon {
+  width: 8px;
+  height: 8px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.breadcrumb-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+  color: #00233B;
+  margin: 0;
+}
+
+.breadcrumb-text.current {
+  font-weight: 400;
+} @media (max-width: 768px) {
+  .container {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+ .breadcrumb-text a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 10px;
+  opacity: 0.6; /* Match the inactive breadcrumb style */
+}
+  .breadcrumb {
+    position: static; /* remove absolute on small screens */
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+  }
+.breadcrumb-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1;
+  color: #00233B;
+  margin: 0;
+}
+
+  .section-heading {
+    margin-top: 0;
+    font-size: 2.2rem; /* ~22px */
+    line-height: 2.6rem; /* ~26px */
+    width: 32.5rem; /* matches width: 225 */
+  }
+
+  .heat-pump-row {
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: space-between;
+  }
+
+  .heat-pump-card {
+    flex: 1 1 calc(50% - 0.8rem); /* two per row with spacing */
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4; /* keeps height proportional */
+  }
+
+  .heat-pump-card img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .heat-pump-card p {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .breadcrumb {
+    position: static;
+    margin-bottom: 1rem;
+    font-size: 11px;
+    left: auto;
+    top: auto;
+  }
+
+  .section-heading {
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 42px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .heat-pump-row {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between; /* distribute cards */
+  }
+
+  .heat-pump-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: 350px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .heat-pump-card p {
+    font-size: 16px;
+    padding: 8px 5px;
+  }
+
+  .breadcrumb-icon {
+    width: 7px;
+    height: 7px;
+  }
+
+  .breadcrumb-text {
+    font-size: 11px;
+  }
+}
+
+</style>
+<section class="air-water-section">
+  <div class="container">
+    <div class="air-water-content">
+      <!-- Left column -->
+      <div class="performance-left">
+        <h3>ATFD Dryers</h3>
+
+        <div class="performance-block">
+          <h4>	Temperature Range: </h4>
+          <p>50°C – 85°C </p>
+          <hr />
+        </div>
+
+        <div class="performance-block">
+          <h4>Drying Capacity:   </h4>
+          <p>10 L/hr to 1,000+ L/hr</p>
+          <hr />
+        </div>
+
+        <div class="performance-block">
+          <h4>	Material of Construction:  </h4>
+          <p>SS316L / Hastelloy / Duplex Steel</p>
+          <hr />
+        </div>
+        <div class="performance-block">
+          <h4>Agitator Types:</h4>
+          <p>PTFE blades, rigid or flexible scrapers </p>
+          <hr />
+        </div>
+         <div class="performance-block">
+          <h4>Energy Source:    </h4>
+          <p>Electricity (No boiler required)</p>
+          <hr />
+        </div>
+          <div class="performance-block">
+          <h4>Automation:   </h4>
+          <p>PLC + HMI, SCADA optional</p>
+          <hr />
+        </div>
+         <div class="performance-block">
+          <h4>Heat Recovery:   </h4>
+          <p>Built-in for maximum efficiency</p>
+          <hr />
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="performance-description">
+        <p>
+    Our Heat Pump Assisted ATFD (Agitated Thin Film Dryer) systems are designed for drying high-viscosity, concentrated, and heat-sensitive materials in an energy-efficient and environmentally friendly way. By combining the proven drying mechanism of ATFDs with a low-temperature heat pump circuit, this technology significantly reduces energy consumption while ensuring gentle, uniform drying.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<style>
+  .air-water-section {
+  background-color: #fff;
+  padding: 80px 0px;
+  color: #00233B;
+}
+
+.air-water-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: nowrap; /* ensures left-right layout doesn't wrap on larger screens */
+}
+
+.performance-left {
+  max-width: 628px;
+  flex: 0 0 50%;
+}
+
+.performance-left h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  margin-left: -28px;
+}
+
+.performance-description {
+  max-width: 612px;
+  flex: 0 0 45%;
+  margin-top: 115px; /* Aligns with .performance-block h4 */
+  
+}
+
+.performance-block h4 {
+  
+
+     font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 24px;color: #00233B;
+  text-transform: capitalize;
+  margin: 0 0 12px 0;
+   margin-left: -28px;
+}
+
+.performance-block p {
+font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #00233B;
+   margin-left: -28px;
+}
+
+.performance-block hr {
+  border: none;
+  border-top: 1px solid #00233B;
+  width: 100%;
+  padding-top: 15px;
+   margin-left: -28px;
+}
+
+.performance-description {
+  max-width: 612px;
+  flex: 0 0 45%;
+}
+
+.performance-description p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 24px;
+  color: #00233B;
+}
+body{
+  overflow: hidden;
+}
+/* Mobile Styles */
+
+.air-water-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; /* allow stacking on small screens */
+}
+
+.performance-left,
+.performance-description {
+  flex: 1 1 48%; /* take roughly half width each */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.performance-left h3,
+.performance-block h4,
+.performance-block p,
+.performance-block hr {
+  margin-left: 0; /* remove negative margins */
+}
+
+.performance-description {
+  margin-top: 115px; /* Keep alignment on desktop */
+}
+
+@media (max-width: 1024px) {
+  .performance-description {
+    margin-top: 40px; /* Reduce gap on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .performance-left,
+  .performance-description {
+    flex: 1 1 100%;
+          
+        margin-left: -15px;
+  }
+  .performance-description {
+    margin-top: 20px;
+    font-size: 8px;
+
+  }
+  .air-water-content{
+    gap: 0px;
+  }
+  .air-water-section{
+    padding:0px;
+  }
+
+ .performance-description p {
+  
+  position: relative; /* so top/left works */
+ 
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+   line-height: 160%;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+  .performance-block h4{
+    font-size: 14px;
+  }
+  .performance-block p{
+    font-size: 14px;
+  }
+  .performance-left h3{
+    font-size: 20px;
+    padding-top: 40px;
+  }
+}
+
+</style>
+
+<section class="heatpump-industrial-section">
+  <div class="heatpump-industrial-bg">
+    <div class="container">
+    <div class="heatpump-industrial-wrapper">
+      <div class="heatpump-industrial-content">
+        <h3>What Is a Heat Pump ATFD?</h3>
+        <p>
+      A traditional ATFD dries viscous slurries or pastes using high-temperature thermal energy, typically from steam or thermal oil. In our heat pump-integrated ATFD, this thermal energy is supplied by a closed-loop heat pump system, enabling low operating temperatures of 50–85°C, up to 60% energy savings, and complete elimination of steam or fossil fuel requirements. Its compact, fully enclosed design makes it ideal for handling heat-sensitive or explosive materials safely and efficiently.
+
+
+        </p>
+      </div>
+      <div class="heatpump-industrial-image">
+        <img src="assets/atfd-dryers.png" alt="Seasaw Image" />
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<style>
+.heatpump-industrial-section {
+  width: 100%;
+}
+.heatpump-industrial-image {
+  position: relative;
+  right: -100px;
+  flex: 1; /* Allow image container to grow with content */
+  display: flex;
+  align-items: stretch; /* Let image fill full height */
+}
+
+.heatpump-industrial-image img {
+  width: 728px;
+  height: 712px;
+  object-fit: contain;
+  display: block;
+  padding-bottom: 100px;
+   padding-top: 100px;
+}
+
+.heatpump-industrial-bg {
+  background-color: #00233B;
+  width: 100%;
+  
+}
+.heatpump-industrial-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Makes both columns equal in height */
+  width: 100%;
+  box-sizing: border-box;
+  /* Remove fixed height so it grows with content */
+}
+.heatpump-industrial-content {
+  color: #ffffff;
+  font-family: 'Fahkwang', sans-serif;
+  max-width: 628px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.heatpump-industrial-content h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.heatpump-industrial-content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  margin: 0;
+  max-width: 612px;
+}
+
+
+
+.heatpump-industrial-image img {
+  width: 100%;
+  height: 100%; /* Image fills height of content */
+  object-fit: cover; /* Use "contain" if you don't want cropping */
+  display: block;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heatpump-industrial-wrapper {
+    flex-direction: column;        /* Stack content vertically */
+    align-items: center;           /* Center horizontally */
+    gap: 40px;                    /* Space between content and image */
+  }
+
+  .heatpump-industrial-content {
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: center;           /* Center text for tablet */
+  }
+
+  .heatpump-industrial-content h3 {
+    font-size: 32px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .heatpump-industrial-content p {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .heatpump-industrial-image {
+    position: static;             /* Reset position */
+    right: 0;                    /* Reset right offset */
+    width: 100%;
+    max-width: 600px;             /* Limit max width */
+    display: flex;
+    justify-content: center;
+  }
+
+  .heatpump-industrial-image img {
+    width: 100%;
+    height: auto;                /* Keep aspect ratio */
+    object-fit: contain;  
+    padding-bottom: 40px;       /* Prevent cropping */
+  }
+
+  .heatpump-industrial-bg {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heatpump-industrial-wrapper {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .heatpump-industrial-image {
+    position: static; /* remove right offset */
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .heatpump-industrial-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  .heatpump-industrial-content h3 {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+    font-size: 16px !important;
+    padding-top: 30px !important;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    text-align: left;
+    opacity: 1;
+  }
+
+  .heatpump-industrial-content p {
+    font-size: 14px !important;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+}
+
+</style>
+
+
+
+
+<section class="how-heatpumps-work-section">
+  <div class="container">
+    <div class="how-heatpumps-work-wrapper">
+      <div class="how-heatpumps-work-content">
+        <h3>Sustainable, Safe, and Scalable</h3>
+        <p>
+        Heat pump dryers are ideal for organic, export-grade, and specialty food processors looking to meet high quality standards while keeping operating costs and environmental impact 
+        </p>
+        
+      </div>
+      <div class="how-heatpumps-work-image">
+        <img src="assets/Clip1.svg" alt="Industrial Process Diagram" />
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+    .how-heatpumps-work-section {
+  width: 100%;
+  background-color: #ffffff; /* adjust as needed */
+  padding: 100px 0;
+}
+
+.how-heatpumps-work-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.how-heatpumps-work-content {
+  max-width: 612px;
+  color: #00233B;
+}
+
+.how-heatpumps-work-content h3 {
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.how-heatpumps-work-content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%; /* Better readability */
+}
+.how-heatpumps-work-image {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -100px; /* Pull upward to stick to previous image — tweak if needed */
+}
+.how-heatpumps-work-image img {
+  /* width: 326px;
+  height: 409px; */
+  
+ 
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* Tablet (iPad and similar) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .how-heatpumps-work-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .how-heatpumps-work-content {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .how-heatpumps-work-content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .how-heatpumps-work-content p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .how-heatpumps-work-image {
+    position: static;
+    top: 0;
+    max-width: 90%;
+  }
+
+  .how-heatpumps-work-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .how-heatpumps-work-wrapper {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: 20px;
+  }
+.how-heatpumps-work-section{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+  .how-heatpumps-work-content {
+    max-width: 100%;
+   
+  }
+
+  .how-heatpumps-work-content h3 {
+    font-size: 24px;
+  }
+
+  .how-heatpumps-work-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .how-heatpumps-work-image {
+    position: static; /* remove -100px offset */
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .how-heatpumps-work-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+</style>
+
+<!-- <section class="heatpump-industrial-section">
+  <div class="heatpump-industrial-bgs">
+    <div class="container">
+    <div class="heatpump-industrial-wrapper2">
+          <div class="heatpump-industrial-image2">
+        <img src="assets/Waste_Heat_Airwater.jpg" alt="Seasaw Image" />
+      </div>
+      <div class="heatpump-industrial-contents">
+        <h3>Waste heat recovery from heat pumps for best COPs</h3>
+        <p>
+           Meet Sustainability Goals: They support decarbonization efforts and help meet scope 1 emission reduction targets.  Reliable for Heavy-Duty Applications: Engineered for 24/7 industrial environments, the systems offer scalable capacities and high COPs (Coefficient of Performance).ansfer of heat from one location to another. They use a refrigeration cycle to extract heat from a low-temperature source and transfer it to a high-temperature sink. This process can be reversed to provide cooling when needed.
+
+        </p>
+      </div>
+    
+    </div>
+  </div>
+  </div>
+</section> -->
+
+
+
+<style>
+.heatpump-industrial-section {
+  width: 100%;
+}
+
+
+.heatpump-industrial-image2 img {
+  /* width: 728px;
+  height: 712px; */
+  object-fit: contain;
+  display: block;
+}
+
+.heatpump-industrial-bgs {
+  background-color: #05A0C6;
+  width: 100%;
+  
+}
+
+
+.heatpump-industrial-wrapper2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: stretch; /* This makes both sides match height */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.heatpump-industrial-contents {
+  color: #ffffff;
+  font-family: 'Fahkwang', sans-serif;
+  max-width: 628px;
+  /* Remove height and overflow so it grows naturally */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.heatpump-industrial-contents h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.heatpump-industrial-contents p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  margin: 0;
+  max-width: 612px;
+  padding-bottom: 20px;
+  /* Remove overflow, let it grow */
+}
+
+.heatpump-industrial-image2 {
+  flex: 1; /* Allow image container to grow */
+  position: relative;
+  left: 100px;
+  display: flex; /* Required for image inside to fill it */
+  align-items: stretch;
+}
+
+.heatpump-industrial-image2 img {
+  width: 100%;
+  height: 100%; /* Image will now scale with text section height */
+  object-fit: cover; /* or use contain if you want full visibility */
+  display: block;
+}
+@media (max-width: 992px) {
+  .heatpump-industrial-wrapper2 {
+    flex-direction: column; /* Stack image & text */
+    align-items: center;
+    text-align: center;
+  }
+
+  .heatpump-industrial-image2 {
+    position: static; /* Remove the left offset */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .heatpump-industrial-image2 img {
+    width: 100%;
+    height: auto; /* Let image keep proportions */
+    object-fit: contain;
+    margin-top: 20px;
+  }
+
+  .heatpump-industrial-contents {
+    max-width: 100%;
+    
+    text-align: left;
+  }
+
+  .heatpump-industrial-contents h3 {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .heatpump-industrial-contents p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+</style>
+<div class="space"></div>
+<style>
+    .space{
+        padding-top: 80px;
+        /* padding-bottom: 100px; */
+    }
+</style>
+<!-- Industry Section -->
+<section class="overlap-industry-section">
+  <div class="overlap-industry-content">
+    <div class="overlap-industry-card">
+      <h3 class="heatpump-heading2">Applications:</h3>
+      <ul class="industry-feature-list">
+        <li>		Pharma Intermediates & APIs</li>
+        <li>		Chemical Slurries and Extracts</li>
+        <li>		Spent Solvents and Resin Solutions</li>
+        <li>		Food Pastes, Syrups, Extracts</li>
+         <li> 		Evaporator Bottoms (High TDS/COD Effluents)</li>
+         <li> 		Wastewater from Zero Liquid Discharge (ZLD) Systems</li>
+    
+      </ul>
+    </div>
+  </div>
+</section>
+    <div class="container">
+<h3 class="why-choose-heading"></h3>
+</div>
+ <hr class="overlap-industry-separator" />
+
+<style>
+/* Hover effect when card is hovered */
+.overlap-industry-separator {
+  border: none;
+  border-top: 2px solid #00233B; /* color matching your theme */
+  margin-top: 24rem; /* spacing above and below */
+  width: 100%; /* full width */
+  max-width: 200.6rem; /* same as card width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section: Industry (with background image right, card left) */
+.overlap-industry-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Push content to the right */
+  align-items: flex-start;
+  padding: 8rem 0;
+  background: url('assets/construction.svg') no-repeat top left;
+  background-size: contain;
+   margin-bottom: 0rem;
+}
+
+.overlap-industry-content {
+  width: 100%;               /* Take full width of screen */
+  display: flex;
+  justify-content: flex-end; /* Push card to the right */
+}
+.overlap-industry-card {
+  background-color: #00233B;
+  padding: 2.4rem;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 60.6rem;            /* Reduced width */
+}
+.industry-feature-list {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.industry-feature-list li + li {
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #eee;
+}
+
+.why-choose-heading {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 100%;
+  color: #00233B;
+  padding-top: 80px;
+  margin-top: -40rem;
+  width: 65.6rem;
+}
+
+/* .overlap-industry-card:hover {
+  background-color: #00233B;
+  color: #ffffff;
+}
+
+.overlap-industry-card:hover h3,
+.overlap-industry-card:hover p {
+  color: #ffffff;
+} */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .overlap-industry-section {
+    flex-direction: column; /* Stack vertically on tablets */
+    align-items: center;
+    padding: 4rem 2rem;
+    background-position: center top;
+    background-size: contain;
+    margin-bottom: 4rem;
+  }
+
+  .overlap-industry-content {
+    justify-content: center; /* Center the card */
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .overlap-industry-card {
+    width: 100%;        /* Full width inside container */
+    max-width: 600px;   /* Limit max width for readability */
+    padding: 2rem 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  }
+
+  .industry-feature-list {
+    font-size: 1.6rem;  /* Smaller font on tablets */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .industry-feature-list li + li {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .why-choose-heading {
+    font-size: 2rem;  /* Smaller heading */
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto 4rem auto;
+    padding-top: 40px;
+    margin-top: 0; /* Remove negative margin */
+    text-align: center;
+  }
+
+  .overlap-industry-separator {
+    margin-top: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  /* Heading styling */
+  .why-choose-heading {
+  display: none !important;
+  }
+.overlap-industry-section img[src*="construction.svg"] {
+  width: 50% !important;
+  height: 300px !important; /* fixed height */
+  max-height: none !important; /* remove any max-height */
+  object-fit: cover !important; /* fill the height without distortion */
+  display: block !important;
+  margin: 0 !important;
+}
+
+
+  .overlap-industry-section {
+    min-height: 550px !important; /* even taller container */
+    background-position: top left;
+    background-size: 180% auto !important; /* increase background image size */
+  }
+
+
+/* Align text to left */
+.overlap-industry-section,
+.overlap-industry-content {
+  text-align: left !important;
+}
+
+  /* Content wrapper full width */
+.overlap-industry-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;  /* Increased width */
+  padding-left: 0rem;
+  box-sizing: border-box;
+}
+
+.overlap-industry-card {
+  width: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+  /* Bullet list style */
+  .industry-feature-list {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .overlap-industry-separator {
+    margin-top: 4rem;       /* Reduce top margin on smaller screens */
+    max-width: 90%;         /* Use a percentage max width for responsiveness */
+  }
+}
+
+@media (max-width: 576px) {
+  .overlap-industry-separator {
+    margin-top: 2rem;       /* Even smaller margin on very small screens */
+    max-width: 100%;        /* Full width on smallest screens */
+  }
+}
+</style>
+<!-- Here ends the Industry Section  -->
+
+
+<div class="space"></div>
+
+<!-- Here ends the CTA1 Section  -->
+<!-- Here ends the CTA1 Section  -->
+<section class="heatpump-benefits1">
+      <div class="container">
+  <div class="heatpump-container1">
+   
+    <ul class="heatpump-reasons1">
+      <!-- <li>	Process Heating: Industrial heat pumps are commonly used for process heating in industries such as chemical manufacturing, food processing, and paper production. They can efficiently raise the temperature of liquids and gases used in these processes.</li>
+      <li>	Waste Heat Recovery: One of the key advantages of industrial heat pumps is their ability to recover waste heat from various industrial processes. This recovered heat can then be reused to reduce the facility's overall energy consumption.</li>
+      <li>	Cooling and Air Conditioning: In addition to heating, industrial heat pumps can provide effective cooling solutions for industrial facilities, ensuring stable temperatures for processes and equipment.</li>
+      <li>	Drying and Dehumidification: Industries that require drying or dehumidification processes, such as agriculture and pharmaceuticals, can benefit from industrial heat pumps, as they can efficiently remove moisture from the air.</li>
+      -->
+    </ul>
+  </div>
+</section>
+<style>
+.heatpump-benefits1 {
+  padding: 60px 0;
+  background-color: #ffffff;
+  color:  #00233B; /* White text on dark background */
+}
+
+.heatpump-heading2 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  color: #f1f1f1; /* ensure heading is white */
+}
+.heatpump-heading1 {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  color: #00233B; /* ensure heading is white */
+}
+
+.heatpump-reasons1 {
+  list-style-type: disc;
+  padding-left: 20px;
+ 
+  color: #00233B; /* white text for list */
+}
+
+.heatpump-reasons1 li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+}
+
+</style>
+<!-- Here ends the CTA1 Section  -->
+
+
+<section class="heatpump-benefits">
+  <div class="container">
+    <div class="heatpump-container">
+      <h3 class="heatpump-heading">How It Works:</h3>
+      <ul class="heatpump-reasons">
+        <li> <strong>		Feed Introduction: </strong> 
+Viscous or slurry feed enters the ATFD drying chamber.</li>
+        <li> <strong>			Thin Film Formation:   </strong>A rotating agitator spreads the feed into a thin film along the heated wall.</li>
+        <li> <strong>			Heat Supply via Heat Pump:   </strong> Hot water or vapor, generated by the heat pump condenser, indirectly heats the ATFD surface.</li>
+        <li> <strong>			Evaporation:  </strong> Water evaporates at low temperature; the vapor is condensed via the heat pump evaporator.</li>
+        <li> <strong>	Product Discharge:  </strong> Dry powder or solid flakes are scraped off and collected.</li>
+       
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+.heatpump-benefits {
+  padding: 60px 0;
+  background-color: #00233B;
+  color: #ffffff; /* White text on dark background */
+}
+
+
+.heatpump-heading {
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  color: #ffffff; /* ensure heading is white */
+}
+
+.heatpump-reasons {
+  list-style-type: disc;
+  padding-left: 20px;
+ 
+  color: #ffffff; /* white text for list */
+}
+
+.heatpump-reasons li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .heatpump-benefits1 {
+    padding: 40px 15px;
+  }
+
+  .heatpump-heading1 {
+    font-size: 28px;
+    max-width: 100%;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .heatpump-reasons1 {
+    padding-left: 15px;
+    max-width: 100%;
+  }
+
+  .heatpump-reasons1 li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heatpump-benefits1 {
+    padding: 30px 10px;
+  }
+
+  .heatpump-heading1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .heatpump-reasons1 li {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .heatpump-benefits {
+    padding: 40px 15px;
+  }
+
+  .heatpump-heading {
+    font-size: 28px;
+    max-width: 100%;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .heatpump-reasons {
+    padding-left: 15px;
+    max-width: 100%;
+  }
+
+  .heatpump-reasons li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heatpump-benefits {
+    padding: 30px 10px;
+  }
+
+  .heatpump-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .heatpump-reasons li {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+</style>
+<section class="key-features-section">
+  <div class="container">
+    <h4>Advantages at a Glance</h4>
+    <table>
+      <tr><td>Low-Temperature Drying</td><td>Ideal for thermally sensitive products</td></tr>
+      <tr><td>High Energy Efficiency</td><td>COP 3.5–4.5, low OPEX</td></tr>
+      <tr><td>No Combustion or Steam</td><td>Safer, cleaner operation</td></tr>
+      <tr><td>Modular Design</td><td>Easy integration with existing systems</td></tr>
+      <tr><td>Clean & Enclosed Process</td><td>No emissions, no odor, minimal operator handling</td></tr>
+
+    </table>
+  </div>
+</section>
+
+<style>
+    .key-features-section h4{
+        font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 40px;
+  margin-top: 60px;
+    }
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0 20px 0; /* Added top margin for spacing */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+   margin-bottom: 60px;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Column separator for the first column */
+table td:first-child {
+  font-weight: 600; 
+  color: #2a2a2a;
+  width: 40%;
+  border-right: 1px solid #ddd; /* Column separator line */
+}
+
+table td:last-child {
+  color: #555;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Title Style */
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  font-family: 'Work Sans', sans-serif;
+}
+</style>
+<!-- Here Starts the Footer section  -->
+<footer class="custom-footer welcome-texts">
+  <div class="footer-top">
+    <img src="assets/Logo.svg.svg" alt="Logo" class="footer-logo" />
+
+    <div class="social-icons">
+      <img src="assets/linkedin.svg" alt="LinkedIn" />
+      <img src="assets/mail.svg" alt="Mail" />
+      <img src="assets/youtube.svg" alt="YouTube" />
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Our Location</h4>
+      <p>141/145, 8, Kazi Syed<br>street, CST, Mumbai 3</p>
+      <div class="footer-section">
+      <h4>Working hours</h4>
+      <p>Monday to Saturday<br>8am to 9pm</p>
+    </div>
+</div>
+    
+
+    <div class="footer-sections">
+      <h4>Quick Links</h4>
+      <p>Contact us</p>
+      <p>Evaporators</p>
+      <p>HVAC</p>
+      <p>Heat pumps</p>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+    <p>Copyright 2025 © Rockshell Corp. All rights reserved | Crafted by The Yellow Strawberry</p>
+    <div class="footer-links">
+      <a href="#">Disclaimer</a>
+      <a href="#">Privacy Statement</a>
+      <a href="#">Legal Terms</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+<style>
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 2rem 1.6rem;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 4.9rem;   /* 49px */
+    height: 4.7rem;  /* 47px */
+  }
+
+  .social-icons {
+     display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin-right: -50px;
+  }
+
+  .social-icons img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .footer-divider {
+    border-top: 1px solid #000;
+    margin: 2rem 0;
+  }
+
+  .footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section h4 {
+    width: 7.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.6rem;
+       padding-bottom: 1rem;
+  }
+
+  .footer-section p {
+    width: 14.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0.4rem 0;
+       padding-bottom: 1rem;
+  }
+
+  .footer-sections h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-sections p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.4rem 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #00233B;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    color: #00233B;
+    text-decoration: none;
+  }
+}
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4rem 0;
+  }
+ .space {
+    display: none !important;
+  }
+  .why-choose-us h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .why-choose-us .reasons {
+    padding-left: 1.6rem;
+  }
+
+  .why-choose-us .reasons li {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+</style>
+ </div>
+
+  </body>
