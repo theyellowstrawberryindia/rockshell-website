@@ -1273,6 +1273,7 @@ body{
 }
 </style>
 
+<<<<<<<< HEAD:waste-heat-recovery-units.php
 <style>
 @media (max-width: 768px) {
   .why-choose-us {
@@ -1296,6 +1297,8 @@ body{
   }
 }
 </style>
+========
+>>>>>>>> 44bf744f3d94eee28fe115ce262ddeed1f8a69ae:waste-heat-recovery-units.html
 <?php include 'footer.php'; ?>
  </div>
 
