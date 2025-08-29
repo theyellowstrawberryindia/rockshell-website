@@ -5,33 +5,34 @@
    <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-solutions">Heat Pump Solutions</a>
   </p>
-
+ <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
+  <p class="breadcrumb-text current inactive">
+    <a href="steam-heat-pumps">Steam Heat Pumps</a>
+  </p>
   <!-- Break line for responsive only -->
   <div class="breadcrumb-break"></div>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="low-pressure-steam">Low-Pressure Steam Heat Pumps</a>
   </p>
 </div>
 
     <div class="high-temp-content">
       <div class="high-temp-text">
-        <h3>High temperature heat pumps</h3>
-        <p>
-          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-          Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+        <h3>Low-Pressure Steam Heat Pumps</h3>
+        <p>High-Efficiency Steam Generation for Industrial Decarbonization.
         </p>
       </div>
       <div class="high-temp-image">
-        <img src="assets/Industry_2.svg" alt="High temperature heat pump" />
+        <img src="assets/mock-image.svg" alt="High temperature heat pump" />
       </div>
     </div>
   </div>
@@ -104,7 +105,7 @@
   font-weight: 400;
 }
 .high-temp-pump {
-  padding: 20px 0;
+  /* padding: 20px 0; */
   background-color: #fff;
 }
 
@@ -141,6 +142,7 @@
 
 .high-temp-image img {
   width: 455px;
+  padding-bottom: 20px;
   height: 536px;
   object-fit: cover;
 }
@@ -219,37 +221,33 @@ body{
 
 </style>
 <!-- Here Starts the Heatpump 4 images  Section  -->
-<section class="heat-pump-section">
+<!-- <section class="heat-pump-section">
   <div class="container">
 
 
 
-    <!-- Heading -->
-    <h2 class="section-heading">Discover Product Variants</h2>
+
+    <h2 class="section-heading">Heat Pump Solutions</h2>
 
 <div class="heat-pump-row">
-  <a href="air-and-water.html" class="heat-pump-card">
-    <img src="assets/products.svg" alt="High Temperature Heat Pumps" />
-    <p>Air and water sourced units - upto 130C capable   </p>
+  <a href="Air_and_Water.html" class="heat-pump-card">
+    <img src="assets/Industry_4.svg" alt="High Temperature Heat Pumps" />
+    <p>Steam compressors  </p>
   </a>
-  <a href="waste-heat-recovery-units.html" class="heat-pump-card">
-    <img src="assets/products.svg" alt="Steam Heat Pumps" />
-    <p>Waste heat recovery units  </p>
+  <a href="steam_heat_pumps.html" class="heat-pump-card">
+    <img src="assets/Industry_2.svg" alt="Steam Heat Pumps" />
+    <p>Low pressure steam HP - upto 135C capable </p>
   </a>
-  <a href="dual-source-units.html" class="heat-pump-card">
-    <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Dual source units   </p>
-  </a>
-    <a href="standarized-model-upto.html" class="heat-pump-card">
-    <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Standardized model upto 90C  </p>
+  <a href="low_gwp_refrigerant_heat_pump.html" class="heat-pump-card">
+    <img src="assets/Industry_3.svg" alt="Low GWP Refrigerant Heat Pump" />
+    <p>High pressure steam HP - upto 300C capable  </p>
   </a>
   
 </div>
 
 
   </div>
-</section>
+</section> -->
 
 
 <style>
@@ -393,8 +391,276 @@ body{
 }
 
 </style>
+
+<section class="heatpump-industrial-section">
+  <div class="heatpump-industrial-bg">
+    <div class="container">
+    <div class="heatpump-industrial-wrapper">
+      <div class="heatpump-industrial-content">
+        <h3>Introduction to Industrial Heat Pumps:</h3>
+        <p>
+         Rockshell Corp’s Industrial heat pumps are cutting-edge technologies designed to provide efficient heating and cooling solutions for a wide range of industrial processes. These systems are highly energy-efficient and can significantly reduce both energy consumption and carbon emissions in industrial applications. They can produce temperatures as high as 130 °C with a good COP, making the heat pumps suitable for direct use in district heating networks and other high-temperature applications.
+        </p>
+      </div>
+      <div class="heatpump-industrial-image">
+        <img src="assets/introduction_airwater.jpg" alt="Seasaw Image" />
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<style>
+.heatpump-industrial-section {
+  width: 100%;
+}
+.heatpump-industrial-image {
+  position: relative;
+  right: -100px;
+  flex: 1; /* Allow image container to grow with content */
+  display: flex;
+  align-items: stretch; /* Let image fill full height */
+}
+
+.heatpump-industrial-image img {
+  width: 728px;
+  height: 712px;
+  object-fit: contain;
+  display: block;
+}
+
+.heatpump-industrial-bg {
+  background-color: #00233B;
+  width: 100%;
+  
+}
+.heatpump-industrial-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Makes both columns equal in height */
+  width: 100%;
+  box-sizing: border-box;
+  /* Remove fixed height so it grows with content */
+}
+.heatpump-industrial-content {
+  color: #ffffff;
+  font-family: 'Fahkwang', sans-serif;
+  max-width: 628px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.heatpump-industrial-content h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.heatpump-industrial-content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+  margin: 0;
+  max-width: 612px;
+}
+
+
+
+.heatpump-industrial-image img {
+  width: 100%;
+  height: 100%; /* Image fills height of content */
+  object-fit: cover; /* Use "contain" if you don't want cropping */
+  display: block;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heatpump-industrial-wrapper {
+    flex-direction: column;        /* Stack content vertically */
+    align-items: center;           /* Center horizontally */
+    gap: 40px;                    /* Space between content and image */
+  }
+
+  .heatpump-industrial-content {
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: center;           /* Center text for tablet */
+  }
+
+  .heatpump-industrial-content h3 {
+    font-size: 32px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .heatpump-industrial-content p {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .heatpump-industrial-image {
+    position: static;             /* Reset position */
+    right: 0;                    /* Reset right offset */
+    width: 100%;
+    max-width: 600px;             /* Limit max width */
+    display: flex;
+    justify-content: center;
+  }
+
+  .heatpump-industrial-image img {
+    width: 100%;
+    height: auto;                /* Keep aspect ratio */
+    object-fit: contain;  
+    padding-bottom: 40px;       /* Prevent cropping */
+  }
+
+  .heatpump-industrial-bg {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heatpump-industrial-wrapper {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .heatpump-industrial-image {
+    position: static; /* remove right offset */
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .heatpump-industrial-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  .heatpump-industrial-content h3 {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+    font-size: 16px !important;
+    padding-top: 30px !important;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    text-align: left;
+    opacity: 1;
+  }
+
+  .heatpump-industrial-content p {
+    font-size: 14px !important;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+}
+
+</style>
+
+<section class="low-gwp-section">
+  <h2>Electrify Steam. Decarbonize Heat. Lower Costs.</h2>
+  <p>
+    Low Pressure Steam Heat Pumps offer a ground-breaking solution for producing steam sustainably—by using electricity and low-grade heat instead of burning fossil fuels. These systems are ideal for industries seeking to reduce CO₂ emissions, cut energy costs, and modernize steam generation for the low-carbon future.
+  </p>
+  <hr />
+  <h3>Key Benefits</h3>
+  <ul>
+    <li>Electrified Steam Production
+Replaces or supplements fossil-fuel boilers with efficient, low-carbon steam generation.
+</li>
+    <li> Use of Waste Heat
+Recovers heat from industrial exhausts, cooling processes, or other waste streams to reduce input energy needs.
+</li>
+    <li>Reduced Fuel Costs
+Lower operating costs compared to gas or oil-fired boilers—especially in regions with low electricity prices or renewable energy access.
+</li>
+    <li> Lower Carbon Emissions
+Supports net-zero carbon initiatives and helps meet environmental compliance goals.
+</li>
+    <li>Compact & Retrofit-Ready
+Modular design suitable for new installations or integration with existing steam networks.
+</li>
+  </ul>
+</section>
+<style>
+.low-gwp-section {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: #00233B;
+}
+
+.low-gwp-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.low-gwp-section p {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.low-gwp-section hr {
+  border: none;
+  border-top: 2px solid #00233B;
+  margin-bottom: 30px;
+  width: 100px;
+  margin-left: 0;
+}
+
+.low-gwp-section h3 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.low-gwp-section ul {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.low-gwp-section li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+  color: #00233B;
+}
+
+
+
+</style>
 <!-- Here ends the Heat Pump 4 Images Section  -->
  <!-- Here Starts the CTA 1 Section  -->
+
+
+ 
 <section class="contact-cta">
   <div class="contact-container">
     <p class="cta-text">Need a custom coating solution?</p>
@@ -547,13 +813,14 @@ body{
 <!-- Here ends the CTA1 Section  -->
 <section class="why-choose-us">
     <div class="container">
-  <h3>Why Choose Us?</h3>
+  <h3>Industrial Applications:</h3>
   <ul class="reasons">
-    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
-    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
-    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
-    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
-    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
+    <li>	Food & Beverage Processing</li>
+    <li>	Pharmaceutical Manufacturing</li>
+    <li>		Textile & Paper Mills</li>
+    <li>		Biotech & Chemical Industries</li>
+    <li>		District Energy Systems</li>
+     <li>		Breweries & Distilleries</li>
   </ul></div>
 </section>
 
@@ -769,44 +1036,44 @@ body{
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>What is a heat pump and how does it work?</h4>
+      <h4>What are the industrial applications of low-pressure steam heat pumps?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Heat pumps transfer heat from one place to another using a refrigerant cycle. They can be used for both heating and cooling.</p>
+      <p>Low-pressure steam heat pumps are ideal for food & beverage processing, pharmaceutical manufacturing, textile & paper mills, biotech & chemical industries, district energy systems, and breweries & distilleries.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Are heat pumps energy efficient?</h4>
+      <h4>What are the key system features?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Yes, heat pumps are more energy efficient compared to traditional heating methods because they move heat rather than generate it.</p>
+      <p>They can deliver steam output pressure up to 3.5 bar and operate in the 150–160 °C temperature range. They use heat sources such as wastewater, exhaust air, condensate return, and geothermal or ambient sources.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Can heat pumps be used in cold climates?</h4>
+      <h4>Why are low-pressure steam heat pumps important for industry?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Modern heat pumps can work efficiently in colder climates with improved technology such as variable speed compressors.</p>
+      <p>Decarbonizing industrial heat is a major climate challenge. Low-pressure steam heat pumps can deliver 2–4 times more heat energy than the electricity they consume (COP 2–4).</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>How long does a heat pump last?</h4>
+      <h4>How can I get started with low-pressure steam heat pump adoption?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>With proper maintenance, a heat pump can last between 10–15 years or longer.</p>
+      <p>Our team can assess your facility’s steam needs and design a tailored low-pressure steam heat pump solution, complete with pumps, buffer vessels, sensors, piping, and accessories.</p>
     </div>
     <hr />
   </div>
@@ -888,7 +1155,167 @@ hr {
 
 <!-- Here ends the Faq Section  -->
 
+<!-- Here Starts the Footer section  -->
+<footer class="custom-footer welcome-texts">
+  <div class="footer-top">
+    <img src="assets/Logo.svg.svg" alt="Logo" class="footer-logo" />
 
+    <div class="social-icons">
+      <img src="assets/linkedin.svg" alt="LinkedIn" />
+      <img src="assets/mail.svg" alt="Mail" />
+      <img src="assets/youtube.svg" alt="YouTube" />
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Our Location</h4>
+      <p>141/145, 8, Kazi Syed<br>street, CST, Mumbai 3</p>
+      <div class="footer-section">
+      <h4>Working hours</h4>
+      <p>Monday to Saturday<br>8am to 9pm</p>
+    </div>
+</div>
+    
+
+    <div class="footer-sections">
+      <h4>Quick Links</h4>
+      <p>Contact us</p>
+      <p>Evaporators</p>
+      <p>HVAC</p>
+      <p>Heat pumps</p>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+ <p>
+  Copyright 2025 © Rockshell Corp. All rights reserved | Crafted by 
+  <a href="https://theyellowstrawberry.com" target="_blank" 
+     style="text-decoration: none; color: #00233B;">
+     The Yellow Strawberry
+  </a>
+</p>
+
+    <div class="footer-links">
+      <!-- <a href="#">Disclaimer</a> -->
+      <a href="#">Privacy Statement</a>
+      <a href="#">Legal Terms</a>
+      <!-- <a href="#">Cookie Policy</a> -->
+    </div>
+  </div>
+</footer>
+<style>
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 2rem 1.6rem;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 4.9rem;   /* 49px */
+    height: 4.7rem;  /* 47px */
+  }
+
+  .social-icons {
+     display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin-right: -50px;
+  }
+
+  .social-icons img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .footer-divider {
+    border-top: 1px solid #000;
+    margin: 2rem 0;
+  }
+
+  .footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section h4 {
+    width: 7.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.6rem;
+       padding-bottom: 1rem;
+  }
+
+  .footer-section p {
+    width: 14.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0.4rem 0;
+       padding-bottom: 1rem;
+  }
+
+  .footer-sections h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-sections p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.4rem 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #00233B;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    color: #00233B;
+    text-decoration: none;
+  }
+}
+
+</style>
 <style>
  @media (max-width: 768px) {
   .high-temp-content {
@@ -1191,4 +1618,4 @@ hr {
 <?php include 'footer.php'; ?>
  </div>
 
-
+  

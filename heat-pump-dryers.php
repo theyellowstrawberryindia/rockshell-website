@@ -5,12 +5,12 @@
    <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-dryers-evaporators">Heat Pumps Dryers & Evaporators</a>
   </p>
 
   <!-- Break line for responsive only -->
@@ -18,16 +18,17 @@
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="heat-pump-dryers">Heat pump dryers</a>
   </p>
 </div>
 
     <div class="high-temp-content">
       <div class="high-temp-text">
-        <h3>High temperature heat pumps</h3>
+        <h3> Heat pump dryers </h3>
         <p>
-          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-          Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+          Our heat pump dryers offer an energy-efficient and environmentally friendly solution for moisture removal across a wide range of products. 
+  By recycling heat within a closed-loop system, they deliver precise temperature control, gentle drying for sensitive materials, 
+  and significantly reduced operating costs compared to conventional drying methods.
         </p>
       </div>
       <div class="high-temp-image">
@@ -228,21 +229,21 @@ body{
     <h2 class="section-heading">Discover Product Variants</h2>
 
 <div class="heat-pump-row">
-  <a href="air-and-water.html" class="heat-pump-card">
+  <a href="sludge-dryers" class="heat-pump-card">
     <img src="assets/products.svg" alt="High Temperature Heat Pumps" />
-    <p>Air and water sourced units - upto 130C capable   </p>
+    <p>Sludge dryers  </p>
   </a>
-  <a href="waste-heat-recovery-units.html" class="heat-pump-card">
+  <a href="spray-dryers" class="heat-pump-card">
     <img src="assets/products.svg" alt="Steam Heat Pumps" />
-    <p>Waste heat recovery units  </p>
+    <p>Spray dryers  </p>
   </a>
-  <a href="dual-source-units.html" class="heat-pump-card">
+  <a href="food-dryers" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Dual source units   </p>
+    <p>Food dryers   </p>
   </a>
-    <a href="standarized-model-upto.html" class="heat-pump-card">
+    <a href="atfd-dryers" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Standardized model upto 90C  </p>
+    <p>ATFD dryers </p>
   </a>
   
 </div>
@@ -549,12 +550,11 @@ body{
     <div class="container">
   <h3>Why Choose Us?</h3>
   <ul class="reasons">
-    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
-    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
-    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
-    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
-    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
-  </ul></div>
+         <li>Tailored Drying Solutions: Heat pump dryers designed to meet your specific product and process requirements.</li>
+      <li>Consistent Product Quality: Gentle, uniform drying that preserves texture, color, and nutritional value.</li>
+      <li>Energy-Efficient Technology: Advanced heat recovery systems that reduce energy use by up to 50–70%.</li>
+      <li>Reliable Performance: Built for continuous operation with minimal downtime and maintenance.</li>
+      <li>Comprehensive Support: From system design and installation to training and after-sales service.</li> </ul></div>
 </section>
 
 <style>
@@ -769,44 +769,44 @@ body{
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>What is a heat pump and how does it work?</h4>
+      <h4>What is a heat pump dryer and how does it work?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Heat pumps transfer heat from one place to another using a refrigerant cycle. They can be used for both heating and cooling.</p>
+      <p>A heat pump dryer uses a closed-loop refrigeration cycle to remove moisture from products while reusing the recovered heat. This results in efficient drying at lower temperatures.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Are heat pumps energy efficient?</h4>
+      <h4>Are heat pump dryers energy efficient?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Yes, heat pumps are more energy efficient compared to traditional heating methods because they move heat rather than generate it.</p>
+      <p>Yes. Heat pump dryers can reduce energy consumption by 50–70% compared to conventional drying methods, thanks to their heat recovery capability.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Can heat pumps be used in cold climates?</h4>
+      <h4>Can heat pump dryers handle heat-sensitive products?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Modern heat pumps can work efficiently in colder climates with improved technology such as variable speed compressors.</p>
+      <p>Absolutely. They operate at controlled, lower drying temperatures, making them ideal for food, pharmaceuticals, and other products that can be damaged by high heat.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>How long does a heat pump last?</h4>
+      <h4>How long does a heat pump dryer last?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>With proper maintenance, a heat pump can last between 10–15 years or longer.</p>
+      <p>With proper operation and maintenance, a heat pump dryer can provide reliable service for 15 years or more.</p>
     </div>
     <hr />
   </div>
@@ -887,7 +887,6 @@ hr {
 
 
 <!-- Here ends the Faq Section  -->
-
 
 <style>
  @media (max-width: 768px) {
@@ -1188,7 +1187,7 @@ hr {
   }
 }
 </style>
-<?php include 'footer.php'; ?>
+ <?php include 'footer.php'; ?>
  </div>
 
 

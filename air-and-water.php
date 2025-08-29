@@ -6,23 +6,23 @@
   <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-solutions">Heat Pump Solutions</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="high-temperature-heat-pumps">High Temperature Heat Pumps</a>
   </p>
 
   <!-- New line for Air and Water -->
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    Waste Heat Recovery Heat Pump Units
+    Air and water sourced units – upto 130°C capable
   </p>
 </div>
 
@@ -198,23 +198,23 @@
     <div class="air-water-content">
       <!-- Left column -->
       <div class="performance-left">
-        <h3>Waste Heat Recovery Heat Pump Units</h3>
+        <h3>Air and water sourced units upto 130C capable</h3>
 
         <div class="performance-block">
-          <h4>Input Sources: </h4>
-          <p>Flue gas, exhaust air, process water </p>
+          <h4>Performance range: </h4>
+          <p>30kW to 3000kW </p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Output Uses: </h4>
-          <p>Space heating, domestic hot water, preheating for boilers, process heating</p>
+          <h4>Refrigerant: </h4>
+          <p>HFOs and Natural refrigerants</p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Technical Features:</h4>
-          <p>High-temperature lift capability, modular skid-mounted design, integration with existing BMS and SCADA systems</p>
+          <h4>Medium temperature heating:</h4>
+          <p>+60C to +130C</p>
           <hr />
         </div>
       </div>
@@ -222,7 +222,12 @@
       <!-- Right column -->
       <div class="performance-description">
         <p>
-    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, improve process efficiency, and lower carbon emissions
+     Industrial heat pumps are advanced heating and cooling systems that play a crucial role in improving energy efficiency and reducing greenhouse gas emissions in various industrial processes. They work on the same principle as household heat pumps but are designed to meet industries' high-capacity heating and cooling demands. 
+
+The future of industrial heat pumps is promising, with ongoing research and development focused on increasing their efficiency and applicability. Advancements in materials, control systems, and integration with renewable energy sources are expected to further enhance the performance and sustainability of industrial heat pump systems.
+
+Industrial heat pumps are a vital component of modern industrial processes, offering energy-efficient solutions for heating, cooling, and waste heat recovery. Their adoption can lead to significant energy and cost savings while reducing the environmental impact of industrial operations. As technology continues to evolve, industrial heat pumps will play an increasingly important role in the transition to more sustainable industrial practices.
+
         </p>
       </div>
     </div>
@@ -394,11 +399,9 @@ body{
     <div class="container">
     <div class="heatpump-industrial-wrapper">
       <div class="heatpump-industrial-content">
-        <h3>Waste Heat Recovery Heat Pump Units:</h3>
+        <h3>Introduction to Industrial Heat Pumps:</h3>
         <p>
-        Rockshell Corp’s Industrial Heat Pumps capture waste energy from sources such as flue gas, exhaust air, process water, condenser heat from chillers, and cooling tower blowdown. These systems efficiently provide space heating, domestic hot water, preheating for boilers, and process heating. Designed with high-temperature lift capability, modular skid mounted construction, BMS/SCADA integration, energy monitoring, and configurable simultaneous heating and cooling, they reduce thermal waste and emissions, lower operational costs, and improve facility energy performance. Custom-engineered to your facility’s thermal profile, these solutions offer short payback periods and full lifecycle support—from design and commissioning to ongoing maintenance ensuring maximum efficiency and reliability.
-
-
+         Rockshell Corp’s Industrial heat pumps are cutting-edge technologies designed to provide efficient heating and cooling solutions for a wide range of industrial processes. These systems are highly energy-efficient and can significantly reduce both energy consumption and carbon emissions in industrial applications. They can produce temperatures as high as 130 °C with a good COP, making the heat pumps suitable for direct use in district heating networks and other high-temperature applications.
         </p>
       </div>
       <div class="heatpump-industrial-image">
@@ -576,9 +579,9 @@ body{
   <div class="container">
     <div class="how-heatpumps-work-wrapper">
       <div class="how-heatpumps-work-content">
-        <h3>How Waste Heat Recovery Units Work:</h3>
+        <h3>How Industrial Heat Pumps Work:</h3>
         <p>
-                  Recover & Reuse Waste Energy: Rockshell Corp’s Industrial Heat Pumps recover thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment.  Reduce Energy Bills: These systems significantly cut energy usage by utilizing existing waste heat instead of generating new heat from scratch. 
+          Industrial heat pumps operate on the same basic principle as household heat pumps, which is the transfer of heat from one location to another. They use a refrigeration cycle to extract heat from a low-temperature source and transfer it to a high-temperature sink. This process can be reversed to provide cooling when needed.
         </p>
       </div>
       <div class="how-heatpumps-work-image">
@@ -723,7 +726,9 @@ body{
       <div class="heatpump-industrial-contents">
         <h3>Waste heat recovery from heat pumps for best COPs</h3>
         <p>
-           Meet Sustainability Goals: They support decarbonization efforts and help meet scope 1 emission reduction targets.  Reliable for Heavy-Duty Applications: Engineered for 24/7 industrial environments, the systems offer scalable capacities and high COPs (Coefficient of Performance).ansfer of heat from one location to another. They use a refrigeration cycle to extract heat from a low-temperature source and transfer it to a high-temperature sink. This process can be reversed to provide cooling when needed.
+          Rockshell Corp’s heat pumps allow companies to use heat sources which would be otherwise difficult or impossible to use. For example, low-temperature waste heat from industrial processes can be used as a source of energy for district heating.
+
+The best coefficient of performance can be achieved with combined heating and cooling (CHC). In CHC solutions, a heat pump cools down one part of a process and uses the extracted energy to heat up another part of the process, reducing the need for traditional forms of heating. This arrangement can be used to create a fully carbon-neutral heating and cooling solution.
 
         </p>
       </div>
@@ -861,19 +866,19 @@ body{
     <div class="overlap-industry-card">
       <h3 class="heatpump-heading2">Waste heat can be recycled from the below processes.</h3>
       <ul class="industry-feature-list">
-        <li>		Manufacturing Plants</li>
-        <li>	Chemical & Pharmaceutical Production</li>
-        <li>	Food & Beverage Processing</li>
+        <li>	Cooling systems (delivering water glycol to -10°C)</li>
+        <li>	Indirect cooling systems (via condenser/cooling tower circuits)</li>
+        <li>	Ventilation extract systems</li>
         <li>	Heat rejection flues/stacks</li>
-         <li> 	Data Centres & Server Rooms</li>
-         <li> 		District Heating Systems</li>
-        
+         <li> Wastewater/effluent streams</li>
+         <li> Air compressor cooling systems</li>
+         <li> Hot production area waste heat</li>
       </ul>
     </div>
   </div>
 </section>
     <div class="container">
-<h3 class="why-choose-heading"></h3>
+<h3 class="why-choose-heading">A few applications where Industrial Heat Pumps are the best fit:</h3>
 </div>
  <hr class="overlap-industry-separator" />
 
@@ -882,7 +887,7 @@ body{
 .overlap-industry-separator {
   border: none;
   border-top: 2px solid #00233B; /* color matching your theme */
-  margin-top: 24rem; /* spacing above and below */
+  margin-top: 18rem; /* spacing above and below */
   width: 100%; /* full width */
   max-width: 200.6rem; /* same as card width */
   margin-left: auto;
@@ -1088,11 +1093,11 @@ body{
   <div class="heatpump-container1">
    
     <ul class="heatpump-reasons1">
-      <!-- <li>	Process Heating: Industrial heat pumps are commonly used for process heating in industries such as chemical manufacturing, food processing, and paper production. They can efficiently raise the temperature of liquids and gases used in these processes.</li>
+      <li>	Process Heating: Industrial heat pumps are commonly used for process heating in industries such as chemical manufacturing, food processing, and paper production. They can efficiently raise the temperature of liquids and gases used in these processes.</li>
       <li>	Waste Heat Recovery: One of the key advantages of industrial heat pumps is their ability to recover waste heat from various industrial processes. This recovered heat can then be reused to reduce the facility's overall energy consumption.</li>
       <li>	Cooling and Air Conditioning: In addition to heating, industrial heat pumps can provide effective cooling solutions for industrial facilities, ensuring stable temperatures for processes and equipment.</li>
       <li>	Drying and Dehumidification: Industries that require drying or dehumidification processes, such as agriculture and pharmaceuticals, can benefit from industrial heat pumps, as they can efficiently remove moisture from the air.</li>
-      -->
+     
     </ul>
   </div>
 </section>
@@ -1144,22 +1149,20 @@ body{
 </style>
 <!-- Here ends the CTA1 Section  -->
 <section class="heatpump-benefits">
-  <div class="container">
-    <div class="heatpump-container">
-      <h3 class="heatpump-heading">Benefits of Waste Heat Recovery Heat Pumps:</h3>
-      <ul class="heatpump-reasons">
-        <li> <strong>Recover & Reuse Waste Energy:</strong> These heat pumps capture thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment, turning waste heat into usable energy.</li>
-        <li> <strong>Reduce Energy Bills:</strong> By utilizing existing waste heat instead of generating new heat from scratch, facilities can significantly lower energy consumption and operating costs.</li>
-        <li> <strong>Support Sustainability Goals:</strong> Using waste heat recovery reduces carbon emissions and helps meet environmental and decarbonization targets.</li>
-        <li> <strong>Reliable for Heavy-Duty Applications:</strong> Engineered for continuous industrial operation, these systems provide high COPs and scalable capacities for diverse applications.</li>
-        <li> <strong>Versatile Integration:</strong> Suitable for process heating, space heating, domestic hot water, preheating for boilers, and even cooling applications, these units can be adapted to many industrial processes.</li>
-        <li> <strong>Flexible Heat Sources:</strong> Waste heat can be extracted from flue gas, exhaust air, condenser heat, cooling tower blowdown, and other low-grade heat streams, making integration into existing facilities seamless.</li>
-        <li> <strong>Advanced Monitoring & Control:</strong> Systems can be connected to BMS/SCADA platforms or cloud solutions to monitor performance, optimize operation, and reduce downtime through remote diagnostics.</li>
-      </ul>
-    </div>
+      <div class="container">
+  <div class="heatpump-container">
+    <h3 class="heatpump-heading">Benefits of Industrial Heat Pumps:</h3>
+    <ul class="heatpump-reasons">
+      <li>Energy Efficiency: Industrial heat pumps are highly energy-efficient, often providing several units of heating or cooling for each unit of electricity consumed.</li>
+      <li>Reduced Carbon Emissions: By using heat pumps to recover and reuse waste heat, industrial facilities can significantly reduce their carbon emissions and overall environmental footprint.</li>
+      <li>Cost Savings: While the upfront cost of installing industrial heat pumps can be significant, the long-term energy savings and reduced operating costs often outweigh the initial investment.</li>
+      <li>Improved Process Control: Industrial heat pumps offer precise temperature and humidity control, which is essential for many industrial processes.</li>
+      <li>Versatility: Rockshell Corp’s industrial heat pumps are versatile and can be used for various applications, including process heating, cooling, air conditioning, drying, and dehumidification. Their adaptability makes them suitable for a wide range of industries, from food processing to pharmaceuticals to chemical manufacturing.</li>
+      <li>Heat Source Flexibility: Industrial heat pumps can extract heat from a variety of sources, including air, water, and even low-temperature waste streams. This flexibility allows them to be integrated into different industrial processes.</li>
+      <li>Data monitoring: These heat pumps can be connected to Global Monitor, a cloud solution which continuously monitors the system’s operation. If there is a problem, engineers can troubleshoot the issue remotely, minimizing unplanned downtime.</li>
+    </ul>
   </div>
 </section>
-
 <style>
 .heatpump-benefits {
   padding: 60px 0;
@@ -1273,7 +1276,30 @@ body{
 }
 </style>
 
-<?php include 'footer.php'; ?>
+<!-- Here Starts the Footer section  -->
+ <?php include 'footer.php'; ?>
+<style>
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4rem 0;
+  }
+ .space {
+    display: none !important;
+  }
+  .why-choose-us h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .why-choose-us .reasons {
+    padding-left: 1.6rem;
+  }
+
+  .why-choose-us .reasons li {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+</style>
  </div>
 
-  </body>

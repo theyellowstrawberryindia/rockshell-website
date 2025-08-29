@@ -6,23 +6,23 @@
   <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-solutions">Heat Pump Solutions</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="high-temperature-heat-pumps">High Temperature Heat Pumps</a>
   </p>
 
   <!-- New line for Air and Water -->
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    Waste Heat Recovery Heat Pump Units
+    Dual Source Heat Pumps
   </p>
 </div>
 
@@ -198,23 +198,28 @@
     <div class="air-water-content">
       <!-- Left column -->
       <div class="performance-left">
-        <h3>Waste Heat Recovery Heat Pump Units</h3>
+        <h3>Dual Source Heat Pumps </h3>
 
         <div class="performance-block">
-          <h4>Input Sources: </h4>
-          <p>Flue gas, exhaust air, process water </p>
+          <h4>	Air Source Mode: </h4>
+          <p>Pulls heat from the outside air during milder conditions. </p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Output Uses: </h4>
-          <p>Space heating, domestic hot water, preheating for boilers, process heating</p>
+          <h4>Water source Mode:  </h4>
+          <p>Pulls heat from from utitlies like chiller, cooling tower, air compressors etc </p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Technical Features:</h4>
-          <p>High-temperature lift capability, modular skid-mounted design, integration with existing BMS and SCADA systems</p>
+          <h4>Ground Source Mode:</h4>
+          <p>Switches to ground loop heating during colder months or when air temperatures drop.</p>
+          <hr />
+        </div>
+         <div class="performance-block">
+          <h4>Smart Control System:   </h4>
+          <p>Monitors energy efficiency and selects the most effective mode in real-time. </p>
           <hr />
         </div>
       </div>
@@ -222,7 +227,8 @@
       <!-- Right column -->
       <div class="performance-description">
         <p>
-    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, improve process efficiency, and lower carbon emissions
+    Dual Source Heat Pumps are advanced systems designed to provide reliable heating and cooling throughout the year. 
+          By intelligently switching between air, water, or ground sources, these units maximize energy efficiency, reduce operational costs, and maintain optimal hot water supply even in challenging conditions.
         </p>
       </div>
     </div>
@@ -394,9 +400,9 @@ body{
     <div class="container">
     <div class="heatpump-industrial-wrapper">
       <div class="heatpump-industrial-content">
-        <h3>Waste Heat Recovery Heat Pump Units:</h3>
+        <h3>What Is a Dual Source Heat Pump?</h3>
         <p>
-        Rockshell Corp’s Industrial Heat Pumps capture waste energy from sources such as flue gas, exhaust air, process water, condenser heat from chillers, and cooling tower blowdown. These systems efficiently provide space heating, domestic hot water, preheating for boilers, and process heating. Designed with high-temperature lift capability, modular skid mounted construction, BMS/SCADA integration, energy monitoring, and configurable simultaneous heating and cooling, they reduce thermal waste and emissions, lower operational costs, and improve facility energy performance. Custom-engineered to your facility’s thermal profile, these solutions offer short payback periods and full lifecycle support—from design and commissioning to ongoing maintenance ensuring maximum efficiency and reliability.
+        A dual source heat pump combines the best of both air source, water source and ground source (geothermal) technologies. By switching between the air and water as heat sources, it optimizes energy efficiency and delivers consistent hot water—even in extreme temperatures.
 
 
         </p>
@@ -576,9 +582,28 @@ body{
   <div class="container">
     <div class="how-heatpumps-work-wrapper">
       <div class="how-heatpumps-work-content">
-        <h3>How Waste Heat Recovery Units Work:</h3>
+        <h3>Why Industrial Facilities Choose Dual Source Heat Pumps?</h3>
         <p>
-                  Recover & Reuse Waste Energy: Rockshell Corp’s Industrial Heat Pumps recover thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment.  Reduce Energy Bills: These systems significantly cut energy usage by utilizing existing waste heat instead of generating new heat from scratch. 
+                  <strong>Intelligent Source Switching</strong>
+Automatically alternates between ground and air sources based on real-time conditions to ensure optimal energy usage and reliability.
+
+        </p>
+         <p>
+                <strong>Lower Operational Costs</strong> 
+Reduces reliance on fossil fuels and stabilizes energy bills by using the most cost-effective heat source available.
+
+
+        </p>
+         <p>
+             <strong>Scalable for Industrial</strong>    Needs
+Designed for large-scale operations with high thermal demands, including manufacturing plants, warehouses, processing facilities, data centers, and institutional campuses.
+
+        </p>
+          <p>
+                <strong>Sustainability & Compliance</strong> 
+Supports corporate ESG goals and helps meet regulatory standards for energy efficiency and carbon reduction.
+
+
         </p>
       </div>
       <div class="how-heatpumps-work-image">
@@ -613,13 +638,15 @@ body{
   font-weight: 600;
   line-height: 100%;
   text-transform: capitalize;
-  margin-bottom: 24px;
+  margin-bottom: 54px;
 }
 
 .how-heatpumps-work-content p {
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
   font-weight: 400;
+   margin-bottom: 16px; /* adjust as needed */
+  line-height: 1.6;  
   line-height: 150%; /* Better readability */
 }
 .how-heatpumps-work-image {
@@ -721,9 +748,9 @@ body{
         <img src="assets/Waste_Heat_Airwater.jpg" alt="Seasaw Image" />
       </div>
       <div class="heatpump-industrial-contents">
-        <h3>Waste heat recovery from heat pumps for best COPs</h3>
+        <h3>System Features</h3>
         <p>
-           Meet Sustainability Goals: They support decarbonization efforts and help meet scope 1 emission reduction targets.  Reliable for Heavy-Duty Applications: Engineered for 24/7 industrial environments, the systems offer scalable capacities and high COPs (Coefficient of Performance).ansfer of heat from one location to another. They use a refrigeration cycle to extract heat from a low-temperature source and transfer it to a high-temperature sink. This process can be reversed to provide cooling when needed.
+           Rockshell Corp’s dual source heat pumps feature integrated water source and air source technology, variable capacity compressors for optimal load matching and efficiency, advanced controls with BMS integration, modular design for phased installation or future expansion, and remote monitoring and diagnostics. These systems deliver reliable performance even in extreme climates, reduce CO₂ emissions, lower peak demand charges, and ensure improved thermal stability along with consistent process hot water temperatures.
 
         </p>
       </div>
@@ -859,14 +886,14 @@ body{
 <section class="overlap-industry-section">
   <div class="overlap-industry-content">
     <div class="overlap-industry-card">
-      <h3 class="heatpump-heading2">Waste heat can be recycled from the below processes.</h3>
+      <h3 class="heatpump-heading2">Applications:</h3>
       <ul class="industry-feature-list">
-        <li>		Manufacturing Plants</li>
-        <li>	Chemical & Pharmaceutical Production</li>
-        <li>	Food & Beverage Processing</li>
-        <li>	Heat rejection flues/stacks</li>
-         <li> 	Data Centres & Server Rooms</li>
-         <li> 		District Heating Systems</li>
+        <li>	Manufacturing and Production Plants</li>
+        <li>	Logistics & Distribution Centers</li>
+        <li>	Food & Beverage Processing Facilities</li>
+        <li>	Chemical and Pharmaceutical Plants</li>
+         <li> 	District Heating & Cooling Systems</li>
+         <li> 	Data Centers & Critical Infrastructure</li>
         
       </ul>
     </div>
@@ -1146,15 +1173,14 @@ body{
 <section class="heatpump-benefits">
   <div class="container">
     <div class="heatpump-container">
-      <h3 class="heatpump-heading">Benefits of Waste Heat Recovery Heat Pumps:</h3>
+      <h3 class="heatpump-heading">Salient features of Simultaneous heat pump units:</h3>
       <ul class="heatpump-reasons">
-        <li> <strong>Recover & Reuse Waste Energy:</strong> These heat pumps capture thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment, turning waste heat into usable energy.</li>
-        <li> <strong>Reduce Energy Bills:</strong> By utilizing existing waste heat instead of generating new heat from scratch, facilities can significantly lower energy consumption and operating costs.</li>
-        <li> <strong>Support Sustainability Goals:</strong> Using waste heat recovery reduces carbon emissions and helps meet environmental and decarbonization targets.</li>
-        <li> <strong>Reliable for Heavy-Duty Applications:</strong> Engineered for continuous industrial operation, these systems provide high COPs and scalable capacities for diverse applications.</li>
-        <li> <strong>Versatile Integration:</strong> Suitable for process heating, space heating, domestic hot water, preheating for boilers, and even cooling applications, these units can be adapted to many industrial processes.</li>
-        <li> <strong>Flexible Heat Sources:</strong> Waste heat can be extracted from flue gas, exhaust air, condenser heat, cooling tower blowdown, and other low-grade heat streams, making integration into existing facilities seamless.</li>
-        <li> <strong>Advanced Monitoring & Control:</strong> Systems can be connected to BMS/SCADA platforms or cloud solutions to monitor performance, optimize operation, and reduce downtime through remote diagnostics.</li>
+        <li> Units operates with HFO R1234Ze & R1233Zde with a Global Warming Potential of 7 and an Ozone depletion potential (ODP) of 0</li>
+        <li> Units capable of delivering 130C temperature. </li>
+        <li> A turn-down of around 10% to 20% can be achieved in most cases, this makes the unit ideal where process demands keep fluctuating. </li>
+        <li> Capable of delivering the entire solution with pumps, buffer vessels, sensors, piping, and accessories </li>
+        <li> Unit available with all common communication protocols Modbus, Profibus, Profinet and BACNet</li>
+        
       </ul>
     </div>
   </div>
@@ -1273,7 +1299,30 @@ body{
 }
 </style>
 
+<!-- Here Starts the Footer section  -->
 <?php include 'footer.php'; ?>
+<style>
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4rem 0;
+  }
+ .space {
+    display: none !important;
+  }
+  .why-choose-us h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .why-choose-us .reasons {
+    padding-left: 1.6rem;
+  }
+
+  .why-choose-us .reasons li {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+</style>
  </div>
 
-  </body>

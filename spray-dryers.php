@@ -1,28 +1,28 @@
-<?php include 'header.php'; ?>
 
+<?php include 'header.php'; ?>
 <!-- Here Ends the Ends the Navbar  Section  -->
 <section class="high-temp-pump">
   <div class="container">
   <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-dryers-evaporators">Heat Pump Dryers & Evaporators </a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="heat-pump-dryers"> Heat pump dryers </a>
   </p>
 
   <!-- New line for Air and Water -->
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    Waste Heat Recovery Heat Pump Units
+    Spray Dryers
   </p>
 </div>
 
@@ -198,23 +198,33 @@
     <div class="air-water-content">
       <!-- Left column -->
       <div class="performance-left">
-        <h3>Waste Heat Recovery Heat Pump Units</h3>
+        <h3>Spray dryers</h3>
 
         <div class="performance-block">
-          <h4>Input Sources: </h4>
-          <p>Flue gas, exhaust air, process water </p>
+          <h4>Air Temperature Range: </h4>
+          <p>40°C to 130°C </p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Output Uses: </h4>
-          <p>Space heating, domestic hot water, preheating for boilers, process heating</p>
+          <h4>Drying Capacity:  </h4>
+          <p>1 kg/hr to 3000+ kg/hr</p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Technical Features:</h4>
-          <p>High-temperature lift capability, modular skid-mounted design, integration with existing BMS and SCADA systems</p>
+          <h4>Materials:</h4>
+          <p>SS316L / Food & Pharma Grade</p>
+          <hr />
+        </div>
+        <div class="performance-block">
+          <h4>Energy Efficiency: </h4>
+          <p>COP 3.5 to 5.0 </p>
+          <hr />
+        </div>
+        <div class="performance-block">
+          <h4>Fully Automated with Touchscreen Controls</h4>
+
           <hr />
         </div>
       </div>
@@ -222,7 +232,9 @@
       <!-- Right column -->
       <div class="performance-description">
         <p>
-    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, improve process efficiency, and lower carbon emissions
+    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes 
+    and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, 
+    improve process efficiency, and lower carbon emissions.
         </p>
       </div>
     </div>
@@ -268,20 +280,22 @@
 }
 
 .performance-block h4 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 8px;
-  color: #00233B;
+  
+
+     font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 24px;color: #00233B;
+  text-transform: capitalize;
+  margin: 0 0 12px 0;
    margin-left: -28px;
 }
 
 .performance-block p {
-  font-family: 'Fahkwang', sans-serif;
-  font-weight: 600;
+font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   font-size: 24px;
-  text-transform: capitalize;
-  margin: 0 0 12px 0;
+  margin-bottom: 8px;
+  color: #00233B;
    margin-left: -28px;
 }
 
@@ -394,15 +408,15 @@ body{
     <div class="container">
     <div class="heatpump-industrial-wrapper">
       <div class="heatpump-industrial-content">
-        <h3>Waste Heat Recovery Heat Pump Units:</h3>
+        <h3>Low-Temperature Drying for High-Value, Heat-Sensitive Products:</h3>
         <p>
-        Rockshell Corp’s Industrial Heat Pumps capture waste energy from sources such as flue gas, exhaust air, process water, condenser heat from chillers, and cooling tower blowdown. These systems efficiently provide space heating, domestic hot water, preheating for boilers, and process heating. Designed with high-temperature lift capability, modular skid mounted construction, BMS/SCADA integration, energy monitoring, and configurable simultaneous heating and cooling, they reduce thermal waste and emissions, lower operational costs, and improve facility energy performance. Custom-engineered to your facility’s thermal profile, these solutions offer short payback periods and full lifecycle support—from design and commissioning to ongoing maintenance ensuring maximum efficiency and reliability.
+      Our Heat Pump Spray Dryers provide an innovative, energy-efficient solution for gentle drying of liquid products into powders, especially where product quality, aroma, and bioactivity are critical. By utilizing low-temperature air heated via a heat pump, these systems drastically reduce energy consumption while preserving product integrity.
 
 
         </p>
       </div>
       <div class="heatpump-industrial-image">
-        <img src="assets/introduction_airwater.jpg" alt="Seasaw Image" />
+        <img src="assets/spray-dryer.png" alt="Seasaw Image" />
       </div>
     </div>
   </div>
@@ -428,6 +442,8 @@ body{
   height: 712px;
   object-fit: contain;
   display: block;
+  padding-bottom: 100px;
+   padding-top: 100px;
 }
 
 .heatpump-industrial-bg {
@@ -576,10 +592,11 @@ body{
   <div class="container">
     <div class="how-heatpumps-work-wrapper">
       <div class="how-heatpumps-work-content">
-        <h3>How Waste Heat Recovery Units Work:</h3>
+        <h3>Why Heat Pump Spray Drying?</h3>
         <p>
-                  Recover & Reuse Waste Energy: Rockshell Corp’s Industrial Heat Pumps recover thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment.  Reduce Energy Bills: These systems significantly cut energy usage by utilizing existing waste heat instead of generating new heat from scratch. 
+        Unlike conventional spray dryers that rely on hot air from fossil-fuel heaters, our systems use closed-loop dehumidified warm air, recycled and efficiently reheated using a heat pump. This innovative approach enables high-band temperature operation (40–130°C), preserves sensitive nutrients and flavors, reduces energy consumption by up to 60%, eliminates direct combustion and flue gases, and ensures a compact, clean, and quiet operation.
         </p>
+        
       </div>
       <div class="how-heatpumps-work-image">
         <img src="assets/Clip1.svg" alt="Industrial Process Diagram" />
@@ -713,7 +730,7 @@ body{
 
 </style>
 
-<section class="heatpump-industrial-section">
+<!-- <section class="heatpump-industrial-section">
   <div class="heatpump-industrial-bgs">
     <div class="container">
     <div class="heatpump-industrial-wrapper2">
@@ -731,7 +748,7 @@ body{
     </div>
   </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -859,15 +876,15 @@ body{
 <section class="overlap-industry-section">
   <div class="overlap-industry-content">
     <div class="overlap-industry-card">
-      <h3 class="heatpump-heading2">Waste heat can be recycled from the below processes.</h3>
+      <h3 class="heatpump-heading2">Ideal for Drying:</h3>
       <ul class="industry-feature-list">
-        <li>		Manufacturing Plants</li>
-        <li>	Chemical & Pharmaceutical Production</li>
-        <li>	Food & Beverage Processing</li>
-        <li>	Heat rejection flues/stacks</li>
-         <li> 	Data Centres & Server Rooms</li>
-         <li> 		District Heating Systems</li>
-        
+        <li>		Fruit & Vegetable Juices</li>
+        <li>		Herbal Extracts</li>
+        <li>		Dairy Products (Milk, Whey, Casein)</li>
+        <li>		Probiotics, Enzymes, and Cultures</li>
+         <li> 		Plant-Based Proteins and Amino Acids</li>
+         <li> 		Liquid Pharmaceuticals and Nutraceuticals</li>
+        <li> 	Specialty Chemicals and Polymers</li>
       </ul>
     </div>
   </div>
@@ -1143,18 +1160,19 @@ body{
 
 </style>
 <!-- Here ends the CTA1 Section  -->
+
+
 <section class="heatpump-benefits">
   <div class="container">
     <div class="heatpump-container">
-      <h3 class="heatpump-heading">Benefits of Waste Heat Recovery Heat Pumps:</h3>
+      <h3 class="heatpump-heading">How It Works:</h3>
       <ul class="heatpump-reasons">
-        <li> <strong>Recover & Reuse Waste Energy:</strong> These heat pumps capture thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment, turning waste heat into usable energy.</li>
-        <li> <strong>Reduce Energy Bills:</strong> By utilizing existing waste heat instead of generating new heat from scratch, facilities can significantly lower energy consumption and operating costs.</li>
-        <li> <strong>Support Sustainability Goals:</strong> Using waste heat recovery reduces carbon emissions and helps meet environmental and decarbonization targets.</li>
-        <li> <strong>Reliable for Heavy-Duty Applications:</strong> Engineered for continuous industrial operation, these systems provide high COPs and scalable capacities for diverse applications.</li>
-        <li> <strong>Versatile Integration:</strong> Suitable for process heating, space heating, domestic hot water, preheating for boilers, and even cooling applications, these units can be adapted to many industrial processes.</li>
-        <li> <strong>Flexible Heat Sources:</strong> Waste heat can be extracted from flue gas, exhaust air, condenser heat, cooling tower blowdown, and other low-grade heat streams, making integration into existing facilities seamless.</li>
-        <li> <strong>Advanced Monitoring & Control:</strong> Systems can be connected to BMS/SCADA platforms or cloud solutions to monitor performance, optimize operation, and reduce downtime through remote diagnostics.</li>
+        <li> <strong>	Atomization:</strong> Liquid product is atomized into fine droplets using a rotary or nozzle atomizer.</li>
+        <li> <strong>	Drying: </strong>Warm, dehumidified air (from the heat pump system) quickly removes moisture in the drying chamber.</li>
+        <li> <strong>	Powder Collection: </strong> Dried particles fall to the bottom or are collected via cyclone/separator.</li>
+        <li> <strong>	Air Loop:  </strong> Dry, warm air is reheated by the heat pump and recirculated—no energy is wasted.</li>
+        <li> <strong>Dry Sludge Discharge: </strong> Moist air is circulated through the heat pump dehumidifier, removing moisture and reheating air for reuse.</li>
+       
       </ul>
     </div>
   </div>
@@ -1272,8 +1290,264 @@ body{
   }
 }
 </style>
+<section class="key-features-section">
+  <div class="container">
+    <h4> Key Advantages</h4>
+    <table>
+      <tr><td>Low Temp Operation</td><td>Ideal for bioactive and heat-sensitive materials</td></tr>
+      <tr><td>Closed Air Loop</td><td>No product loss or contamination risk</td></tr>
+      <tr><td>Water Recovery</td><td>Condensate can be reused or treated</td></tr>
+      <tr><td>Low Utility Requirements</td><td>No need for boiler, chiller, or combustion air</td></tr>
+      <tr><td>Compact Footprint</td><td>Easy installation in GMP or HACCP zones</td></tr>
 
+    </table>
+  </div>
+</section>
+
+<style>
+    .key-features-section h4{
+        font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 40px;
+  margin-top: 60px;
+    }
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0 20px 0; /* Added top margin for spacing */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+   margin-bottom: 60px;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Column separator for the first column */
+table td:first-child {
+  font-weight: 600; 
+  color: #2a2a2a;
+  width: 40%;
+  border-right: 1px solid #ddd; /* Column separator line */
+}
+
+table td:last-child {
+  color: #555;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Title Style */
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  font-family: 'Work Sans', sans-serif;
+}
+</style>
+<!-- Here Starts the Footer section  -->
+<footer class="custom-footer welcome-texts">
+  <div class="footer-top">
+    <img src="assets/Logo.svg.svg" alt="Logo" class="footer-logo" />
+
+    <div class="social-icons">
+      <img src="assets/linkedin.svg" alt="LinkedIn" />
+      <img src="assets/mail.svg" alt="Mail" />
+      <img src="assets/youtube.svg" alt="YouTube" />
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Our Location</h4>
+      <p>141/145, 8, Kazi Syed<br>street, CST, Mumbai 3</p>
+      <div class="footer-section">
+      <h4>Working hours</h4>
+      <p>Monday to Saturday<br>8am to 9pm</p>
+    </div>
+</div>
+    
+
+    <div class="footer-sections">
+      <h4>Quick Links</h4>
+      <p>Contact us</p>
+      <p>Evaporators</p>
+      <p>HVAC</p>
+      <p>Heat pumps</p>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+ <p>
+  Copyright 2025 © Rockshell Corp. All rights reserved | Crafted by 
+  <a href="https://theyellowstrawberry.com" target="_blank" 
+     style="text-decoration: none; color: #00233B;">
+     The Yellow Strawberry
+  </a>
+</p>
+
+    <div class="footer-links">
+      <!-- <a href="#">Disclaimer</a> -->
+      <a href="#">Privacy Statement</a>
+      <a href="#">Legal Terms</a>
+      <!-- <a href="#">Cookie Policy</a> -->
+    </div>
+  </div>
+</footer>
+<style>
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 2rem 1.6rem;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 4.9rem;   /* 49px */
+    height: 4.7rem;  /* 47px */
+  }
+
+  .social-icons {
+     display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin-right: -50px;
+  }
+
+  .social-icons img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .footer-divider {
+    border-top: 1px solid #000;
+    margin: 2rem 0;
+  }
+
+  .footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section h4 {
+    width: 7.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.6rem;
+       padding-bottom: 1rem;
+  }
+
+  .footer-section p {
+    width: 14.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0.4rem 0;
+       padding-bottom: 1rem;
+  }
+
+  .footer-sections h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-sections p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.4rem 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #00233B;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    color: #00233B;
+    text-decoration: none;
+  }
+}
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4rem 0;
+  }
+ .space {
+    display: none !important;
+  }
+  .why-choose-us h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .why-choose-us .reasons {
+    padding-left: 1.6rem;
+  }
+
+  .why-choose-us .reasons li {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+</style>
 <?php include 'footer.php'; ?>
  </div>
 
-  </body>

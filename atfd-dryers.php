@@ -1,32 +1,39 @@
-<?php include 'header.php'; ?>
 
+<?php include 'header.php'; ?>
 <!-- Here Ends the Ends the Navbar  Section  -->
 <section class="high-temp-pump">
   <div class="container">
   <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-dryers-evaporators">Heat Pump Dryers & Evaporators </a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="heat-pump-dryers"> Heat pump dryers </a>
   </p>
 
   <!-- New line for Air and Water -->
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    Waste Heat Recovery Heat Pump Units
+    ATFD Dryers
   </p>
 </div>
 
 <style>
+    @media (max-width: 768px) {
+ .key-features-section h4 {
+    font-size: 24px !important;
+ }
+ .heatpump-heading2{
+    font-size: 24px !important;
+ }}
   .breadcrumb-text a {
   color: inherit;
   text-decoration: none;
@@ -198,23 +205,43 @@
     <div class="air-water-content">
       <!-- Left column -->
       <div class="performance-left">
-        <h3>Waste Heat Recovery Heat Pump Units</h3>
+        <h3>ATFD Dryers</h3>
 
         <div class="performance-block">
-          <h4>Input Sources: </h4>
-          <p>Flue gas, exhaust air, process water </p>
+          <h4>	Temperature Range: </h4>
+          <p>50°C – 85°C </p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Output Uses: </h4>
-          <p>Space heating, domestic hot water, preheating for boilers, process heating</p>
+          <h4>Drying Capacity:   </h4>
+          <p>10 L/hr to 1,000+ L/hr</p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Technical Features:</h4>
-          <p>High-temperature lift capability, modular skid-mounted design, integration with existing BMS and SCADA systems</p>
+          <h4>	Material of Construction:  </h4>
+          <p>SS316L / Hastelloy / Duplex Steel</p>
+          <hr />
+        </div>
+        <div class="performance-block">
+          <h4>Agitator Types:</h4>
+          <p>PTFE blades, rigid or flexible scrapers </p>
+          <hr />
+        </div>
+         <div class="performance-block">
+          <h4>Energy Source:    </h4>
+          <p>Electricity (No boiler required)</p>
+          <hr />
+        </div>
+          <div class="performance-block">
+          <h4>Automation:   </h4>
+          <p>PLC + HMI, SCADA optional</p>
+          <hr />
+        </div>
+         <div class="performance-block">
+          <h4>Heat Recovery:   </h4>
+          <p>Built-in for maximum efficiency</p>
           <hr />
         </div>
       </div>
@@ -222,7 +249,7 @@
       <!-- Right column -->
       <div class="performance-description">
         <p>
-    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, improve process efficiency, and lower carbon emissions
+    Our Heat Pump Assisted ATFD (Agitated Thin Film Dryer) systems are designed for drying high-viscosity, concentrated, and heat-sensitive materials in an energy-efficient and environmentally friendly way. By combining the proven drying mechanism of ATFDs with a low-temperature heat pump circuit, this technology significantly reduces energy consumption while ensuring gentle, uniform drying.
         </p>
       </div>
     </div>
@@ -268,20 +295,22 @@
 }
 
 .performance-block h4 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 8px;
-  color: #00233B;
+  
+
+     font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 24px;color: #00233B;
+  text-transform: capitalize;
+  margin: 0 0 12px 0;
    margin-left: -28px;
 }
 
 .performance-block p {
-  font-family: 'Fahkwang', sans-serif;
-  font-weight: 600;
+font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   font-size: 24px;
-  text-transform: capitalize;
-  margin: 0 0 12px 0;
+  margin-bottom: 8px;
+  color: #00233B;
    margin-left: -28px;
 }
 
@@ -394,15 +423,15 @@ body{
     <div class="container">
     <div class="heatpump-industrial-wrapper">
       <div class="heatpump-industrial-content">
-        <h3>Waste Heat Recovery Heat Pump Units:</h3>
+        <h3>What Is a Heat Pump ATFD?</h3>
         <p>
-        Rockshell Corp’s Industrial Heat Pumps capture waste energy from sources such as flue gas, exhaust air, process water, condenser heat from chillers, and cooling tower blowdown. These systems efficiently provide space heating, domestic hot water, preheating for boilers, and process heating. Designed with high-temperature lift capability, modular skid mounted construction, BMS/SCADA integration, energy monitoring, and configurable simultaneous heating and cooling, they reduce thermal waste and emissions, lower operational costs, and improve facility energy performance. Custom-engineered to your facility’s thermal profile, these solutions offer short payback periods and full lifecycle support—from design and commissioning to ongoing maintenance ensuring maximum efficiency and reliability.
+      A traditional ATFD dries viscous slurries or pastes using high-temperature thermal energy, typically from steam or thermal oil. In our heat pump-integrated ATFD, this thermal energy is supplied by a closed-loop heat pump system, enabling low operating temperatures of 50–85°C, up to 60% energy savings, and complete elimination of steam or fossil fuel requirements. Its compact, fully enclosed design makes it ideal for handling heat-sensitive or explosive materials safely and efficiently.
 
 
         </p>
       </div>
       <div class="heatpump-industrial-image">
-        <img src="assets/introduction_airwater.jpg" alt="Seasaw Image" />
+        <img src="assets/atfd-dryers.png" alt="Seasaw Image" />
       </div>
     </div>
   </div>
@@ -428,6 +457,8 @@ body{
   height: 712px;
   object-fit: contain;
   display: block;
+  padding-bottom: 100px;
+   padding-top: 100px;
 }
 
 .heatpump-industrial-bg {
@@ -576,10 +607,11 @@ body{
   <div class="container">
     <div class="how-heatpumps-work-wrapper">
       <div class="how-heatpumps-work-content">
-        <h3>How Waste Heat Recovery Units Work:</h3>
+        <h3>Sustainable, Safe, and Scalable</h3>
         <p>
-                  Recover & Reuse Waste Energy: Rockshell Corp’s Industrial Heat Pumps recover thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment.  Reduce Energy Bills: These systems significantly cut energy usage by utilizing existing waste heat instead of generating new heat from scratch. 
+        Heat pump dryers are ideal for organic, export-grade, and specialty food processors looking to meet high quality standards while keeping operating costs and environmental impact 
         </p>
+        
       </div>
       <div class="how-heatpumps-work-image">
         <img src="assets/Clip1.svg" alt="Industrial Process Diagram" />
@@ -713,7 +745,7 @@ body{
 
 </style>
 
-<section class="heatpump-industrial-section">
+<!-- <section class="heatpump-industrial-section">
   <div class="heatpump-industrial-bgs">
     <div class="container">
     <div class="heatpump-industrial-wrapper2">
@@ -731,7 +763,7 @@ body{
     </div>
   </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -859,15 +891,15 @@ body{
 <section class="overlap-industry-section">
   <div class="overlap-industry-content">
     <div class="overlap-industry-card">
-      <h3 class="heatpump-heading2">Waste heat can be recycled from the below processes.</h3>
+      <h3 class="heatpump-heading2">Applications:</h3>
       <ul class="industry-feature-list">
-        <li>		Manufacturing Plants</li>
-        <li>	Chemical & Pharmaceutical Production</li>
-        <li>	Food & Beverage Processing</li>
-        <li>	Heat rejection flues/stacks</li>
-         <li> 	Data Centres & Server Rooms</li>
-         <li> 		District Heating Systems</li>
-        
+        <li>		Pharma Intermediates & APIs</li>
+        <li>		Chemical Slurries and Extracts</li>
+        <li>		Spent Solvents and Resin Solutions</li>
+        <li>		Food Pastes, Syrups, Extracts</li>
+         <li> 		Evaporator Bottoms (High TDS/COD Effluents)</li>
+         <li> 		Wastewater from Zero Liquid Discharge (ZLD) Systems</li>
+    
       </ul>
     </div>
   </div>
@@ -1143,18 +1175,20 @@ body{
 
 </style>
 <!-- Here ends the CTA1 Section  -->
+
+
 <section class="heatpump-benefits">
   <div class="container">
     <div class="heatpump-container">
-      <h3 class="heatpump-heading">Benefits of Waste Heat Recovery Heat Pumps:</h3>
+      <h3 class="heatpump-heading">How It Works:</h3>
       <ul class="heatpump-reasons">
-        <li> <strong>Recover & Reuse Waste Energy:</strong> These heat pumps capture thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment, turning waste heat into usable energy.</li>
-        <li> <strong>Reduce Energy Bills:</strong> By utilizing existing waste heat instead of generating new heat from scratch, facilities can significantly lower energy consumption and operating costs.</li>
-        <li> <strong>Support Sustainability Goals:</strong> Using waste heat recovery reduces carbon emissions and helps meet environmental and decarbonization targets.</li>
-        <li> <strong>Reliable for Heavy-Duty Applications:</strong> Engineered for continuous industrial operation, these systems provide high COPs and scalable capacities for diverse applications.</li>
-        <li> <strong>Versatile Integration:</strong> Suitable for process heating, space heating, domestic hot water, preheating for boilers, and even cooling applications, these units can be adapted to many industrial processes.</li>
-        <li> <strong>Flexible Heat Sources:</strong> Waste heat can be extracted from flue gas, exhaust air, condenser heat, cooling tower blowdown, and other low-grade heat streams, making integration into existing facilities seamless.</li>
-        <li> <strong>Advanced Monitoring & Control:</strong> Systems can be connected to BMS/SCADA platforms or cloud solutions to monitor performance, optimize operation, and reduce downtime through remote diagnostics.</li>
+        <li> <strong>		Feed Introduction: </strong> 
+Viscous or slurry feed enters the ATFD drying chamber.</li>
+        <li> <strong>			Thin Film Formation:   </strong>A rotating agitator spreads the feed into a thin film along the heated wall.</li>
+        <li> <strong>			Heat Supply via Heat Pump:   </strong> Hot water or vapor, generated by the heat pump condenser, indirectly heats the ATFD surface.</li>
+        <li> <strong>			Evaporation:  </strong> Water evaporates at low temperature; the vapor is condensed via the heat pump evaporator.</li>
+        <li> <strong>	Product Discharge:  </strong> Dry powder or solid flakes are scraped off and collected.</li>
+       
       </ul>
     </div>
   </div>
@@ -1272,8 +1306,107 @@ body{
   }
 }
 </style>
+<section class="key-features-section">
+  <div class="container">
+    <h4>Advantages at a Glance</h4>
+    <table>
+      <tr><td>Low-Temperature Drying</td><td>Ideal for thermally sensitive products</td></tr>
+      <tr><td>High Energy Efficiency</td><td>COP 3.5–4.5, low OPEX</td></tr>
+      <tr><td>No Combustion or Steam</td><td>Safer, cleaner operation</td></tr>
+      <tr><td>Modular Design</td><td>Easy integration with existing systems</td></tr>
+      <tr><td>Clean & Enclosed Process</td><td>No emissions, no odor, minimal operator handling</td></tr>
 
-<?php include 'footer.php'; ?>
+    </table>
+  </div>
+</section>
+
+<style>
+    .key-features-section h4{
+        font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 40px;
+  margin-top: 60px;
+    }
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0 20px 0; /* Added top margin for spacing */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+   margin-bottom: 60px;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Column separator for the first column */
+table td:first-child {
+  font-weight: 600; 
+  color: #2a2a2a;
+  width: 40%;
+  border-right: 1px solid #ddd; /* Column separator line */
+}
+
+table td:last-child {
+  color: #555;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Title Style */
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  font-family: 'Work Sans', sans-serif;
+}
+</style>
+<!-- Here Starts the Footer section  -->
+ <?php include 'footer.php'; ?>
+<style>
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4rem 0;
+  }
+ .space {
+    display: none !important;
+  }
+  .why-choose-us h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .why-choose-us .reasons {
+    padding-left: 1.6rem;
+  }
+
+  .why-choose-us .reasons li {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+</style>
  </div>
 
-  </body>

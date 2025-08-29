@@ -1,28 +1,28 @@
-<?php include 'header.php'; ?>
 
+<?php include 'header.php'; ?>
 <!-- Here Ends the Ends the Navbar  Section  -->
 <section class="high-temp-pump">
   <div class="container">
   <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-solutions">Heat Pump Solutions</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="high-temperature-heat-pumps">High Temperature Heat Pumps</a>
   </p>
 
   <!-- New line for Air and Water -->
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    Waste Heat Recovery Heat Pump Units
+    Standard Model Upto +90C
   </p>
 </div>
 
@@ -198,23 +198,28 @@
     <div class="air-water-content">
       <!-- Left column -->
       <div class="performance-left">
-        <h3>Waste Heat Recovery Heat Pump Units</h3>
+        <h3>Standardized models +90C capable </h3>
 
         <div class="performance-block">
-          <h4>Input Sources: </h4>
-          <p>Flue gas, exhaust air, process water </p>
+          <h4>Performance range: </h4>
+          <p>20kW to 2000kW+  </p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Output Uses: </h4>
-          <p>Space heating, domestic hot water, preheating for boilers, process heating</p>
+          <h4>Refrigerant:  </h4>
+          <p>Natural refrigerant, HFOs, R134a  </p>
           <hr />
         </div>
 
         <div class="performance-block">
-          <h4>Technical Features:</h4>
-          <p>High-temperature lift capability, modular skid-mounted design, integration with existing BMS and SCADA systems</p>
+          <h4>Medium temperature heating: </h4>
+          <p>+30C to +90C</p>
+          <hr />
+        </div>
+         <div class="performance-block">
+          <h4>Medium temperature cooling:    </h4>
+          <p>-7C to +30C </p>
           <hr />
         </div>
       </div>
@@ -222,7 +227,7 @@
       <!-- Right column -->
       <div class="performance-description">
         <p>
-    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, improve process efficiency, and lower carbon emissions
+    Rockshell Corp’s design and application engineering team can guide its customers through every step to ensure the correct heat pump solution is offered. The team is also capable of delivering the entire solution with pumps, buffer vessels, sensors, piping, and accessories 
         </p>
       </div>
     </div>
@@ -392,17 +397,28 @@ body{
 <section class="heatpump-industrial-section">
   <div class="heatpump-industrial-bg">
     <div class="container">
-    <div class="heatpump-industrial-wrapper">
-      <div class="heatpump-industrial-content">
-        <h3>Waste Heat Recovery Heat Pump Units:</h3>
-        <p>
-        Rockshell Corp’s Industrial Heat Pumps capture waste energy from sources such as flue gas, exhaust air, process water, condenser heat from chillers, and cooling tower blowdown. These systems efficiently provide space heating, domestic hot water, preheating for boilers, and process heating. Designed with high-temperature lift capability, modular skid mounted construction, BMS/SCADA integration, energy monitoring, and configurable simultaneous heating and cooling, they reduce thermal waste and emissions, lower operational costs, and improve facility energy performance. Custom-engineered to your facility’s thermal profile, these solutions offer short payback periods and full lifecycle support—from design and commissioning to ongoing maintenance ensuring maximum efficiency and reliability.
+ <div class="heatpump-industrial-wrapper">
+  <div class="heatpump-industrial-content">
+    <h3>
+      Types of Heat Pumps:
+    </h3>
+
+    <p>
+      <strong>Air-Source Heat Pumps (ASHP):</strong> These systems extract heat from the outdoor air and are suitable for a wide range of commercial applications. They can be installed on rooftops or common spaces where cold air can be released into the atmosphere.
+    </p>
+
+    <p >
+      <strong>Water-Source Heat Pumps (WSHP):</strong> WSHPs use a water loop for heat exchange. They are particularly efficient in buildings with a dedicated water source, such as cooling towers or geothermal wells.
+    </p>
+
+    <p >
+      <strong>Ground-Source Heat Pumps (GSHP):</strong> GSHPs utilize the stable temperature of the ground or a water source for heat exchange. They are highly efficient but may require more extensive installation.
+    </p>
+  </div>
 
 
-        </p>
-      </div>
       <div class="heatpump-industrial-image">
-        <img src="assets/introduction_airwater.jpg" alt="Seasaw Image" />
+        <img src="assets/standard-4.jpg" alt="Seasaw Image" />
       </div>
     </div>
   </div>
@@ -412,6 +428,12 @@ body{
 
 
 <style>
+
+
+.heatpump-industrial-content p {
+  margin-bottom: 20px;
+}
+
 .heatpump-industrial-section {
   width: 100%;
 }
@@ -466,7 +488,7 @@ body{
   font-size: 20px;
   font-weight: 300;
   line-height: 160%;
-  margin: 0;
+  margin-bottom: 20px;
   max-width: 612px;
 }
 
@@ -576,13 +598,32 @@ body{
   <div class="container">
     <div class="how-heatpumps-work-wrapper">
       <div class="how-heatpumps-work-content">
-        <h3>How Waste Heat Recovery Units Work:</h3>
+        <h3>Why Industrial Facilities Choose Dual Source Heat Pumps?</h3>
         <p>
-                  Recover & Reuse Waste Energy: Rockshell Corp’s Industrial Heat Pumps recover thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment.  Reduce Energy Bills: These systems significantly cut energy usage by utilizing existing waste heat instead of generating new heat from scratch. 
+                  <strong>Intelligent Source Switching</strong>
+Automatically alternates between ground and air sources based on real-time conditions to ensure optimal energy usage and reliability.
+
         </p>
+         <p>
+                <strong>Lower Operational Costs</strong> 
+Reduces reliance on fossil fuels and stabilizes energy bills by using the most cost-effective heat source available.
+
+
+        </p>
+         <!-- <p>
+             <strong>Scalable for Industrial</strong>    Needs
+Designed for large-scale operations with high thermal demands, including manufacturing plants, warehouses, processing facilities, data centers, and institutional campuses.
+
+        </p>
+          <p>
+                <strong>Sustainability & Compliance</strong> 
+Supports corporate ESG goals and helps meet regulatory standards for energy efficiency and carbon reduction.
+
+
+        </p> -->
       </div>
       <div class="how-heatpumps-work-image">
-        <img src="assets/Clip1.svg" alt="Industrial Process Diagram" />
+        <img src="assets/standard.jpg" alt="Industrial Process Diagram" />
       </div>
     </div>
   </div>
@@ -613,13 +654,15 @@ body{
   font-weight: 600;
   line-height: 100%;
   text-transform: capitalize;
-  margin-bottom: 24px;
+  margin-bottom: 54px;
 }
 
 .how-heatpumps-work-content p {
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
   font-weight: 400;
+   margin-bottom: 16px; /* adjust as needed */
+  line-height: 1.6;  
   line-height: 150%; /* Better readability */
 }
 .how-heatpumps-work-image {
@@ -718,12 +761,12 @@ body{
     <div class="container">
     <div class="heatpump-industrial-wrapper2">
           <div class="heatpump-industrial-image2">
-        <img src="assets/Waste_Heat_Airwater.jpg" alt="Seasaw Image" />
+        <img src="assets/standard-3.jpg" alt="Seasaw Image" />
       </div>
       <div class="heatpump-industrial-contents">
-        <h3>Waste heat recovery from heat pumps for best COPs</h3>
+        <h3>Considerations:</h3>
         <p>
-           Meet Sustainability Goals: They support decarbonization efforts and help meet scope 1 emission reduction targets.  Reliable for Heavy-Duty Applications: Engineered for 24/7 industrial environments, the systems offer scalable capacities and high COPs (Coefficient of Performance).ansfer of heat from one location to another. They use a refrigeration cycle to extract heat from a low-temperature source and transfer it to a high-temperature sink. This process can be reversed to provide cooling when needed.
+           Proper installation, regular maintenance, and careful consideration of specific building requirements are essential to maximizing a heat pump’s benefits. Key factors to consider when selecting a commercial heat pump include proper sizing and capacity calculations to meet the building’s specific needs, routine maintenance to ensure optimal efficiency and extended lifespan, the use of eco-friendly refrigerants with low global warming potential (GWP) to minimize environmental impact, and compliance with local building codes and regulations. Rockshell Corp’s design and application engineering team guides customers through every step of the process to ensure the right heat pump solution is selected and is fully capable of delivering a complete system, including pumps, buffer vessels, sensors, piping, and accessories.
 
         </p>
       </div>
@@ -859,14 +902,14 @@ body{
 <section class="overlap-industry-section">
   <div class="overlap-industry-content">
     <div class="overlap-industry-card">
-      <h3 class="heatpump-heading2">Waste heat can be recycled from the below processes.</h3>
+      <h3 class="heatpump-heading2">Salient features of commercial heat pump units</h3>
       <ul class="industry-feature-list">
-        <li>		Manufacturing Plants</li>
-        <li>	Chemical & Pharmaceutical Production</li>
-        <li>	Food & Beverage Processing</li>
-        <li>	Heat rejection flues/stacks</li>
-         <li> 	Data Centres & Server Rooms</li>
-         <li> 		District Heating Systems</li>
+        <li>	Units come with low GWP HFO </li>
+        <li>	Ultra-low noise unit</li>
+        <li>	Unit capable of delivering up to 90C in heating mode</li>
+        <li>	Unit is equipped with shell and tube heat exchangers to deal with harsh-quality water</li>
+         <li> 	Compact footprint </li>
+         <li> 	Unit available with MODBUS communication for BMS connectivity </li>
         
       </ul>
     </div>
@@ -1014,7 +1057,7 @@ body{
   .why-choose-heading {
   display: none !important;
   }
-.overlap-industry-section img[src*="construction.svg"] {
+.overlap-industry-section img[src*="standard-4.jpg"] {
   width: 50% !important;
   height: 300px !important; /* fixed height */
   max-height: none !important; /* remove any max-height */
@@ -1146,15 +1189,20 @@ body{
 <section class="heatpump-benefits">
   <div class="container">
     <div class="heatpump-container">
-      <h3 class="heatpump-heading">Benefits of Waste Heat Recovery Heat Pumps:</h3>
+      <h3 class="heatpump-heading">Benefits of Rockshell Corp’s Heat Pumps:</h3>
       <ul class="heatpump-reasons">
-        <li> <strong>Recover & Reuse Waste Energy:</strong> These heat pumps capture thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment, turning waste heat into usable energy.</li>
-        <li> <strong>Reduce Energy Bills:</strong> By utilizing existing waste heat instead of generating new heat from scratch, facilities can significantly lower energy consumption and operating costs.</li>
-        <li> <strong>Support Sustainability Goals:</strong> Using waste heat recovery reduces carbon emissions and helps meet environmental and decarbonization targets.</li>
-        <li> <strong>Reliable for Heavy-Duty Applications:</strong> Engineered for continuous industrial operation, these systems provide high COPs and scalable capacities for diverse applications.</li>
-        <li> <strong>Versatile Integration:</strong> Suitable for process heating, space heating, domestic hot water, preheating for boilers, and even cooling applications, these units can be adapted to many industrial processes.</li>
-        <li> <strong>Flexible Heat Sources:</strong> Waste heat can be extracted from flue gas, exhaust air, condenser heat, cooling tower blowdown, and other low-grade heat streams, making integration into existing facilities seamless.</li>
-        <li> <strong>Advanced Monitoring & Control:</strong> Systems can be connected to BMS/SCADA platforms or cloud solutions to monitor performance, optimize operation, and reduce downtime through remote diagnostics.</li>
+        <li><strong>Energy Efficiency:</strong>  Rockshell Corp’s commercial heat pumps are known for their energy efficiency, which can result in significant cost savings on energy bills.</li>
+        <li> <strong>Year-Round Comfort:</strong>Units capable of delivering 130C temperature. </li>
+        <li> <strong>High Heating and Cooling Capacity: </strong>A turn-down of around 10% to 20% can be achieved in most cases, this makes the unit ideal where process demands keep fluctuating. </li>
+        <li> <strong>Environmental Sustainability: </strong>Capable of delivering the entire solution with pumps, buffer vessels, sensors, piping, and accessories </li>
+        <li> <strong>Zoning Capabilities: </strong>Unit available with all common communication protocols Modbus, Profibus, Profinet and BACNet</li>
+         <li> <strong>Long Lifespan:  </strong>With proper maintenance, commercial heat pumps can have a long operational life, providing a reliable HVAC solution.</li>
+          <li> <strong>Lower Operating Costs:  </strong>The high efficiency of these systems can lead to lower operating costs, making them a cost-effective choice for commercial properties.</li>
+           <li> <strong>Quiet Operation:  </strong>Noise reduction features are often incorporated to ensure quiet operation, which is essential for maintaining a comfortable environment, particularly in commercial and industrial settings.</li>
+            <li> <strong>Remote Monitoring and Control: </strong>Our commercial heat pumps offer remote monitoring and control capabilities, allowing facility managers to monitor system performance and make adjustments remotely, enhancing system reliability and efficiency.
+
+</li>
+        
       </ul>
     </div>
   </div>
@@ -1273,7 +1321,187 @@ body{
 }
 </style>
 
+<!-- Here Starts the Footer section  -->
+<footer class="custom-footer welcome-texts">
+  <div class="footer-top">
+    <img src="assets/Logo.svg.svg" alt="Logo" class="footer-logo" />
+
+    <div class="social-icons">
+      <img src="assets/linkedin.svg" alt="LinkedIn" />
+      <img src="assets/mail.svg" alt="Mail" />
+      <img src="assets/youtube.svg" alt="YouTube" />
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Our Location</h4>
+      <p>141/145, 8, Kazi Syed<br>street, CST, Mumbai 3</p>
+      <div class="footer-section">
+      <h4>Working hours</h4>
+      <p>Monday to Saturday<br>8am to 9pm</p>
+    </div>
+</div>
+    
+
+    <div class="footer-sections">
+      <h4>Quick Links</h4>
+      <p>Contact us</p>
+      <p>Evaporators</p>
+      <p>HVAC</p>
+      <p>Heat pumps</p>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+ <p>
+  Copyright 2025 © Rockshell Corp. All rights reserved | Crafted by 
+  <a href="https://theyellowstrawberry.com" target="_blank" 
+     style="text-decoration: none; color: #00233B;">
+     The Yellow Strawberry
+  </a>
+</p>
+
+    <div class="footer-links">
+      <!-- <a href="#">Disclaimer</a> -->
+      <a href="#">Privacy Statement</a>
+      <a href="#">Legal Terms</a>
+      <!-- <a href="#">Cookie Policy</a> -->
+    </div>
+  </div>
+</footer>
+<style>
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 2rem 1.6rem;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 4.9rem;   /* 49px */
+    height: 4.7rem;  /* 47px */
+  }
+
+  .social-icons {
+     display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin-right: -50px;
+  }
+
+  .social-icons img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .footer-divider {
+    border-top: 1px solid #000;
+    margin: 2rem 0;
+  }
+
+  .footer-content {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-section h4 {
+    width: 7.6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0.6rem;
+       padding-bottom: 1rem;
+  }
+
+  .footer-section p {
+    width: 14.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0.4rem 0;
+       padding-bottom: 1rem;
+  }
+
+  .footer-sections h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-sections p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.4rem 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #00233B;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    color: #00233B;
+    text-decoration: none;
+  }
+}
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4rem 0;
+  }
+ .space {
+    display: none !important;
+  }
+  .why-choose-us h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .why-choose-us .reasons {
+    padding-left: 1.6rem;
+  }
+
+  .why-choose-us .reasons li {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+</style>
 <?php include 'footer.php'; ?>
  </div>
 
-  </body>

@@ -1,16 +1,16 @@
-<?php include 'header.php'; ?>
+
 <!-- Here Ends the Ends the Navbar  Section  -->
 <section class="high-temp-pump">
   <div class="container">
    <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-solutions">Heat Pump Solutions</a>
   </p>
 
   <!-- Break line for responsive only -->
@@ -18,22 +18,26 @@
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="steam-heat-pumps">Steam Heat Pumps</a>
   </p>
 </div>
 
     <div class="high-temp-content">
-      <div class="high-temp-text">
-        <h3>High temperature heat pumps</h3>
-        <p>
-          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-          Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
-        </p>
-      </div>
-      <div class="high-temp-image">
-        <img src="assets/Industry_2.svg" alt="High temperature heat pump" />
-      </div>
-    </div>
+  <div class="high-temp-text">
+    <h3>Steam Heat Pumps</h3>
+    <p>
+      Rockshell Corp’s Steam Heat Pump utilises waste heat from utilities in the form of vapour and steam 
+      and elevates the temperature required in the process. For example, if 120°C waste steam is available 
+      in a factory, this steam will be the input to our steam heat pump where it will be compressed and 
+      pressurised, thereby increasing its temperature by 20°C to 140°C in a single stage. The temperature 
+      can be further increased by adding more stages to meet the desired process requirement.
+    </p>
+   
+  </div>
+  <div class="high-temp-image">
+    <img src="assets/steam-heat-pumps.jpg" alt="Steam Heat Pump" />
+  </div>
+</div>
   </div>
 
   <!-- Full-width HR below the image -->
@@ -228,25 +232,22 @@ body{
     <h2 class="section-heading">Discover Product Variants</h2>
 
 <div class="heat-pump-row">
-  <a href="air-and-water.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="High Temperature Heat Pumps" />
-    <p>Air and water sourced units - upto 130C capable   </p>
+    <p>Steam compressors</p>
   </a>
-  <a href="waste-heat-recovery-units.html" class="heat-pump-card">
+  <a href="low-pressure-steam" class="heat-pump-card">
     <img src="assets/products.svg" alt="Steam Heat Pumps" />
-    <p>Waste heat recovery units  </p>
+    <p>Low pressure steam HP - upto 135C capable</p>
   </a>
-  <a href="dual-source-units.html" class="heat-pump-card">
+  <a href="high-pressure-steam-hp" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Dual source units   </p>
+    <p>High pressure steam HP - upto 300C capable</p>
   </a>
-    <a href="standarized-model-upto.html" class="heat-pump-card">
-    <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Standardized model upto 90C  </p>
+  <a href="high-pressure-steam-hp" class="heat-pump-card cta-card">
+    <img src="assets/cta-final-one.jpg" alt="Low GWP Refrigerant Heat Pump" />
   </a>
-  
 </div>
-
 
   </div>
 </section>
@@ -254,7 +255,11 @@ body{
 
 <style>
 
-
+@media (max-width: 768px) {
+  .cta-card img {
+    content: url("assets/cta-mobile.png");
+  }
+}
  .heat-pump-section {
   padding: 60px 0;
   background: #fff;
@@ -287,7 +292,7 @@ body{
   font-weight: 600;
   text-transform: capitalize;
   line-height: 52px;
-  width: 449px;
+  /* width: 449px; */
   color: #00233B;
 }
 
@@ -547,13 +552,14 @@ body{
 <!-- Here ends the CTA1 Section  -->
 <section class="why-choose-us">
     <div class="container">
-  <h3>Why Choose Us?</h3>
+  <h3>features and advantages</h3>
   <ul class="reasons">
-    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
-    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
-    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
-    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
-    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
+    <li>Roots and Centrifugal Compressors</li>
+    <li>Delta T of 20°C achievable in single stage</li>
+    <li>Recovers complete latent heat</li>
+    <li>Mechanical seal for high temperature application</li>
+    <li>Available in Cast iron, SS 304, and SS 316L grades</li>
+     <li>Oil temperature control system</li>
   </ul></div>
 </section>
 
@@ -764,54 +770,77 @@ body{
 
 <!-- Here starts the FAQ Section -->
 <section class="faq-section">
-    <div class="container">
-  <h3 class="faq-heading">Frequently Asked Questions</h3>
+  <div class="container">
+    <h3 class="faq-heading">Steam Heat Pump – Frequently Asked Questions</h3>
 
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>What is a heat pump and how does it work?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What is a steam heat pump and how does it work?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>
+          A steam heat pump uses waste steam or vapor from industrial utilities as an input, compresses and pressurizes it, and increases its temperature to meet process requirements. This process recovers latent heat, making it energy efficient.
+        </p>
+      </div>
+      <hr />
     </div>
-    <div class="faq-answer">
-      <p>Heat pumps transfer heat from one place to another using a refrigerant cycle. They can be used for both heating and cooling.</p>
-    </div>
-    <hr />
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>Are heat pumps energy efficient?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What temperature increase can it achieve?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>
+          In a single stage, a steam heat pump can achieve a Delta T of around 20°C. Higher temperatures can be reached by adding multiple stages.
+        </p>
+      </div>
+      <hr />
     </div>
-    <div class="faq-answer">
-      <p>Yes, heat pumps are more energy efficient compared to traditional heating methods because they move heat rather than generate it.</p>
-    </div>
-    <hr />
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>Can heat pumps be used in cold climates?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What industries can benefit from a steam heat pump?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>
+          Industries such as food processing, textiles, chemicals, and pharmaceuticals that generate waste steam can benefit from the technology to improve energy efficiency and reduce operating costs.
+        </p>
+      </div>
+      <hr />
     </div>
-    <div class="faq-answer">
-      <p>Modern heat pumps can work efficiently in colder climates with improved technology such as variable speed compressors.</p>
-    </div>
-    <hr />
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>How long does a heat pump last?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What materials are used in construction?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>
+          Units are available in Cast Iron, SS 304, and SS 316L grades, with mechanical seals designed for high-temperature applications.
+        </p>
+      </div>
+      <hr />
     </div>
-    <div class="faq-answer">
-      <p>With proper maintenance, a heat pump can last between 10–15 years or longer.</p>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>How does it help in energy recovery?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>
+          By recovering complete latent heat from waste steam, the system reduces energy wastage and lowers the need for fresh steam generation.
+        </p>
+      </div>
+      <hr />
     </div>
-    <hr />
-  </div>
   </div>
 </section>
+
+
 <style>
   .faq-section {
   padding-top: 80px;
@@ -888,7 +917,7 @@ hr {
 
 <!-- Here ends the Faq Section  -->
 
-
+<?php include 'footer.php'; ?>
 <style>
  @media (max-width: 768px) {
   .high-temp-content {
@@ -1188,7 +1217,6 @@ hr {
   }
 }
 </style>
-<?php include 'footer.php'; ?>
  </div>
 
 

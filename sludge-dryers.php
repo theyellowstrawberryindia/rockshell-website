@@ -1,28 +1,28 @@
-<?php include 'header.php'; ?>
 
+<?php include 'header.php'; ?>
 <!-- Here Ends the Ends the Navbar  Section  -->
 <section class="high-temp-pump">
   <div class="container">
   <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+     <a href="heat-pump-dryers-evaporators">Heat Pump Dryers & Evaporators </a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="heat-pump-dryers"> Heat pump dryers </a>
   </p>
 
   <!-- New line for Air and Water -->
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    Waste Heat Recovery Heat Pump Units
+    Sludge dryers
   </p>
 </div>
 
@@ -198,17 +198,17 @@
     <div class="air-water-content">
       <!-- Left column -->
       <div class="performance-left">
-        <h3>Waste Heat Recovery Heat Pump Units</h3>
+        <h3>Sludge dryers</h3>
 
         <div class="performance-block">
-          <h4>Input Sources: </h4>
-          <p>Flue gas, exhaust air, process water </p>
+          <h4>Environmental Benefits: </h4>
+          <p>Toward Zero Waste — Our dryers help achieve Zero Liquid Discharge (ZLD) and Zero Waste to Landfill goals by converting wet sludge into a dry, manageable, and often reusable form such as fuel. </p>
           <hr />
         </div>
 
         <div class="performance-block">
           <h4>Output Uses: </h4>
-          <p>Space heating, domestic hot water, preheating for boilers, process heating</p>
+          <p>Dry sludge for fuel, compost, or raw material reuse; reduction in waste volume for landfill diversion</p>
           <hr />
         </div>
 
@@ -222,7 +222,9 @@
       <!-- Right column -->
       <div class="performance-description">
         <p>
-    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, improve process efficiency, and lower carbon emissions
+    Waste Heat Recovery Heat Pump (WHRHP) units are advanced systems designed to capture low-grade waste heat from industrial or commercial processes 
+    and convert it into useful heating or hot water. Ideal for energy-intensive operations, these systems dramatically reduce energy consumption, 
+    improve process efficiency, and lower carbon emissions.
         </p>
       </div>
     </div>
@@ -268,20 +270,22 @@
 }
 
 .performance-block h4 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 8px;
-  color: #00233B;
+  
+
+     font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-size: 24px;color: #00233B;
+  text-transform: capitalize;
+  margin: 0 0 12px 0;
    margin-left: -28px;
 }
 
 .performance-block p {
-  font-family: 'Fahkwang', sans-serif;
-  font-weight: 600;
+font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   font-size: 24px;
-  text-transform: capitalize;
-  margin: 0 0 12px 0;
+  margin-bottom: 8px;
+  color: #00233B;
    margin-left: -28px;
 }
 
@@ -394,15 +398,15 @@ body{
     <div class="container">
     <div class="heatpump-industrial-wrapper">
       <div class="heatpump-industrial-content">
-        <h3>Waste Heat Recovery Heat Pump Units:</h3>
+        <h3>Energy-Efficient, Low-Temperature Drying for Waste Sludge Management:</h3>
         <p>
-        Rockshell Corp’s Industrial Heat Pumps capture waste energy from sources such as flue gas, exhaust air, process water, condenser heat from chillers, and cooling tower blowdown. These systems efficiently provide space heating, domestic hot water, preheating for boilers, and process heating. Designed with high-temperature lift capability, modular skid mounted construction, BMS/SCADA integration, energy monitoring, and configurable simultaneous heating and cooling, they reduce thermal waste and emissions, lower operational costs, and improve facility energy performance. Custom-engineered to your facility’s thermal profile, these solutions offer short payback periods and full lifecycle support—from design and commissioning to ongoing maintenance ensuring maximum efficiency and reliability.
+       Our Heat Pump Sludge Dryers offer a sustainable and cost-effective solution for reducing the volume and weight of various industrial and municipal sludges. Using low-temperature dehumidification technology, these systems dry sludge to a stable, dry form—while drastically cutting down on energy consumption and operational costs.
 
 
         </p>
       </div>
       <div class="heatpump-industrial-image">
-        <img src="assets/introduction_airwater.jpg" alt="Seasaw Image" />
+        <img src="assets/sludge.png" alt="Seasaw Image" />
       </div>
     </div>
   </div>
@@ -428,6 +432,8 @@ body{
   height: 712px;
   object-fit: contain;
   display: block;
+  padding-bottom: 100px;
+   padding-top: 100px;
 }
 
 .heatpump-industrial-bg {
@@ -576,10 +582,11 @@ body{
   <div class="container">
     <div class="how-heatpumps-work-wrapper">
       <div class="how-heatpumps-work-content">
-        <h3>How Waste Heat Recovery Units Work:</h3>
+        <h3>Why Heat Pump Drying?</h3>
         <p>
-                  Recover & Reuse Waste Energy: Rockshell Corp’s Industrial Heat Pumps recover thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment.  Reduce Energy Bills: These systems significantly cut energy usage by utilizing existing waste heat instead of generating new heat from scratch. 
+         Traditional thermal drying methods consume large amounts of steam or fuel and often degrade sludge quality. In contrast, our closed-loop heat pump dryers operate at temperatures below 80°C, delivering exceptional benefits such as high energy efficiency (COP 3–4.5), odor-free and emission-free operation, safety for heat-sensitive and organic sludge, suitability for both indoor and outdoor installations, and compatibility with zero liquid discharge (ZLD) and circular waste management systems.
         </p>
+        
       </div>
       <div class="how-heatpumps-work-image">
         <img src="assets/Clip1.svg" alt="Industrial Process Diagram" />
@@ -713,7 +720,7 @@ body{
 
 </style>
 
-<section class="heatpump-industrial-section">
+<!-- <section class="heatpump-industrial-section">
   <div class="heatpump-industrial-bgs">
     <div class="container">
     <div class="heatpump-industrial-wrapper2">
@@ -731,7 +738,7 @@ body{
     </div>
   </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -859,14 +866,14 @@ body{
 <section class="overlap-industry-section">
   <div class="overlap-industry-content">
     <div class="overlap-industry-card">
-      <h3 class="heatpump-heading2">Waste heat can be recycled from the below processes.</h3>
+      <h3 class="heatpump-heading2">Applications:</h3>
       <ul class="industry-feature-list">
-        <li>		Manufacturing Plants</li>
-        <li>	Chemical & Pharmaceutical Production</li>
-        <li>	Food & Beverage Processing</li>
-        <li>	Heat rejection flues/stacks</li>
-         <li> 	Data Centres & Server Rooms</li>
-         <li> 		District Heating Systems</li>
+        <li>	Municipal Sewage Sludge</li>
+        <li>	Effluent Treatment Plant (ETP) Sludge</li>
+        <li>	Biological & Chemical Sludge</li>
+        <li>	Paper Mill & Textile Sludge</li>
+         <li> 	Food, Pharma & Chemical Industry Sludge</li>
+         <li> 	Manure, Agro-Waste, and Digestate</li>
         
       </ul>
     </div>
@@ -1143,18 +1150,19 @@ body{
 
 </style>
 <!-- Here ends the CTA1 Section  -->
+
+
 <section class="heatpump-benefits">
   <div class="container">
     <div class="heatpump-container">
-      <h3 class="heatpump-heading">Benefits of Waste Heat Recovery Heat Pumps:</h3>
+      <h3 class="heatpump-heading">How It Works:</h3>
       <ul class="heatpump-reasons">
-        <li> <strong>Recover & Reuse Waste Energy:</strong> These heat pumps capture thermal energy from exhaust air, process water, compressors, refrigeration systems, and other heat-generating equipment, turning waste heat into usable energy.</li>
-        <li> <strong>Reduce Energy Bills:</strong> By utilizing existing waste heat instead of generating new heat from scratch, facilities can significantly lower energy consumption and operating costs.</li>
-        <li> <strong>Support Sustainability Goals:</strong> Using waste heat recovery reduces carbon emissions and helps meet environmental and decarbonization targets.</li>
-        <li> <strong>Reliable for Heavy-Duty Applications:</strong> Engineered for continuous industrial operation, these systems provide high COPs and scalable capacities for diverse applications.</li>
-        <li> <strong>Versatile Integration:</strong> Suitable for process heating, space heating, domestic hot water, preheating for boilers, and even cooling applications, these units can be adapted to many industrial processes.</li>
-        <li> <strong>Flexible Heat Sources:</strong> Waste heat can be extracted from flue gas, exhaust air, condenser heat, cooling tower blowdown, and other low-grade heat streams, making integration into existing facilities seamless.</li>
-        <li> <strong>Advanced Monitoring & Control:</strong> Systems can be connected to BMS/SCADA platforms or cloud solutions to monitor performance, optimize operation, and reduce downtime through remote diagnostics.</li>
+        <li> <strong>Sludge Loading:</strong> Dewatered sludge (20–30% solids) is fed into the drying chamber.</li>
+        <li> <strong>Heat Pump Drying:</strong>Warm dehumidified air circulates through the chamber, evaporating moisture from the sludge.</li>
+        <li> <strong>Condensation:</strong>  Moisture-laden air is passed through the evaporator coil, where water vapor is condensed and collected.</li>
+        <li> <strong>Air Reheating: </strong> Dry, warm air is reheated by the heat pump and recirculated—no energy is wasted.</li>
+        <li> <strong>Dry Sludge Discharge: </strong> : Final sludge (typically 70–90% dry solids) is discharged as a powder, granule, or cake.</li>
+       
       </ul>
     </div>
   </div>
@@ -1272,8 +1280,108 @@ body{
   }
 }
 </style>
+<section class="key-features-section">
+  <div class="container">
+    <h4>Key Features of our customized heat pumps</h4>
+    <table>
+      <tr><td>Energy Efficiency</td><td>Up to 70% less energy than conventional dryers</td></tr>
+      <tr><td>Emission-Free</td><td>No flue gas, odors, or combustion by-products</td></tr>
+      <tr><td>Space Saving</td><td>Compact footprint and modular expandability</td></tr>
+      <tr><td>Recyclable Water</td><td>Condensate can be reused or treated</td></tr>
+      <tr><td>Lower Disposal Costs</td><td>Up to 80% volume reduction</td></tr>
 
+    </table>
+  </div>
+</section>
+
+<style>
+    .key-features-section h4{
+        font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 40px;
+  margin-top: 60px;
+    }
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0 20px 0; /* Added top margin for spacing */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+   margin-bottom: 60px;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Column separator for the first column */
+table td:first-child {
+  font-weight: 600; 
+  color: #2a2a2a;
+  width: 40%;
+  border-right: 1px solid #ddd; /* Column separator line */
+}
+
+table td:last-child {
+  color: #555;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Title Style */
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  font-family: 'Work Sans', sans-serif;
+}
+</style>
+<!-- Here Starts the Footer section  -->
+ 
+<style>
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 4rem 0;
+  }
+ .space {
+    display: none !important;
+  }
+  .why-choose-us h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .why-choose-us .reasons {
+    padding-left: 1.6rem;
+  }
+
+  .why-choose-us .reasons li {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+</style>
 <?php include 'footer.php'; ?>
  </div>
 
-  </body>

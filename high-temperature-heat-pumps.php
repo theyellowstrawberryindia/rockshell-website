@@ -5,12 +5,12 @@
    <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-solutions">Heat Pump Solutions</a>
   </p>
 
   <!-- Break line for responsive only -->
@@ -18,7 +18,7 @@
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="high-temperature-heat-pumps">High Temperature Heat Pumps</a>
   </p>
 </div>
 
@@ -228,19 +228,19 @@ body{
     <h2 class="section-heading">Discover Product Variants</h2>
 
 <div class="heat-pump-row">
-  <a href="air-and-water.html" class="heat-pump-card">
+  <a href="air-and-water" class="heat-pump-card">
     <img src="assets/products.svg" alt="High Temperature Heat Pumps" />
     <p>Air and water sourced units - upto 130C capable   </p>
   </a>
-  <a href="waste-heat-recovery-units.html" class="heat-pump-card">
+  <a href="waste-heat-recovery-units" class="heat-pump-card">
     <img src="assets/products.svg" alt="Steam Heat Pumps" />
     <p>Waste heat recovery units  </p>
   </a>
-  <a href="dual-source-units.html" class="heat-pump-card">
+  <a href="dual-source-units" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
     <p>Dual source units   </p>
   </a>
-    <a href="standarized-model-upto.html" class="heat-pump-card">
+    <a href="standarized-model-upto" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
     <p>Standardized model upto 90C  </p>
   </a>

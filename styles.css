@@ -14,73 +14,7 @@ body {
   background-color: #fff;
  
 }
-/* Navbar Layout */
-.navbar {
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px solid #ccc;
-}
 
-.navbar .container {
-  max-width: 144rem;
-  margin: 0 auto;
-  padding: 1.5rem 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6rem;
-}
-
-/* Logo Left */
-.logo-wrapper {
-  flex-shrink: 0;
-}
-
-.logo {
-  width: 9rem;
-  height: auto;
-}
-
-/* Nav Center */
-.nav-links {
-    display: flex
-;
-    flex-grow: 1;
-    justify-content: space-between;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links li a {
-  font-size: 17px;
-  color: #00233B;
-  text-decoration: none;
-  text-align: center;
-  line-height: 1.4;
-}
-
-/* Button Right */
-.contact-btn {
-  background: linear-gradient(to right, #01739C, #00233B);
-  color: #ffffff;
-  padding: 1.2rem 2.4rem;
-  font-size: 1.6rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 2.4rem;
-  /* border-radius: 0.4rem; */
-}
-
-.contact-btn .btn-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-.menu-toggle {
-  display: none; /* For desktop by default */
-  background: none;
-  border: none;
-}
 
 .container {
   max-width: 132rem; /* Best fit for 1440px MacBook Pro */
@@ -151,13 +85,14 @@ body {
 
 .main-heading .highlight {
   color: #0076a5;
+  font-size: 34px;
   font-weight: bold;
 }
 
 .intro-text {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  font-size: 2.6rem;
+  font-size: 24px;
   line-height: 1;
   text-transform: capitalize;
   color: #00233B;
@@ -167,12 +102,12 @@ body {
 .expert-btn {
   background: linear-gradient(to bottom, #01739C, #00233B);
   color: #ffffff;
-  padding: 1.6rem 2.4rem;
+  padding: 1.2rem 1.8rem;
   text-decoration: none;
   font-size: 1.6rem;
   display: inline-flex;
   align-items: center;
-  gap: 2.4rem;
+  gap: 2rem;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -249,7 +184,7 @@ body {
 .industry-heading {
   font-family: 'Fahkwang', sans-serif;
   font-weight: 600;
-  font-size: 4rem; /* 40px */
+  font-size: 24px; /* 40px */
   line-height: 100%;
   color: #00233B;
   text-transform: capitalize;
@@ -322,7 +257,7 @@ body {
 }
 
 .industry-description {
-  font-size: 1.9rem;
+  font-size: 18px;
   line-height: 1.6;
   color: #333;
   margin-bottom: 3rem;
@@ -333,9 +268,9 @@ body {
   justify-content: center;
 
 
-  height: 6rem;    /* 60px */
-  padding: 1.6rem 2.4rem;
-  gap: 2.4rem;
+ 
+  padding: 1.4rem 2rem;
+  gap: 2rem;
 
   font-size: 1.6rem;
 
@@ -381,7 +316,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem; /* 24px assuming 1rem = 10px */
+  font-size: 18px; /* 24px assuming 1rem = 10px */
   line-height: 1;
   letter-spacing: 0;
   color: #00233B;
@@ -454,7 +389,7 @@ body {
   font-family: 'Fahkwang', sans-serif;
   font-weight: 600;
   font-style: normal; /* No direct 'SemiBold' keyword — 600 is equivalent */
-  font-size: 3.2rem; /* 32px */
+  font-size: 24px; /* 32px */
   line-height: 100%;
   letter-spacing: 0;
   color: #00233B;
@@ -614,6 +549,11 @@ body {
   gap: 4rem;
   flex-wrap: nowrap;
   flex-grow: 1;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;  /* 🔒 stops right overflow */
 }
 
 .clients-logos img {
