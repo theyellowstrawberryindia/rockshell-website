@@ -2,11 +2,18 @@
   <div class="footer-top">
     <img src="assets/Logo.svg.svg" alt="Logo" class="footer-logo" />
 
-    <div class="social-icons">
+     <div class="social-icons">
+    <a href="https://in.linkedin.com/company/rockshell-corp-energy-efficient-solutions" target="_blank" class="social-link">
       <img src="assets/linkedin.svg" alt="LinkedIn" />
+    </a>
+    <a href="mailto:info@example.com" class="social-link">
       <img src="assets/mail.svg" alt="Mail" />
+    </a>
+    <a href="https://www.youtube.com" target="_blank" class="social-link">
       <img src="assets/youtube.svg" alt="YouTube" />
-    </div>
+    </a>
+  </div>
+
   </div>
 
   <hr class="footer-divider" />
@@ -22,13 +29,26 @@
 </div>
     
 
-    <div class="footer-sections">
-      <h4>Quick Links</h4>
-      <p>Contact us</p>
-      <p>Evaporators</p>
-      <p>HVAC</p>
-      <p>Heat pumps</p>
-    </div>
+<div class="footer-sections">
+  <h4>Quick Links</h4>
+  <p><a href="contact-us" class="footer-link">Contact us</a></p>
+  <p><a href="heat-pump-dryers-evaporators" class="footer-link">Evaporators</a></p>
+  <p><a href="#" class="footer-link">HVAC</a></p>
+  <p><a href="heat-pump-solutions" class="footer-link">Heat pumps</a></p>
+</div>
+<style>
+  .footer-sections p a {
+  color: #00233B;            /* footer text color */
+  text-decoration: none;     /* remove underline */
+  font-family: 'Work Sans', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.footer-sections p a:hover {
+  color: #01739C;            /* hover color */
+  text-decoration: underline; /* optional underline on hover */
+}
+</style>
   </div>
 
   <hr class="footer-divider" />
