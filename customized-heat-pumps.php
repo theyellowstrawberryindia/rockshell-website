@@ -5,12 +5,12 @@
    <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-solutions">Heat Pump Solutions</a>
   </p>
 
   <!-- Break line for responsive only -->
@@ -18,16 +18,15 @@
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="customized-heat-pumps">Customized Heat Pumps</a>
   </p>
 </div>
 
     <div class="high-temp-content">
       <div class="high-temp-text">
-        <h3>High temperature heat pumps</h3>
+        <h3>Customized Heat Pumps</h3>
         <p>
-          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-          Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+          Tailored Thermal Solutions for Maximum Efficiency and Performance : Every building and process is different—your heat pump should be too. Our Customized Heat Pumps are engineered to meet your unique heating and cooling needs with precision. Whether it’s a challenging temperature range, space constraint, or integration with existing systems, we deliver bespoke solutions that optimize performance, efficiency, and lifecycle cost.
         </p>
       </div>
       <div class="high-temp-image">
@@ -228,21 +227,21 @@ body{
     <h2 class="section-heading">Discover Product Variants</h2>
 
 <div class="heat-pump-row">
-  <a href="air-and-water.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="High Temperature Heat Pumps" />
-    <p>Air and water sourced units - upto 130C capable   </p>
+    <p>Special HEXs - Ti, Duplex, SS316   </p>
   </a>
-  <a href="waste-heat-recovery-units.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="Steam Heat Pumps" />
-    <p>Waste heat recovery units  </p>
+    <p>Heat pumps with cold air  </p>
   </a>
-  <a href="dual-source-units.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Dual source units   </p>
+    <p>Heat pump with Cold side and hot side thermal and battery storage  </p>
   </a>
-    <a href="standarized-model-upto.html" class="heat-pump-card">
+    <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Standardized model upto 90C  </p>
+    <p>Brine sourced heat pumps upto -40C  </p>
   </a>
   
 </div>
@@ -547,13 +546,13 @@ body{
 <!-- Here ends the CTA1 Section  -->
 <section class="why-choose-us">
     <div class="container">
-  <h3>Why Choose Us?</h3>
+  <h3>What Customization Means for You</h3>
   <ul class="reasons">
-    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
-    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
-    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
-    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
-    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
+    <li>Custom capacities and temperature ranges.</li>
+    <li>Cooling, heating, or simultaneous heating/cooling.</li>
+    <li>Hybrid systems with multiple energy sources.</li>
+    <li>Custom refrigerant options (including low-GWP and natural gases).</li>
+    <li>Special MOC heat exchangers like Titanium, Duplex steel, SS316L to treat harsh chemicals.</li>
   </ul></div>
 </section>
 
@@ -761,57 +760,177 @@ body{
 </style>
 
 <!-- Here ends the CTA Section  -->
-
-<!-- Here starts the FAQ Section -->
-<section class="faq-section">
+<section class="why-choose-us">
     <div class="container">
-  <h3 class="faq-heading">Frequently Asked Questions</h3>
+  <h3>Heat Pumps with Static Fans for Directed Cold Airflow</h3>
+  <ul class="reasons">
+    <li>Targeted airflow for specific zones or equipment.</li>
+    <li>High energy efficiency with optimized fan and compressor operation.</li>
+    <li>Uniform cooling distribution without turbulence or dead zones.</li>
+    <li>Low maintenance static fan technology with fewer moving parts.</li>
+    <li>Custom ducting or nozzle configurations available.</li>
+  </ul></div>
+</section>
 
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>What is a heat pump and how does it work?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
-    </div>
-    <div class="faq-answer">
-      <p>Heat pumps transfer heat from one place to another using a refrigerant cycle. They can be used for both heating and cooling.</p>
-    </div>
-    <hr />
-  </div>
 
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>Are heat pumps energy efficient?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
-    </div>
-    <div class="faq-answer">
-      <p>Yes, heat pumps are more energy efficient compared to traditional heating methods because they move heat rather than generate it.</p>
-    </div>
-    <hr />
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>Can heat pumps be used in cold climates?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
-    </div>
-    <div class="faq-answer">
-      <p>Modern heat pumps can work efficiently in colder climates with improved technology such as variable speed compressors.</p>
-    </div>
-    <hr />
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      <h4>How long does a heat pump last?</h4>
-      <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
-    </div>
-    <div class="faq-answer">
-      <p>With proper maintenance, a heat pump can last between 10–15 years or longer.</p>
-    </div>
-    <hr />
-  </div>
+ <section class="key-features-section">
+  <div class="container">
+    <h4>Key Features of our customized heat pumps</h4>
+    <table>
+      <tr><td>Heating Capacity</td><td>10 kW – 10+ MW</td></tr>
+      <tr><td>Hot Water Temperature</td><td>Up to 90–130°C</td></tr>
+      <tr><td>Cooling Capabilities</td><td>-20°C chilled brine to +10°C cooling</td></tr>
+      <tr><td>Refrigerants</td><td>R-1234yf, R-1234ze, R-1233zde, R-717 (NH₃)</td></tr>
+      <tr><td>Mounting</td><td>Skid-mounted, containerized, or modular</td></tr>
+      <tr><td>Controls</td><td>BMS-compatible, remote monitoring, PLC/HMI</td></tr>
+    </table>
   </div>
 </section>
+
+<style>
+    .key-features-section h4{
+        font-family: 'Fahkwang', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #00233B;
+  margin-bottom: 40px;
+    }
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0 20px 0; /* Added top margin for spacing */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Column separator for the first column */
+table td:first-child {
+  font-weight: 600; 
+  color: #2a2a2a;
+  width: 40%;
+  border-right: 1px solid #ddd; /* Column separator line */
+}
+
+table td:last-child {
+  color: #555;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Title Style */
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  font-family: 'Work Sans', sans-serif;
+}
+</style>
+<section class="why-choose-us">
+    <div class="container">
+  <h3>What Customization Means for You</h3>
+  <ul class="reasons">
+    <li>Custom capacities and temperature ranges.</li>
+    <li>Cooling, heating, or simultaneous heating/cooling.</li>
+    <li>Hybrid systems with multiple energy sources.</li>
+    <li>Custom refrigerant options (including low-GWP and natural gases).</li>
+    <li>Special MOC heat exchangers like Titanium, Duplex steel, SS316L to treat harsh chemicals.</li>
+  </ul></div>
+</section>
+<section class="contact-cta">
+  <div class="contact-container">
+    <p class="cta-text">Need a custom coating solution?</p>
+    <a href="#contact" class="contact-btns">
+      Get Personal Assistance
+      <img src="assets/Phone.svg" alt="Phone" />
+    </a>
+  </div>
+</section>
+<!-- Here starts the FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <h3 class="faq-heading">Frequently Asked Questions</h3>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>What are customized heat pumps?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>Customized heat pumps are engineered to meet your unique heating and cooling needs. They can be tailored for capacity, temperature range, refrigerants, and integration with existing systems.</p>
+      </div>
+      <hr />
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>How can customized heat pumps improve efficiency?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>By optimizing design for your specific process or building, customized heat pumps reduce energy waste, improve seasonal performance, and ensure precise temperature control.</p>
+      </div>
+      <hr />
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Can customized heat pumps handle both heating and cooling?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>Yes. These systems can provide heating, cooling, or simultaneous heating and cooling. Hybrid configurations using multiple energy sources are also possible.</p>
+      </div>
+      <hr />
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>Which industries benefit from customized heat pumps?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>Industries like commercial buildings, industrial process heating & cooling, food & beverage processing, pharmaceutical manufacturing, cold storage, and district energy networks benefit from tailored solutions.</p>
+      </div>
+      <hr />
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h4>How is energy management handled in these systems?</h4>
+        <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
+      </div>
+      <div class="faq-answer">
+        <p>Smart controllers manage energy flows based on thermal load, time-of-use electricity pricing, renewable inputs, and backup requirements to maximize efficiency and flexibility.</p>
+      </div>
+      <hr />
+    </div>
+
+  </div>
+</section>
+
 <style>
   .faq-section {
   padding-top: 80px;
@@ -888,7 +1007,8 @@ hr {
 
 <!-- Here ends the Faq Section  -->
 
-
+<!-- Here Starts the Footer section  -->
+<?php include 'footer.php'; ?>
 <style>
  @media (max-width: 768px) {
   .high-temp-content {
@@ -1188,7 +1308,6 @@ hr {
   }
 }
 </style>
-<?php include 'footer.php'; ?>
  </div>
 
 

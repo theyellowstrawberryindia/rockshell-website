@@ -5,12 +5,12 @@
    <div class="breadcrumb">
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="index.html">Home</a>
+    <a href="index">Home</a>
   </p>
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon inactive" />
   <p class="breadcrumb-text current inactive">
-    <a href="heat-pump-solutions.html">Heat Pump Solutions</a>
+    <a href="heat-pump-dryers-evaporators">Heat Pump Dryers Evaporators</a>
   </p>
 
   <!-- Break line for responsive only -->
@@ -18,16 +18,17 @@
 
   <img src="assets/Polygon.svg" alt="Breadcrumb arrow" class="breadcrumb-icon" />
   <p class="breadcrumb-text current">
-    <a href="high-temperature-heat-pumps.html">High Temperature Heat Pumps</a>
+    <a href="heat-pump-based-zero">Heat pump based zero liquid discharge solutions </a>
   </p>
 </div>
 
     <div class="high-temp-content">
       <div class="high-temp-text">
-        <h3>High temperature heat pumps</h3>
+        <h3>Heat pump based zero liquid discharge solutions</h3>
         <p>
-          Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-          Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+          Heat pump–based Zero Liquid Discharge (ZLD) solutions deliver advanced wastewater recovery by efficiently evaporating and condensing water for reuse, leaving behind only solid residues. 
+This technology reduces environmental impact, lowers operating costs, and ensures regulatory compliance while maximizing resource recovery for industrial processes.
+
         </p>
       </div>
       <div class="high-temp-image">
@@ -228,32 +229,33 @@ body{
     <h2 class="section-heading">Discover Product Variants</h2>
 
 <div class="heat-pump-row">
-  <a href="air-and-water.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="High Temperature Heat Pumps" />
-    <p>Air and water sourced units - upto 130C capable   </p>
+    <p>Vacuum distillation unit</p>
   </a>
-  <a href="waste-heat-recovery-units.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="Steam Heat Pumps" />
-    <p>Waste heat recovery units  </p>
+    <p>Effluent evaporation units </p>
   </a>
-  <a href="dual-source-units.html" class="heat-pump-card">
+  <a href="#" class="heat-pump-card">
     <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Dual source units   </p>
+    <p>Prod concentration</p>
   </a>
-    <a href="standarized-model-upto.html" class="heat-pump-card">
-    <img src="assets/products.svg" alt="Low GWP Refrigerant Heat Pump" />
-    <p>Standardized model upto 90C  </p>
+  <a href="#" class="heat-pump-card cta-card">
+    <img src="assets/cta-final-one.jpg" alt="Low GWP Refrigerant Heat Pump" />
   </a>
-  
 </div>
-
 
   </div>
 </section>
 
 
 <style>
-
+@media (max-width: 768px) {
+  .cta-card img {
+    content: url("assets/cta-mobile.png");
+  }
+}
 
  .heat-pump-section {
   padding: 60px 0;
@@ -287,7 +289,7 @@ body{
   font-weight: 600;
   text-transform: capitalize;
   line-height: 52px;
-  width: 449px;
+  /* width: 449px; */
   color: #00233B;
 }
 
@@ -549,11 +551,11 @@ body{
     <div class="container">
   <h3>Why Choose Us?</h3>
   <ul class="reasons">
-    <li>Custom-Engineered Solutions: Products designed to match your exact industry requirements.</li>
-    <li>Unmatched Quality Standards: Strict quality control ensuring durability and performance.</li>
-    <li>Advanced Manufacturing Technology: Cutting-edge processes for precision and efficiency.</li>
-    <li>On-Time Delivery Assurance: Reliable logistics for seamless and timely supply.</li>
-    <li>Expert Technical Support: End-to-end assistance from consultation to after-sales service.</li>
+    <li>Tailored ZLD Solutions: Heat pump-based systems engineered to meet your specific wastewater treatment needs.</li>
+      <li>Superior Water Recovery: Achieve up to 95–99% water reclamation with minimal environmental impact.</li>
+      <li>Energy-Efficient Technology: Advanced heat pump integration reduces operational energy costs significantly.</li>
+      <li>Reliable Compliance: Designed to meet stringent environmental and discharge regulations.</li>
+      <li>Comprehensive Support: From process design to commissioning and ongoing maintenance.</li>
   </ul></div>
 </section>
 
@@ -769,44 +771,44 @@ body{
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>What is a heat pump and how does it work?</h4>
+      <h4>What is a heat pump-based Zero Liquid Discharge (ZLD) system and how does it work?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Heat pumps transfer heat from one place to another using a refrigerant cycle. They can be used for both heating and cooling.</p>
+      <p>A heat pump-based ZLD system uses energy-efficient heat pump technology to evaporate and condense wastewater, recovering clean water while concentrating and separating solids for safe disposal, ensuring no liquid waste leaves the facility.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Are heat pumps energy efficient?</h4>
+      <h4>Are heat pump-based ZLD systems energy efficient?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Yes, heat pumps are more energy efficient compared to traditional heating methods because they move heat rather than generate it.</p>
+      <p>Yes. By reusing latent heat within a closed-loop cycle, these systems consume significantly less energy than conventional thermal evaporation, lowering operational costs and environmental impact.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>Can heat pumps be used in cold climates?</h4>
+      <h4>Can these systems handle high-salinity or challenging wastewater streams?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>Modern heat pumps can work efficiently in colder climates with improved technology such as variable speed compressors.</p>
+      <p>Absolutely. Heat pump-based ZLD units can be customized to handle brines, chemical-laden effluents, and other difficult wastewater streams, ensuring compliance with strict environmental standards.</p>
     </div>
     <hr />
   </div>
 
   <div class="faq-item">
     <div class="faq-question">
-      <h4>How long does a heat pump last?</h4>
+      <h4>What is the typical lifespan of a heat pump-based ZLD system?</h4>
       <img src="assets/Dropdown.svg" alt="Toggle answer" class="dropdown-icon" />
     </div>
     <div class="faq-answer">
-      <p>With proper maintenance, a heat pump can last between 10–15 years or longer.</p>
+      <p>With proper operation and preventive maintenance, these systems can operate reliably for 15–20 years or more, delivering consistent performance and high water recovery rates.</p>
     </div>
     <hr />
   </div>
@@ -888,6 +890,7 @@ hr {
 
 <!-- Here ends the Faq Section  -->
 
+<!-- Here Starts the Footer section  -->
 
 <style>
  @media (max-width: 768px) {
@@ -1188,7 +1191,7 @@ hr {
   }
 }
 </style>
-<?php include 'footer.php'; ?>
+ <?php include 'footer.php'; ?>
  </div>
 
 
